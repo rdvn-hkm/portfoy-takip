@@ -25,6 +25,7 @@ fiyat üretiminde bırakılır.
 import json
 import os
 import re
+import ssl
 import subprocess
 import sys
 import time
@@ -38,6 +39,23 @@ ENV_FILE = os.path.join(ROOT, ".env")
 
 AV_BASE = "https://www.alphavantage.co/query"
 REQUEST_DELAY = 1.1  # Alpha Vantage: saniyede 1 istek limiti
+
+
+def build_ssl_context():
+    """Homebrew/python.org Python kurulumlarında CA sertifika paketi
+    sisteme bağlı olmayabilir (certifi de yoksa urlopen SSL doğrulama
+    hatası verir). macOS'un sistem kök sertifika paketini deneyip, yoksa
+    varsayılan bağlama düşer (ör. Linux konteynerlerinde zaten çalışır)."""
+    for path in ("/etc/ssl/cert.pem", "/etc/ssl/certs/ca-certificates.crt"):
+        if os.path.exists(path):
+            try:
+                return ssl.create_default_context(cafile=path)
+            except Exception:
+                pass
+    return ssl.create_default_context()
+
+
+SSL_CONTEXT = build_ssl_context()
 
 
 def load_env():
@@ -60,7 +78,7 @@ def av_get(params, api_key):
     params = dict(params)
     params["apikey"] = api_key
     url = AV_BASE + "?" + urllib.parse.urlencode(params)
-    with urllib.request.urlopen(url, timeout=20) as resp:
+    with urllib.request.urlopen(url, timeout=20, context=SSL_CONTEXT) as resp:
         data = json.loads(resp.read().decode("utf-8"))
     if "Information" in data or "Note" in data or "Error Message" in data:
         raise RuntimeError(data.get("Information") or data.get("Note") or data.get("Error Message"))
@@ -116,7 +134,7 @@ def send_telegram(token, chat_id, text):
         "text": text,
     }).encode("utf-8")
     req = urllib.request.Request(url, data=payload, method="POST")
-    with urllib.request.urlopen(req, timeout=20) as resp:
+    with urllib.request.urlopen(req, timeout=20, context=SSL_CONTEXT) as resp:
         result = json.loads(resp.read().decode("utf-8"))
     if not result.get("ok"):
         raise RuntimeError(f"Telegram gönderimi başarısız: {result}")
