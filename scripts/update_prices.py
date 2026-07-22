@@ -13,14 +13,19 @@ ortamdan okunur, .env asla git'e commit edilmez):
     TELEGRAM_BOT_TOKEN
     TELEGRAM_CHAT_ID
 
-Alpha Vantage ücretsiz anahtar limiti: günde 25 istek, saniyede 1 istek.
-Bu script tek çalıştırmada 8 istek harcar (3 ABD hissesi + BTC + ETH +
-EURUSD + USD/TRY + XAU/USD) — bu yüzden zamanlanmış rutin günde 3
-kezden (8 saatte bir) daha sık çalıştırılmamalı.
+Sembol listesi DİNAMİKTİR: index.html'deki mevcut holdings dizisinde
+hangi US/Crypto/Forex/Gold tipi semboller varsa onlar çekilir (BIST ve
+Fund, Alpha Vantage kapsamı dışında olduğu SYMBOL_SEARCH ile doğrulandığı
+için hariç tutulur). Baseline'a yeni bir ABD hissesi/kripto eklenirse
+script otomatik uyum sağlar.
 
-BIST hisseleri (THYAO, ASELS) ve fon (GTF) Alpha Vantage kapsamında
-değildir (SYMBOL_SEARCH ile doğrulandı); bunlar kasıtlı olarak demo
-fiyat üretiminde bırakılır.
+Alpha Vantage ücretsiz anahtar limiti: günde 25 istek, saniyede 1 istek.
+Her sembol/kur 1 istek harcar + USD/TRY için 1 istek daha. Mevcut 10
+varlıklı baseline'da (3 ABD hissesi + BTC + ETH + EURUSD + XAU + USD/TRY)
+bu 8 istek eder — bu yüzden zamanlanmış rutin günde 3 kezden (8 saatte
+bir) daha sık çalıştırılmamalı. Baseline'a yeni sembol eklenirse istek
+sayısı da artar; toplamın günde 25'i (ya da rutin sıklığına göre daha
+azını) aşmadığından emin olun.
 """
 import json
 import os
@@ -39,6 +44,11 @@ ENV_FILE = os.path.join(ROOT, ".env")
 
 AV_BASE = "https://www.alphavantage.co/query"
 REQUEST_DELAY = 1.1  # Alpha Vantage: saniyede 1 istek limiti
+
+# Alpha Vantage'da GERÇEKTEN karşılığı olduğu doğrulanan tipler.
+# BIST: SYMBOL_SEARCH boş döndü (kapsam dışı). Fund: gerçek bir ticker
+# değil, kurumsal veri kaynağımız yok.
+LIVE_TYPES = {"US", "Crypto", "Forex", "Gold"}
 
 
 def build_ssl_context():
@@ -86,12 +96,14 @@ def av_get(params, api_key):
 
 
 def fetch_stock_quote(symbol, api_key):
+    """(fiyat, önceki_kapanış) döner."""
     data = av_get({"function": "GLOBAL_QUOTE", "symbol": symbol}, api_key)
     quote = data.get("Global Quote") or {}
     price = quote.get("05. price")
+    prev_close = quote.get("08. previous close")
     if not price:
         raise RuntimeError(f"{symbol}: fiyat alanı boş döndü")
-    return float(price)
+    return float(price), float(prev_close) if prev_close else float(price)
 
 
 def fetch_exchange_rate(from_ccy, to_ccy, api_key):
@@ -120,6 +132,16 @@ def save_portfolio_data(html, match, data):
     serialized = json.dumps(data, ensure_ascii=False, indent=2)
     serialized = serialized.replace("</script", "<\\/script")
     return html[:match.start()] + match.group(1) + serialized + match.group(3) + html[match.end():]
+
+
+def upsert_history(holding, today, price):
+    history = holding.setdefault("priceHistory", [])
+    for entry in history:
+        if entry["date"] == today:
+            entry["price"] = price
+            return
+    history.append({"date": today, "price": price})
+    history.sort(key=lambda e: e["date"])
 
 
 def git(*args, check=True):
@@ -151,6 +173,7 @@ def main():
     with open(INDEX_HTML, encoding="utf-8") as f:
         html = f.read()
     data, match = load_portfolio_data(html)
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     updated, failed = [], []
 
@@ -166,40 +189,56 @@ def main():
         finally:
             time.sleep(REQUEST_DELAY)
 
-    holdings_by_symbol = {h["symbol"]: h for h in data["holdings"]}
+    for holding in data["holdings"]:
+        symbol = holding["symbol"]
+        htype = holding.get("type")
+        if htype not in LIVE_TYPES:
+            continue  # BIST / Fund: Alpha Vantage kapsamı dışı, demo kalır
 
-    for sym in ("AAPL", "MSFT", "NVDA"):
-        if sym in holdings_by_symbol:
-            price = try_fetch(sym, lambda s=sym: fetch_stock_quote(s, api_key))
+        if htype == "US":
+            result = try_fetch(symbol, lambda s=symbol: fetch_stock_quote(s, api_key))
+            if result is not None:
+                price, prev_close = result
+                holding["price"] = price
+                holding["prevClose"] = prev_close
+                holding["source"] = "live"
+                upsert_history(holding, today, price)
+        elif htype == "Crypto":
+            prev_price = holding.get("price") or None
+            price = try_fetch(f"{symbol}/USD", lambda s=symbol: fetch_exchange_rate(s, "USD", api_key))
             if price is not None:
-                holdings_by_symbol[sym]["price"] = price
-                holdings_by_symbol[sym]["source"] = "live"
-
-    for sym, av_symbol in (("BTC", "BTC"), ("ETH", "ETH")):
-        if sym in holdings_by_symbol:
-            price = try_fetch(f"{sym}/USD", lambda s=av_symbol: fetch_exchange_rate(s, "USD", api_key))
+                holding["prevClose"] = prev_price if prev_price else price
+                holding["price"] = price
+                holding["source"] = "live"
+                upsert_history(holding, today, price)
+        elif htype == "Forex":
+            # "EURUSD" gibi birleşik semboller varsayılan olarak from=ilk3/to=son3
+            from_ccy, to_ccy = (symbol[:3], symbol[3:]) if len(symbol) == 6 else (symbol, "USD")
+            prev_price = holding.get("price") or None
+            price = try_fetch(f"{from_ccy}/{to_ccy}", lambda f=from_ccy, t=to_ccy: fetch_exchange_rate(f, t, api_key))
             if price is not None:
-                holdings_by_symbol[sym]["price"] = price
-                holdings_by_symbol[sym]["source"] = "live"
-
-    if "EURUSD" in holdings_by_symbol:
-        price = try_fetch("EUR/USD", lambda: fetch_exchange_rate("EUR", "USD", api_key))
-        if price is not None:
-            holdings_by_symbol["EURUSD"]["price"] = price
-            holdings_by_symbol["EURUSD"]["source"] = "live"
-
-    if "XAU" in holdings_by_symbol:
-        price = try_fetch("XAU/USD (altın)", lambda: fetch_exchange_rate("XAU", "USD", api_key))
-        if price is not None:
-            holdings_by_symbol["XAU"]["price"] = price
-            holdings_by_symbol["XAU"]["source"] = "live"
+                holding["prevClose"] = prev_price if prev_price else price
+                holding["price"] = price
+                holding["source"] = "live"
+                upsert_history(holding, today, price)
+        elif htype == "Gold":
+            prev_price = holding.get("price") or None
+            price = try_fetch(f"{symbol}/USD (emtia)", lambda s=symbol: fetch_exchange_rate(s, "USD", api_key))
+            if price is not None:
+                holding["prevClose"] = prev_price if prev_price else price
+                holding["price"] = price
+                holding["source"] = "live"
+                upsert_history(holding, today, price)
 
     usd_try = try_fetch("USD/TRY", lambda: fetch_exchange_rate("USD", "TRY", api_key))
     if usd_try is not None:
         data["usdTryRate"] = usd_try
 
+    eurusd_holding = next((h for h in data["holdings"] if h["symbol"] == "EURUSD"), None)
+    if eurusd_holding:
+        data["eurUsdRate"] = eurusd_holding["price"]
+
     data["lastUpdated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    data["holdings"] = list(holdings_by_symbol.values())
 
     new_html = save_portfolio_data(html, match, data)
     with open(INDEX_HTML, "w", encoding="utf-8") as f:
