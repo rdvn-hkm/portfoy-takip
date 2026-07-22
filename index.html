@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vault — Portföy Takip</title>
+<title>Portföy Takip</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body{background:#0a0c11;color:#eceef2;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;}
@@ -18,48 +18,22 @@
 <div id="app"></div>
 
 <!--
-  Bu blok scripts/update_prices.py tarafından her çalıştırmada otomatik
-  güncellenir (fiyatlar, lastUpdated, aiNote). Elle düzenlemek için de
-  güvenlidir — sadece geçerli JSON kalmasına dikkat edin.
+  Bu blok scripts/update_prices.py ve zamanlanmış bulut rutini tarafından
+  otomatik güncellenir (fiyatlar, prevClose, priceHistory, aiNote,
+  advisorReport, opportunityReport). Pozisyon kompozisyonu (miktar/maliyet/
+  nakit/profil) tarayıcıda localStorage'da tutulur; buradaki holdings
+  sadece İLK YÜKLEME baseline'ı ve fiyat kaynağıdır — elle düzenlemek
+  güvenlidir, sadece geçerli JSON kalmasına dikkat edin.
 -->
 <script type="application/json" id="portfolio-data">
 {
   "cash": 8500,
-  "usdTryRate": 47.21153799,
-  "lastUpdated": "2026-07-22T15:24:10Z",
+  "usdTryRate": 47.19519646,
+  "eurUsdRate": 1.14122922,
+  "lastUpdated": "2026-07-22T21:56:47Z",
   "aiNote": "",
-  "activityLog": [
-    {
-      "text": "NVDA pozisyonu eklendi",
-      "time": "Az önce"
-    },
-    {
-      "text": "Portföy açıldı",
-      "time": "Az önce"
-    }
-  ],
-  "history": [
-    98200,
-    99100,
-    97400,
-    100200,
-    101800,
-    100900,
-    103200,
-    104500,
-    103800,
-    106100,
-    107300,
-    106500,
-    109200,
-    110800,
-    109900,
-    112400,
-    113600,
-    112900,
-    115200,
-    116400
-  ],
+  "advisorReport": null,
+  "opportunityReport": null,
   "holdings": [
     {
       "id": 1,
@@ -67,9 +41,16 @@
       "name": "Apple Inc.",
       "type": "US",
       "quantity": 20,
-      "cost": 165,
-      "price": 327.74,
-      "source": "live"
+      "avgCost": 165,
+      "price": 325.89,
+      "prevClose": 327.74,
+      "source": "live",
+      "priceHistory": [
+        {
+          "date": "2026-07-22",
+          "price": 325.89
+        }
+      ]
     },
     {
       "id": 2,
@@ -77,9 +58,16 @@
       "name": "Microsoft Corp.",
       "type": "US",
       "quantity": 10,
-      "cost": 380,
-      "price": 397.75,
-      "source": "live"
+      "avgCost": 380,
+      "price": 390.34,
+      "prevClose": 397.75,
+      "source": "live",
+      "priceHistory": [
+        {
+          "date": "2026-07-22",
+          "price": 390.34
+        }
+      ]
     },
     {
       "id": 3,
@@ -87,9 +75,16 @@
       "name": "NVIDIA Corp.",
       "type": "US",
       "quantity": 15,
-      "cost": 700,
-      "price": 207.29,
-      "source": "live"
+      "avgCost": 700,
+      "price": 212.06,
+      "prevClose": 207.29,
+      "source": "live",
+      "priceHistory": [
+        {
+          "date": "2026-07-22",
+          "price": 212.06
+        }
+      ]
     },
     {
       "id": 4,
@@ -97,9 +92,11 @@
       "name": "Türk Hava Yolları",
       "type": "BIST",
       "quantity": 500,
-      "cost": 240,
+      "avgCost": 240,
       "price": 0,
-      "source": "demo"
+      "prevClose": 0,
+      "source": "demo",
+      "priceHistory": []
     },
     {
       "id": 5,
@@ -107,9 +104,11 @@
       "name": "Aselsan",
       "type": "BIST",
       "quantity": 300,
-      "cost": 55,
+      "avgCost": 55,
       "price": 0,
-      "source": "demo"
+      "prevClose": 0,
+      "source": "demo",
+      "priceHistory": []
     },
     {
       "id": 6,
@@ -117,9 +116,16 @@
       "name": "Bitcoin",
       "type": "Crypto",
       "quantity": 0.15,
-      "cost": 42000,
-      "price": 66011.9,
-      "source": "live"
+      "avgCost": 42000,
+      "price": 66099.99,
+      "prevClose": 66011.9,
+      "source": "live",
+      "priceHistory": [
+        {
+          "date": "2026-07-22",
+          "price": 66099.99
+        }
+      ]
     },
     {
       "id": 7,
@@ -127,9 +133,16 @@
       "name": "Ethereum",
       "type": "Crypto",
       "quantity": 2,
-      "cost": 2400,
-      "price": 1949.95,
-      "source": "live"
+      "avgCost": 2400,
+      "price": 1938.61,
+      "prevClose": 1949.95,
+      "source": "live",
+      "priceHistory": [
+        {
+          "date": "2026-07-22",
+          "price": 1938.61
+        }
+      ]
     },
     {
       "id": 8,
@@ -137,9 +150,16 @@
       "name": "Euro / Amerikan Doları",
       "type": "Forex",
       "quantity": 10000,
-      "cost": 1.08,
-      "price": 1.14146947,
-      "source": "live"
+      "avgCost": 1.08,
+      "price": 1.14122922,
+      "prevClose": 1.14146947,
+      "source": "live",
+      "priceHistory": [
+        {
+          "date": "2026-07-22",
+          "price": 1.14122922
+        }
+      ]
     },
     {
       "id": 9,
@@ -147,9 +167,11 @@
       "name": "Altın (ons)",
       "type": "Gold",
       "quantity": 5,
-      "cost": 1950,
+      "avgCost": 1950,
       "price": 0,
-      "source": "demo"
+      "prevClose": 0,
+      "source": "demo",
+      "priceHistory": []
     },
     {
       "id": 10,
@@ -157,9 +179,11 @@
       "name": "Global Teknoloji Fonu",
       "type": "Fund",
       "quantity": 100,
-      "cost": 45,
+      "avgCost": 45,
       "price": 0,
-      "source": "demo"
+      "prevClose": 0,
+      "source": "demo",
+      "priceHistory": []
     }
   ]
 }
