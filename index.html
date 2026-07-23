@@ -33,66 +33,38 @@
   "lastUpdated": "2026-07-23T16:07:00Z",
   "aiNote": "",
   "advisorReport": {
-    "generatedAt": "2026-07-23T15:50:00Z",
-    "healthScore": 52,
-    "summary": "Bu tur öncesi ‘Varlıklarım’ listesi GitHub senkronizasyonuyla gerçek portföyle eşitlendi: AAPL/MSFT/NVDA tamamen çıktı, yerine gerçek 18 varlık (EURUSD, XAU, GTF, THYAO, BTC, ETH, ARB, AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY) analiz edildi. Portföy karışık bir görünüm sergiliyor: BTC (+%112,5), UNH (+%51,3) ve PYPL (+%32,6, Stripe/Advent devralma teklifi haberiyle) güçlü kazançlarken, ARB (-%94,0) ve EVTL (-%39,2) derin zararda; bugün ECB beklendiği gibi faizleri sabit tuttu. PYPL'deki devralma teklifi ve UNH'nin bilanço sonrası güçlü performansı önümüzdeki günlerde en çok izlenmesi gereken gelişmeler.",
-    "dataCoverageNote": "Bu rapor, ‘Varlıklarım’ listesi GitHub üzerinden senkronize edildikten sonra rutin manuel olarak çalıştırılarak üretildi (fiyat güncellemesi 2026-07-23T15:27:07Z). AUR/AVGO/UNH/BABA/LULU/GTLB/NVO/PYPL/TMDX/EVTL/UAMY için Alpha Vantage GLOBAL_QUOTE'tan, BTC/ETH/ARB/EURUSD için CURRENCY_EXCHANGE_RATE'ten canlı fiyat çekildi. XAU (altın) için Alpha Vantage yine 'Invalid API call' hatası döndürdü (ücretsiz planda desteklenmiyor); dış kaynaklara göre ons altın şu sıralar ~4.089$ civarında ama bu holding'e dokunulmadı, demo/0 olarak kaldı ve analiz dışı bırakıldı. THYAO (BIST) ve GTF (fon) Alpha Vantage kapsamı dışında, demo/0 olarak kaldı, analiz dışı bırakıldı. priceHistory'de yeni eklenen sembollerin çoğu için (ARB/AUR/UNH/BABA/LULU/GTLB/NVO/PYPL/TMDX/EVTL/UAMY) sadece bugünden itibaren veri birikmeye başladı; aylık/YTD/yıllık getiriler için henüz yeterli geçmiş yok. SEC/KAP dosyaları, bilanço detay tabloları, içeriden öğrenenlerin işlemleri, analist hedef fiyat değişiklik geçmişi ve teknik göstergelere (RSI/MACD vb.) erişimim yok; bu raporda kullanılan haberler yalnızca WebSearch ile bulunan güncel kaynaklardan. Not: fırsatlar raporu (opportunityReport) bu manuel çalıştırmada güncellenmedi, bir sonraki zamanlanmış rutin turunda tazelenecek.",
+    "generatedAt": "2026-07-23T16:20:00Z",
+    "healthScore": 53,
+    "summary": "Portföy güncel 17 varlıkla (XAU/GTF/THYAO hâlâ fiyatsız/demo) karışık bir tablo çiziyor: BTC (+%112,5) ve UNH (+%51,3, bilanço sonrası) güçlü kazançta, PYPL (+%32,6) yeni bir gelişmeyle takipte — PayPal yönetim kurulu 20 Temmuz'da Stripe/Advent'in 60,50$/hisse teklifini reddederek daha yüksek fiyat talep etti, bu da anlaşma belirsizliğini artırıyor. Öte yandan ARB (-%94,1) ve EVTL (-%39,2) derin zararda; toplamda yatırılan sermaye üzerinden portföyün canlı fiyatlanan kısmı yaklaşık +%13,7 getiride.",
+    "dataCoverageNote": "Fiyatlar bu turda Alpha Vantage'dan tazelendi (BTC/ETH canlı hareket etti; 11 ABD hissesi ve ARB, Alpha Vantage'ın ücretsiz planında güncellenmeyen aynı '2026-07-22' kapanış verisini döndürdü, değişiklik yok). XAU (altın) yine 'Invalid API call' hatasıyla desteklenmiyor, THYAO (BIST) ve GTF (fon) Alpha Vantage kapsamı dışı — üçü de demo/0 olarak kaldı, analiz dışı. Önceki turda hatalı biçimde artık portföyde bulunmayan bir EURUSD holding'i için öneri üretilmişti; bu turda kaldırıldı, sadece gerçek holdings listesindeki 17 varlık değerlendirildi. Aşağıdaki öneriler şema sınırı gereği en fazla 6 kalemle sınırlı; en büyük kazanç/zarar ve en güncel haber akışına sahip pozisyonlar (PYPL, UNH, BTC, ARB, LULU, EVTL) önceliklendirildi, diğer 11 pozisyon (AUR/AVGO/BABA/GTLB/NVO/TMDX/UAMY/ETH) bu turda öne çıkan yeni bir gelişme taşımadığı için listeye alınmadı. Çoğu sembol için priceHistory sadece 1-2 günlük veri içeriyor; aylık/YTD/yıllık getiriler için veri birikiyor. SEC/KAP dosyaları, bilanço detay tabloları, içeriden öğrenen işlemleri, analist hedef fiyat geçmişi ve teknik göstergelere (RSI/MACD vb.) erişimim yok; haberler yalnızca WebSearch ile bulunan güncel kaynaklardan.",
     "recommendations": [
       {
-        "symbol": "EURUSD",
-        "action": "BEKLE",
-        "confidence": 50,
-        "rationale": "Pozisyon maliyete göre +%5,3 kazançta; ECB bugün (23 Temmuz) beklendiği gibi üç politika faizini de sabit tuttu (mevduat faizi %2,25), EUR/USD kararın ardından 1,1375 civarına geriledi (İran-ABD gerginliğinin dolara güvenli liman talebi getirmesi baskı yapıyor). Lagarde'ın basın toplantısı sonrası net bir yön sinyali yok, karar öncesi pozisyon korunabilir.",
+        "symbol": "PYPL",
+        "action": "AZALT",
+        "confidence": 45,
+        "rationale": "Pozisyon maliyete göre +%32,6 kazançta (canlı fiyat 55,51$). PayPal yönetim kurulu 20 Temmuz'da özel bir toplantıda Stripe/Advent'in 60,50$/hisse (~53 milyar$) teklifini resmen reddetti ve daha yüksek fiyat için müzakere bekliyor; bu, anlaşmanın tamamen düşme veya daha yüksek bir fiyatla yeniden şekillenme riskini birlikte taşıyor. Hisse hâlâ teklif fiyatının altında işlem görüyor, 28 Temmuz'daki bilanço da ek oynaklık getirebilir; haber odaklı belirsizlik altında kısmi kâr realizasyonu sermaye korumasını önceliklendirebilir. Bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
+        "risk": "Yüksek"
+      },
+      {
+        "symbol": "UNH",
+        "action": "AZALT",
+        "confidence": 55,
+        "rationale": "Pozisyon maliyete göre +%51,3 gibi güçlü bir kazançta; 2. çeyrek bilançosu beklentileri açık ara aştı (düzeltilmiş HBK 6,38$ vs 4,88$ beklenti) ve Morgan Stanley (529$) ile KeyBanc (500$) hedef fiyatlarını yükseltti. Güçlü bilanço sonrası zirve yakını seviyelerde kısmi kâr realizasyonu sermaye korumasını önceliklendirebilir; bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
         "risk": "Orta"
       },
       {
         "symbol": "BTC",
         "action": "BEKLE",
         "confidence": 48,
-        "rationale": "Pozisyon maliyete göre +%112,5 gibi çok güçlü bir kazançta; canlı fiyat 64.851,59$, günlük -%1,3 (65.687,14$'dan). Bitcoin Temmuz dibinden %13 toparlanmanın ardından 64.000-66.800$ bandında yatay seyrediyor, net bir makro katalizör yok. Derin kârdaki pozisyonda kısmi kâr realizasyonu bir risk yönetimi seçeneği olabilir; bu bir zamanlama tahmini değildir.",
-        "risk": "Yüksek"
-      },
-      {
-        "symbol": "ETH",
-        "action": "BEKLE",
-        "confidence": 42,
-        "rationale": "Pozisyon maliyete göre +%6,6 sınırlı kazançta; canlı fiyat 1.892,60$, günlük -%1,8 (1.928,12$'dan). Dolar gücü ve teknoloji risk iştahındaki zayıflama fiyatı bastırıyor, ETH'ye özgü belirgin bir katalizör tespit edilmedi. Net yön sinyali yok, mevcut pozisyon korunabilir.",
+        "rationale": "Pozisyon maliyete göre +%112,5 gibi çok güçlü bir kazançta; canlı fiyat 64.855,12$, son 24 saatte pratik olarak yatay (+%0,01). Bitcoin 64.000-66.800$ bandında yatay seyrediyor, net bir yeni makro katalizör tespit edilmedi. Derin kârdaki pozisyonda kısmi kâr realizasyonu bir risk yönetimi seçeneği olabilir; bu bir zamanlama tahmini değildir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "ARB",
         "action": "BEKLE",
         "confidence": 35,
-        "rationale": "Pozisyon maliyete göre -%94,0 gibi çok derin bir zararda (canlı fiyat 0,0863$, maliyet 1,45$); Arbitrum'un yeni gelir paylaşım modeli ve Robinhood Chain entegrasyonu (Temmuz başında %19 sıçrama) token'ı maliyet seviyesine yaklaştırmaktan çok uzak. Kayıp büyük ölçüde zaten gerçekleşmiş durumda, net bir toparlanma katalizörü yok.",
+        "rationale": "Pozisyon maliyete göre -%94,1 gibi çok derin bir zararda (canlı fiyat 0,0863$, maliyet 1,45$); fiyat son turdan bu yana pratik olarak değişmedi. Arbitrum'un gelir paylaşım modeli ve Robinhood Chain entegrasyonu token'ı maliyet seviyesine yaklaştırmaktan çok uzak. Kayıp büyük ölçüde zaten gerçekleşmiş durumda, net bir toparlanma katalizörü yok; pozisyonu azaltmak gerçekleşmiş zararı kilitler, bu nedenle net bir öneri sunulmuyor.",
         "risk": "Yüksek"
-      },
-      {
-        "symbol": "AUR",
-        "action": "BEKLE",
-        "confidence": 40,
-        "rationale": "Pozisyon maliyete göre +%22,2 kazançta; canlı fiyat 6,61$, günlük +%4,8 (6,31$'dan). Bağımsız denetçi Edge Case, Aurora Driver'ın güvenlik olgunluğuna olumlu görüş verdi ve Craig-Hallum 18$ hedefle Al tavsiyesi başlattı, ancak şirket hâlâ gelir öncesi aşamada (son çeyrek ~1 milyon$ gelir, ~223 milyon$ net zarar) ve 29 Temmuz'da bilanço açıklayacak — yüksek oynaklık riski taşıyor.",
-        "risk": "Yüksek"
-      },
-      {
-        "symbol": "AVGO",
-        "action": "BEKLE",
-        "confidence": 45,
-        "rationale": "Pozisyon maliyete göre +%4,2 kazançta; canlı fiyat 396,81$, günlük +%2,7 (386,50$'dan). Apple ile 30 milyar$'lık çip anlaşması ve Standard Chartered ortaklığı olumlu, ancak yarı iletken sektörü Temmuz'da 2008'den bu yana en kötü ayını yaşıyor (iShares Semiconductor ETF -%18,6) ve AB, VMware bulut ekosistemi soruşturmasında Broadcom'a karşı ara tedbir talep ediyor. Karışık sinyaller nedeniyle net yön önerisi yok.",
-        "risk": "Orta"
-      },
-      {
-        "symbol": "UNH",
-        "action": "AZALT",
-        "confidence": 55,
-        "rationale": "Pozisyon maliyete göre +%51,3 gibi güçlü bir kazançta; 2. çeyrek bilançosu beklentileri açık ara aştı (düzeltilmiş HBK 6,38$ vs 4,88$ beklenti, ciro 112 milyar$) ve Morgan Stanley (529$) ile KeyBanc (500$) hedef fiyatlarını yükseltti. Güçlü bilanço sonrası zirve yakını seviyelerde kısmi kâr realizasyonu sermaye korumasını önceliklendirebilir; bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
-        "risk": "Orta"
-      },
-      {
-        "symbol": "BABA",
-        "action": "BEKLE",
-        "confidence": 48,
-        "rationale": "Pozisyon maliyete göre +%18,9 kazançta; canlı fiyat 116,56$. Qwen AI modellerinin Apple Intelligence/Siri için Çin'de onay alması ve DOJ ile 600 milyon$'lık anlaşmayla belirsizliğin giderilmesi olumlu, ancak AB AliExpress'e 550 milyon€ rekor ceza kesti. Konsensüs hedef 190,83$ olsa da karışık sinyaller nedeniyle net yön önerisi yapılmıyor.",
-        "risk": "Orta"
       },
       {
         "symbol": "LULU",
@@ -102,112 +74,87 @@
         "risk": "Yüksek"
       },
       {
-        "symbol": "GTLB",
-        "action": "BEKLE",
-        "confidence": 47,
-        "rationale": "Pozisyon maliyete göre +%20,7 kazançta; canlı fiyat 31,35$, son 90 günde %46,9 toparlanma var. UBS hedefini 35$'a yükseltti, DCF analizine göre hisse %39,7 iskontolu görünüyor, ancak analist görüşleri karışık (7 Al/14 Tut/2 Sat) ve yeni bir C-seviyesi atama yönetim değişikliği riski taşıyor. Net yön sinyali yok, mevcut pozisyon korunabilir.",
-        "risk": "Orta"
-      },
-      {
-        "symbol": "NVO",
-        "action": "BEKLE",
-        "confidence": 44,
-        "rationale": "Pozisyon maliyete göre -%2,0 ile sınırlı bir zararda; canlı fiyat 48,19$. AB'nin Wegovy hapını onaylaması (+%3) ve AMAZE 13 çalışmasındaki ilerleme olumlu, Eli Lilly'ye açılan yanıltıcı reklam davası ise belirsizlik yaratıyor. Bazı değerleme modelleri hisseyi belirgin iskontolu gösterse de bu tahminler değişken; net bir katalizör yokken mevcut pozisyon korunabilir.",
-        "risk": "Orta"
-      },
-      {
-        "symbol": "PYPL",
-        "action": "AZALT",
-        "confidence": 42,
-        "rationale": "Pozisyon maliyete göre +%32,6 kazançta; 15 Temmuz'da Stripe ve Advent International'ın hisse başına 60,50$'dan (~53 milyar$) devralma teklifi haberiyle hisse %16-17 sıçradı, canlı fiyat 55,51$. Teklifin kabul edilip edilmeyeceği belirsiz ve 28 Temmuz'da bilanço açıklanacak; haber odaklı sert yükseliş sonrası kısmi kâr realizasyonu, teklif geri çekilirse oluşabilecek geri çekilme riskine karşı sermaye korumasını önceliklendirebilir. Bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
-        "risk": "Yüksek"
-      },
-      {
-        "symbol": "TMDX",
-        "action": "BEKLE",
-        "confidence": 43,
-        "rationale": "Pozisyon maliyete göre +%3,2 sınırlı kazançta; canlı fiyat 71,20$, günlük -%4,2. Almanya merkezli PAD Aviation'a stratejik yatırım Avrupa'da OCS NOP modelini genişletme adımı, ancak Evercore ISI hedef fiyatını 100$'dan 90$'a indirdi (Outperform korundu). 4 Ağustos'taki 2. çeyrek bilançosu öncesi net yön sinyali yok.",
-        "risk": "Orta"
-      },
-      {
         "symbol": "EVTL",
         "action": "BEKLE",
         "confidence": 38,
-        "rationale": "Pozisyon maliyete göre -%39,2 gibi derin bir zararda; canlı fiyat 1,63$. 20 Temmuz'da Farnborough'da dünyanın ilk halka açık eVTOL geçiş uçuşu tarihi bir kilometre taşıydı (+%8,1) ve H.C. Wainwright hedefini 15$'a yükseltti, İngiltere hükümeti üretim tesisleri için destek sözü verdi; ancak şirket Ar-Ge finansmanı için 60 milyon$'lık yeni halka arz açıkladı, bu da sulanma riski taşıyor. Pozisyon derin zararda ve gelir öncesi/yüksek riskli bir isim; sermaye korumasını önceliklendirerek pozisyon korunabilir.",
-        "risk": "Yüksek"
-      },
-      {
-        "symbol": "UAMY",
-        "action": "BEKLE",
-        "confidence": 41,
-        "rationale": "Pozisyon maliyete göre -%3,6 ile sınırlı bir zararda; canlı fiyat 5,84$. Savunma Lojistik Ajansı ile 245 milyon$'lık tedarik sözleşmesi kapsamında ilk sevkiyatlar tamamlandı ve Radersburg flotasyon tesisi devreye alındı, kritik mineral tedarik zincirini destekleyen yürütme emirleri olumlu momentum yaratıyor. Küçük ölçekli ve negatif F/K'lı (-48,99) yüksek oynaklıklı bir isim; net yön sinyali yok, mevcut pozisyon korunabilir.",
+        "rationale": "Pozisyon maliyete göre -%39,2 gibi derin bir zararda; canlı fiyat 1,63$. Farnborough'daki dünyanın ilk halka açık eVTOL geçiş uçuşu ve H.C. Wainwright'ın 15$ hedefi olumlu, ancak Ar-Ge finansmanı için 60 milyon$'lık yeni halka arz sulanma riski taşıyor. Pozisyon derin zararda ve gelir öncesi/yüksek riskli bir isim; sermaye korumasını önceliklendirerek mevcut pozisyon korunabilir.",
         "risk": "Yüksek"
       }
     ]
   },
   "opportunityReport": {
-    "generatedAt": "2026-07-23T09:45:00Z",
-    "dataCoverageNote": "Bu liste tamamen WebSearch ile bulunan güncel haber ve piyasa raporlarına dayanmaktadır (21-23 Temmuz 2026 civarı). SEC/KAP dosyalarının tam metnine, fon akışı verilerine, içeriden öğrenen işlemlerine ve analist hedef fiyat verisine doğrudan erişimim yok. Önceki turlarda önerilen isimler (MP, GPI, KMX, GLD, AKSEN, BALSU, EFOR, SMCI, T, AVGO, PGSUS, TUPRS, ICBCT, GOOGL, NOW, TXN, YEOTK, EKGYO, ISCTR, GM, EQT, MMM, CVKMD, ARDYZ, GOLDA) bu turda tekrarlanmadı. BIST kalemleri KAP bildirim özetlerine ve halka arz haberlerine, ABD kalemleri 2. çeyrek bilanço sonuçlarına/beklentilerine dayanıyor; hiçbiri ileriye dönük bir getiri garantisi oluşturmaz. Fiyat tepkisi/işlem hacmi teyidi tüm kalemler için sınırlı, doğrudan borsa verisine erişimim yok. LMT için bilanço henüz açıklanmadı (bugün, 23 Temmuz), bu tamamen bilanço öncesi bir izleme notudur.",
+    "generatedAt": "2026-07-23T16:20:00Z",
+    "dataCoverageNote": "Bu liste tamamen WebSearch ile bulunan güncel haber/analist raporlarına dayanmaktadır (22-23 Temmuz 2026 civarı). SEC/KAP dosyalarının tam metnine, fon akışı verilerine, içeriden öğrenen işlemlerine ve doğrudan borsa fiyat/hacim verisine erişimim yok. Önceki turlarda önerilen isimler (MP, GPI, KMX, GLD, AKSEN, BALSU, EFOR, SMCI, T, AVGO, PGSUS, TUPRS, ICBCT, GOOGL, NOW, TXN, YEOTK, EKGYO, ISCTR, GM, EQT, MMM, CVKMD, ARDYZ, GOLDA, KARCL, KLSYN, TLMAN, HAS, CCK) bu turda tekrarlanmadı. İstisna: LMT bir önceki turda 'bilanço öncesi izleme' notu olarak yer almıştı; bugün (23 Temmuz) gerçek 2. çeyrek sonuçları açıklandığı için aynı isim güncel/gerçekleşmiş verilerle tazelendi. BIST kalemleri (ARCLK, AHGAZ) KAP bildirim özetlerine, KOZAL ise şirket-spesifik değil sektör-endeksi (madencilik) performansına ve genel altın fiyatı gözlemine dayanıyor — doğrudan KOZAL haberi bulunamadı, bu daha düşük güvenilirlikli bir çıkarım. ABD kalemleri (DOCN, GMAB, CRWV) tek bir analist yükseltmesine dayanıyor, birden fazla bağımsız kaynakla teyit edilmedi; CRWV'de derece yükselişine rağmen hedef fiyat düşürüldü, karışık bir sinyal olarak belirtiliyor. Hiçbiri ileriye dönük bir getiri garantisi oluşturmaz.",
     "items": [
-      {
-        "market": "BIST",
-        "symbol": "KARCL",
-        "name": "Kardemir Çelik Sanayi A.Ş.",
-        "opportunityScore": 55,
-        "confidence": 40,
-        "risk": "Yüksek",
-        "action": "İZLE",
-        "reason": "22-24 Temmuz'da 35 TL fiyattan, 4,48 milyar TL büyüklüğünde halka arzı gerçekleşiyor; şirket son yıllarda üretim ölçeğini büyüttüğünü duyurdu (entegre demir-çelik, ~1,2 milyon ton çelikhane kapasitesi). Yeni halka arzlarda ilk işlem günleri yüksek oynaklık gösterebilir, borsa performansı ve tahsisat sonrası arz-talep dengesi belirsiz; sadece izleme amaçlı, güven düzeyi düşük."
-      },
-      {
-        "market": "BIST",
-        "symbol": "KLSYN",
-        "name": "Koleksiyon Mobilya",
-        "opportunityScore": 48,
-        "confidence": 40,
-        "risk": "Yüksek",
-        "action": "İZLE",
-        "reason": "23 Temmuz'da ahşap üretim ve montaj işlerini kapsayan 129,8 milyon TL tutarında bir sözleşme imzalandığı KAP'a bildirildi. Tek bir sözleşme kazanımına dayanıyor; şirketin toplam cirosuna oranı ve tekrarlanabilirliği hakkında veri yok, küçük/orta ölçekli şirket likidite riski taşıyor."
-      },
-      {
-        "market": "BIST",
-        "symbol": "TLMAN",
-        "name": "Tellioğlu Mensucat / TLMAN",
-        "opportunityScore": 38,
-        "confidence": 30,
-        "risk": "Yüksek",
-        "action": "İZLE",
-        "reason": "22 Temmuz'da açık deniz römorkörü inşası ve değişimi için 750.000 euro ek bedelli bir sözleşme imzalandığı KAP'a bildirildi. Göreceli olarak küçük tutarlı, tek seferlik bir sözleşme; düşük güven düzeyiyle sadece izleme amaçlı, likidite ve ölçek riski yüksek."
-      },
-      {
-        "market": "US",
-        "symbol": "HAS",
-        "name": "Hasbro, Inc.",
-        "opportunityScore": 58,
-        "confidence": 55,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "21 Temmuz'da açıklanan 2. çeyrek sonuçlarında gelir 1.139,6 milyon$ ile beklentiyi (%6,63) aştı, düzeltilmiş hisse başına kâr 1,28$ ile beklentiyi (1,13$) %12,8 aştı; hisse haberin ardından %9 yükseldi. Tek çeyreklik beklenti-üstü sonuca dayanıyor, oyuncak/eğlence sektörü mevsimsellik ve tüketici harcama riskine duyarlı."
-      },
-      {
-        "market": "US",
-        "symbol": "CCK",
-        "name": "Crown Holdings, Inc.",
-        "opportunityScore": 52,
-        "confidence": 50,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "2. çeyrekte hisse başına 2,49$ kâr (beklenti 2,16$) ve 3,668 milyar$ satış (beklenti 3,367 milyar$) ile beklentileri aştı; hisse ön piyasada %3,5 yükseldi. Ambalaj üreticisi olarak alüminyum/çelik gibi girdi maliyetlerine duyarlı, tek çeyreklik veriye dayanıyor."
-      },
       {
         "market": "US",
         "symbol": "LMT",
         "name": "Lockheed Martin Corp.",
-        "opportunityScore": 42,
-        "confidence": 32,
+        "opportunityScore": 62,
+        "confidence": 60,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "Bugün (23 Temmuz) 2. çeyrek bilançosunu açıklayacak; analist beklentileri hisse başına ~7,20-7,28$ kâr ve ~19,3-19,5 milyar$ gelir civarında, şirket son dört çeyreğin üçünde beklenti üstü sonuç açıkladı. Sonuç henüz açıklanmadı; bu bir tahmin değil, bilanço öncesi izleme notudur, savunma sanayi bütçe/jeopolitik riskine tabi."
+        "reason": "23 Temmuz'da açıklanan 2. çeyrek sonuçları beklentileri açık ara aştı: HBK 7,94$ (beklenti 7,23$, +%9,8), ciro 20,1 milyar$ (+%11 yıllık); 65 milyar$ yeni sipariş ile birikmiş iş 230 milyar$ rekora ulaştı ve tam yıl ciro beklentisi yukarı revize edildi. Hisse işlem başında +%5 üzerinde yükseldi. Sonuçlar gerçekleşmiş ve doğrulanmış olsa da hisse zaten bu haberle yükseldi, değerleme bir miktar bu iyi haberi fiyatlamış olabilir; savunma harcamaları bütçe/jeopolitik risklere tabi."
+      },
+      {
+        "market": "BIST",
+        "symbol": "KOZAL",
+        "name": "Koza Altın İşletmeleri A.Ş.",
+        "opportunityScore": 50,
+        "confidence": 35,
+        "risk": "Yüksek",
+        "action": "İZLE",
+        "reason": "23 Temmuz'da BIST'te madencilik endeksi (XMADN) sektörler arasında en güçlü performansı gösterdi (+%1,25) ve ons altın halen yüksek seviyelerde seyrediyor; büyük bir altın üreticisi olan KOZAL bu makro rüzgardan faydalanabilir. Şirkete özgü güncel bir KAP haberi/bilanço verisi bulunamadı, bu tamamen sektör-endeksi bazlı bir çıkarım; güven düzeyi bu nedenle düşük tutuldu."
+      },
+      {
+        "market": "BIST",
+        "symbol": "ARCLK",
+        "name": "Arçelik A.Ş.",
+        "opportunityScore": 45,
+        "confidence": 35,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "23 Temmuz'da Beylikdüzü ve Tuzla'daki toplam ~699 bin m² büyüklüğündeki taşınmazların geliştirilmesi için Kentsel Dönüşüm Başkanlığı ile protokol imzalandığı KAP'a bildirildi. Potansiyel olarak gizli gayrimenkul değerini ortaya çıkarabilir, ancak şirketin toplam büyüklüğüne göre görece küçük bir katalizör ve gerçekleşme zamanlaması belirsiz."
+      },
+      {
+        "market": "BIST",
+        "symbol": "AHGAZ",
+        "name": "Ahlatcı Doğal Gaz Dağıtım A.Ş.",
+        "opportunityScore": 40,
+        "confidence": 35,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "Pay geri alım programı sürüyor; geri alınan paylar sermayenin %2,79'una ulaştı (23 Temmuz KAP bildirimi). Şirketin kendi hissesine duyduğu güveni gösterse de tek başına güçlü bir yükseliş katalizörü değil, düşük-orta güven düzeyiyle izleme amaçlı."
+      },
+      {
+        "market": "US",
+        "symbol": "DOCN",
+        "name": "DigitalOcean Holdings, Inc.",
+        "opportunityScore": 55,
+        "confidence": 45,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "22 Temmuz'da Stifel hisseyi Tut'tan Al'a yükseltti ve hedef fiyatı 135$'dan 160$'a çıkardı. Bulut/AI altyapı harcama trendinden faydalanabilecek bir konumda, ancak öneri tek bir analist görüşüne dayanıyor; rekabet yoğun bulut pazarı ve kâr marjı baskısı risk unsurları."
+      },
+      {
+        "market": "US",
+        "symbol": "GMAB",
+        "name": "Genmab A/S",
+        "opportunityScore": 52,
+        "confidence": 42,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "22 Temmuz'da TD Cowen hisseyi Tut'tan Al'a yükseltti ve hedef fiyatı 32$'dan 43$'a (~%34 yukarı) revize etti. Tek bir analist görüşüne dayanan bir güncelleme; biyoteknoloji/ilaç şirketleri için klinik çalışma sonuçları ve düzenleyici kararlar önemli belirsizlik kaynağı olmaya devam ediyor."
+      },
+      {
+        "market": "US",
+        "symbol": "CRWV",
+        "name": "CoreWeave, Inc.",
+        "opportunityScore": 40,
+        "confidence": 32,
+        "risk": "Yüksek",
+        "action": "İZLE",
+        "reason": "22 Temmuz'da Truist hisseyi Tut'tan Al'a yükseltti, ancak aynı anda hedef fiyatı 131$'dan 126$'a indirdi — karışık bir sinyal (derece yükselişi + hedef fiyat kesintisi). AI altyapı kiralama sektöründe yüksek büyüme potansiyeli var, ancak yüksek değerleme, borç yükü ve sermaye yoğunluğu riski taşıyor; güven düzeyi bu karışıklık nedeniyle düşük tutuldu."
       }
     ]
   },
