@@ -2,12 +2,18 @@
 // Fiyat verisi: index.html içindeki #portfolio-data (scripts/update_prices.py
 // ve zamanlanmış bulut rutini tarafından güncellenir).
 // Pozisyon kompozisyonu (miktar/ortalama maliyet/nakit/profil): tarayıcı
-// localStorage'ında tutulur — bu yüzden bu cihaza özeldir. Rutin sadece
-// git'teki index.html baseline'ındaki sembollerin fiyatını güncelleyebilir;
-// burada yeni eklenen bir sembol otomatik canlı fiyat almaz (bkz. uyarı notu).
+// localStorage'ında tutulur — bu yüzden bu cihaza özeldir. GitHub token
+// tanımlıysa her değişiklikte index.html'deki holdings/cash otomatik olarak
+// GitHub'a commit edilir, böylece rutin de aynı listeyi görür (bkz. GITHUB_*
+// sabitleri ve syncHoldingsToGitHub).
 
 (function () {
   const STORAGE_KEY = 'vault_portfolio_v1';
+  const GITHUB_TOKEN_KEY = 'vault_github_token';
+  const GITHUB_OWNER = 'rdvn-hkm';
+  const GITHUB_REPO = 'portfoy-takip';
+  const GITHUB_BRANCH = 'main';
+  const GITHUB_PATH = 'index.html';
 
   const TYPE_META = {
     US: { label: 'ABD Hissesi', category: 'ABD Hisseleri', color: '#60a5fa' },
@@ -124,8 +130,117 @@
     showAddForm: false,
     editingProfile: false,
     editingCash: false,
-    addSelected: null // {symbol,name,type} son seçilen katalog eşleşmesi
+    editingSync: false,
+    addSelected: null, // {symbol,name,type} son seçilen katalog eşleşmesi
+    syncStatus: getGithubToken() ? 'ready' : 'off', // off|ready|syncing|ok|error
+    syncMessage: ''
   };
+
+  // ---------- GitHub senkronizasyonu (composition -> index.html holdings) ----------
+  function getGithubToken() {
+    return localStorage.getItem(GITHUB_TOKEN_KEY) || '';
+  }
+  function setGithubToken(token) {
+    if (token) localStorage.setItem(GITHUB_TOKEN_KEY, token);
+    else localStorage.removeItem(GITHUB_TOKEN_KEY);
+  }
+
+  function utf8ToBase64(str) {
+    const bytes = new TextEncoder().encode(str);
+    let binary = '';
+    bytes.forEach(b => { binary += String.fromCharCode(b); });
+    return btoa(binary);
+  }
+  function base64ToUtf8(b64) {
+    const binary = atob(b64.replace(/\n/g, ''));
+    const bytes = Uint8Array.from(binary, c => c.charCodeAt(0));
+    return new TextDecoder('utf-8').decode(bytes);
+  }
+
+  // composition.holdings/cash'i verilen index.html içeriğindeki
+  // #portfolio-data bloğuna uygular; fiyat/prevClose/priceHistory/source
+  // alanlarını (rutin tarafından yönetilir) mevcut sembol eşleşmesi varsa
+  // korur, yeni sembollere demo/boş değer atar, kompozisyonda olmayan
+  // sembolleri baseline'dan çıkarır.
+  function mergeCompositionIntoFileContent(fileContent) {
+    const re = /(<script type="application\/json" id="portfolio-data">\n)([\s\S]*?)(\n<\/script>)/;
+    const m = fileContent.match(re);
+    if (!m) throw new Error('index.html içinde #portfolio-data bloğu bulunamadı');
+    const data = JSON.parse(m[2]);
+    const oldBySymbol = {};
+    (data.holdings || []).forEach(h => { oldBySymbol[h.symbol] = h; });
+    data.holdings = composition.holdings.map(c => {
+      const old = oldBySymbol[c.symbol];
+      if (old) return { ...old, id: c.id, symbol: c.symbol, name: c.name, type: c.type, quantity: c.quantity, avgCost: c.avgCost };
+      return {
+        id: c.id, symbol: c.symbol, name: c.name, type: c.type,
+        quantity: c.quantity, avgCost: c.avgCost,
+        price: 0, prevClose: 0, source: 'demo', priceHistory: []
+      };
+    });
+    data.cash = composition.cash;
+    const newBlock = JSON.stringify(data, null, 2);
+    return fileContent.slice(0, m.index) + m[1] + newBlock + m[3] + fileContent.slice(m.index + m[0].length);
+  }
+
+  async function githubApi(path, options) {
+    const token = getGithubToken();
+    const res = await fetch('https://api.github.com/repos/' + GITHUB_OWNER + '/' + GITHUB_REPO + path, {
+      ...options,
+      headers: {
+        'Authorization': 'Bearer ' + token,
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+        ...(options && options.headers)
+      }
+    });
+    return res;
+  }
+
+  let syncTimer = null;
+  function scheduleSync() {
+    if (!getGithubToken()) { ui.syncStatus = 'off'; return; }
+    clearTimeout(syncTimer);
+    syncTimer = setTimeout(syncHoldingsToGitHub, 1200);
+    ui.syncStatus = 'syncing';
+    render();
+  }
+
+  async function syncHoldingsToGitHub(retry) {
+    if (!getGithubToken()) { ui.syncStatus = 'off'; render(); return; }
+    ui.syncStatus = 'syncing';
+    render();
+    try {
+      const getRes = await githubApi('/contents/' + GITHUB_PATH + '?ref=' + GITHUB_BRANCH, {});
+      if (!getRes.ok) throw new Error('GitHub okuma hatası: ' + getRes.status);
+      const getData = await getRes.json();
+      const oldContent = base64ToUtf8(getData.content);
+      const newContent = mergeCompositionIntoFileContent(oldContent);
+      const putRes = await githubApi('/contents/' + GITHUB_PATH, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 'chore: portföy pozisyonlarını senkronize et',
+          content: utf8ToBase64(newContent),
+          sha: getData.sha,
+          branch: GITHUB_BRANCH
+        })
+      });
+      if (putRes.status === 409 && !retry) {
+        return syncHoldingsToGitHub(true);
+      }
+      if (!putRes.ok) {
+        const body = await putRes.json().catch(() => ({}));
+        throw new Error('GitHub yazma hatası: ' + putRes.status + ' ' + (body.message || ''));
+      }
+      ui.syncStatus = 'ok';
+      ui.syncMessage = '';
+    } catch (e) {
+      ui.syncStatus = 'error';
+      ui.syncMessage = e.message || String(e);
+    }
+    render();
+  }
 
   // Hızlı manuel yenileme (tarayıcıdan, ücretsiz/limitsiz uçlar): sadece
   // kripto + döviz. ABD hisseleri/altın/BIST scripts/update_prices.py
@@ -446,7 +561,7 @@
                     <div style="width:8px;height:8px;border-radius:2px;background:${a.color};flex-shrink:0"></div>
                     <div style="color:#c7ccd6;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(a.label)}</div>
                   </div>
-                  <div style="color:#767c8a;flex-shrink:0;margin-left:8px">${a.pctDisplay}</div>
+                  <div style="flex-shrink:0;margin-left:8px;text-align:right"><div style="color:#c7ccd6;font-weight:600">${a.valueDisplay}</div><div style="color:#767c8a;font-size:10px">${a.pctDisplay}</div></div>
                 </div>
               `).join('')}
             </div>
@@ -513,7 +628,7 @@
           <div style="font-size:14px;font-weight:600;margin-bottom:14px">Varlık Dağılımı</div>
           <div style="display:flex;align-items:center;gap:16px">
             ${donutChart(v.allocation, 120)}
-            <div style="flex:1">${v.allocation.map(a2 => `<div style="display:flex;justify-content:space-between;font-size:12px;padding:3px 0"><div style="color:#c7ccd6">${esc(a2.label)}</div><div style="color:#767c8a">${a2.pctDisplay}</div></div>`).join('')}</div>
+            <div style="flex:1">${v.allocation.map(a2 => `<div style="display:flex;justify-content:space-between;font-size:12px;padding:3px 0"><div style="color:#c7ccd6">${esc(a2.label)}</div><div style="text-align:right"><span style="color:#c7ccd6;font-weight:600">${a2.valueDisplay}</span> <span style="color:#767c8a">(${a2.pctDisplay})</span></div></div>`).join('')}</div>
           </div>
         </div>
         <div style="background:#12151d;border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:20px">
@@ -535,7 +650,7 @@
           <div style="font-size:14px;font-weight:600;margin-bottom:14px">Varlık Türüne Göre Katkı</div>
           ${v.allocation.map(a2 => `
             <div style="margin-bottom:10px">
-              <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px"><div style="color:#c7ccd6">${esc(a2.label)}</div><div style="color:#767c8a">${a2.pctDisplay}</div></div>
+              <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px"><div style="color:#c7ccd6">${esc(a2.label)}</div><div style="text-align:right"><span style="color:#c7ccd6;font-weight:600">${a2.valueDisplay}</span> <span style="color:#767c8a">(${a2.pctDisplay})</span></div></div>
               <div style="height:8px;border-radius:4px;background:#0f1218;overflow:hidden"><div style="height:100%;border-radius:4px;background:${a2.color};width:${a2.pct.toFixed(1)}%"></div></div>
             </div>
           `).join('')}
@@ -759,8 +874,12 @@
             </div>
           </div>
 
+          <div style="display:flex;justify-content:flex-end;padding:8px 32px 0 32px">
+            ${renderSyncControl()}
+          </div>
+
           <div style="margin:16px 32px 0 32px;padding:10px 14px;border-radius:10px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.25);font-size:12px;color:#d9b26a">
-            ABD hisseleri, BTC/ETH, USD/TRY ve USD/EUR için Alpha Vantage üzerinden canlı fiyatlar (8 saatte bir rutin) güncellenir. BIST hisseleri ve fonlar Alpha Vantage kapsamı dışında olduğu için demo değerlerdir. Bu cihazda eklediğiniz yeni bir sembol, index.html'in temel listesine eklenip repoya push edilmeden otomatik fiyat almaz.
+            ABD hisseleri, BTC/ETH, USD/TRY ve USD/EUR için Alpha Vantage üzerinden canlı fiyatlar (8 saatte bir rutin) güncellenir. BIST hisseleri ve fonlar Alpha Vantage kapsamı dışında olduğu için demo değerlerdir. AI rutini analizini "Varlıklarım" listenizden yapar: GitHub senkronizasyonu açıksa (aşağıdaki durum göstergesi) her ekleme/çıkarma otomatik olarak repoya işlenir; kapalıysa rutin hâlâ index.html'deki son push edilmiş listeyi kullanır.
           </div>
 
           <div style="flex:1;padding:20px 32px 40px 32px">
@@ -790,6 +909,32 @@
       const f = document.getElementById('cash-input');
       if (f) { f.focus(); f.select(); }
     }
+    if (ui.editingSync) {
+      const f = document.getElementById('github-token-input');
+      if (f) f.focus();
+    }
+  }
+
+  function renderSyncControl() {
+    if (ui.editingSync) {
+      return `
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px">
+          <input id="github-token-input" type="password" placeholder="GitHub Personal Access Token (repo yazma izinli)" value="${esc(getGithubToken())}" style="width:280px;background:#0f1218;border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:7px 10px;color:#eceef2;font-size:12px;outline:none">
+          <div data-action="save-github-token" style="font-weight:600;padding:7px 12px;border-radius:8px;background:#4d7cf0;cursor:pointer;color:#fff">Kaydet</div>
+          ${getGithubToken() ? `<div data-action="clear-github-token" style="color:#f87171;cursor:pointer;padding:7px 10px">Bağlantıyı Kaldır</div>` : ''}
+          <div data-action="cancel-sync-edit" style="color:#767c8a;cursor:pointer;padding:7px 10px">İptal</div>
+        </div>
+      `;
+    }
+    const statusMeta = {
+      off: { color: '#767c8a', label: 'GitHub Senkronizasyonu: Kapalı ⚙' },
+      ready: { color: '#767c8a', label: 'GitHub Senkronizasyonu: Hazır' },
+      syncing: { color: '#fbbf24', label: 'GitHub\'a senkronize ediliyor…' },
+      ok: { color: '#34d399', label: 'GitHub\'a senkronize edildi ✓' },
+      error: { color: '#f87171', label: 'Senkronizasyon hatası ⚠' }
+    };
+    const s = statusMeta[ui.syncStatus] || statusMeta.off;
+    return `<div data-action="edit-sync" title="${esc(ui.syncMessage || 'GitHub token ayarlamak için tıklayın')}" style="font-size:11px;color:${s.color};cursor:pointer">${s.label}</div>`;
   }
 
   function renderNews() {
@@ -828,6 +973,7 @@
       }
     }
     saveComposition();
+    scheduleSync();
     return true;
   }
 
@@ -862,6 +1008,7 @@
     else if (action === 'remove') {
       composition.holdings = composition.holdings.filter(h => h.id !== Number(el.dataset.id));
       saveComposition();
+      scheduleSync();
       render();
     }
     else if (action === 'edit-profile') { ui.editingProfile = true; render(); }
@@ -871,6 +1018,23 @@
       composition.cash = Number.isNaN(val) ? composition.cash : val;
       ui.editingCash = false;
       saveComposition();
+      scheduleSync();
+      render();
+    }
+    else if (action === 'edit-sync') { ui.editingSync = true; render(); }
+    else if (action === 'cancel-sync-edit') { ui.editingSync = false; render(); }
+    else if (action === 'save-github-token') {
+      const val = (document.getElementById('github-token-input').value || '').trim();
+      setGithubToken(val);
+      ui.editingSync = false;
+      ui.syncStatus = val ? 'ready' : 'off';
+      render();
+      if (val) syncHoldingsToGitHub();
+    }
+    else if (action === 'clear-github-token') {
+      setGithubToken('');
+      ui.editingSync = false;
+      ui.syncStatus = 'off';
       render();
     }
     else if (el.dataset.edit) {
@@ -890,7 +1054,7 @@
       input.select();
       const commit = () => {
         const val = parseFloat(input.value);
-        if (!Number.isNaN(val) && val >= 0) { holding[field] = val; saveComposition(); }
+        if (!Number.isNaN(val) && val >= 0) { holding[field] = val; saveComposition(); scheduleSync(); }
         render();
       };
       input.addEventListener('blur', commit);

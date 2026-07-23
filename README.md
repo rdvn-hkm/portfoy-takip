@@ -49,3 +49,23 @@ Fiyat güncellemesi Claude Code'un bulut rutini (schedule/CronCreate)
 çalıştırır, portföydeki dikkat çekici hareketler için kısa bir AI
 yorumu üretip `aiNote` alanına yazar, commit+push eder ve Telegram'a
 bildirim gönderir. Rutin claude.ai/code/routines üzerinden yönetilir.
+
+## Pozisyon senkronizasyonu (GitHub)
+
+Pozisyon kompozisyonu (miktar/ortalama maliyet/nakit) varsayılan olarak
+tarayıcı localStorage'ında tutulur ve bu cihaza özeldir — zamanlanmış
+rutin bu veriyi göremez, sadece `index.html`'deki son push edilmiş
+`holdings` listesini baz alır (fiyat çekimi ve AI tavsiye/fırsat
+raporları için sembol kaynağı budur).
+
+Bu ikisini eşitlemek için panelde bir GitHub senkronizasyon anahtarı
+girilebilir (sağ üstteki durum göstergesine tıklayın): girildiğinde her
+pozisyon ekleme/çıkarma/miktar-maliyet/nakit değişikliğinde, tarayıcı
+GitHub Contents API üzerinden `index.html` içindeki `holdings` ve
+`cash` alanlarını doğrudan bu repoya commit eder. Böylece rutinin
+analiz ettiği liste her zaman "Varlıklarım" ekranındakiyle aynı olur.
+
+Kullanılacak token, sadece bu repoya (`Contents: Read and write`)
+izinli **fine-grained personal access token** olmalı — repo geneli
+yazma izni olan klasik bir PAT kullanmayın, token tarayıcıda
+localStorage'da saklanır ve asla git'e commit edilmez.
