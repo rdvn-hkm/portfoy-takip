@@ -33,118 +33,118 @@
   "lastUpdated": "2026-07-26T16:03:00Z",
   "aiNote": "",
   "advisorReport": {
-    "generatedAt": "2026-07-26T08:15:00Z",
-    "healthScore": 53,
-    "summary": "Bu turda (26 Temmuz, Pazar, ~08:0x UTC) Alpha Vantage'tan USD/TRY kuru ve 3 kripto varlık (BTC, ETH, ARB) hatasız güncellendi; ABD borsaları hafta sonu kapalı olduğu için 11 ABD hissesi de yeniden sorgulandı ve sonuçlar 24 Temmuz Cuma kapanışıyla birebir aynı döndü. Canlı takip edilen varlıklarda maliyete göre toplam K/Z yaklaşık +%10,2 (yaklaşık +1.584$); en güçlü katkı BTC (+%110,7) ve UNH (+%47,6)'dan, en derin zarar ise ARB (-%94,3) ve EVTL (-%48,5)'ten geliyor. Kripto varlıklar (BTC+ETH+ARB) canlı (nakit hariç) portföy toplamının yaklaşık %34,2'sini, tek başına BTC ise ~%27,5'ini oluşturuyor; bu yoğunlaşma risk yönetimi açısından önemli bir izleme noktası olmaya devam ediyor. WebSearch'e göre PayPal yönetim kurulu Stripe-Advent'in 53,4 milyar$'lık teklifini 20 Temmuz'da resmen reddetti, AUR'un Ç2 bilançosu 29 Temmuz'da açıklanacak ve aynı hafta (28-29 Temmuz) Fed faiz kararı bekleniyor; bu üç gelişme önümüzdeki günler için portföy genelinde oynaklık riskini artırıyor.",
-    "dataCoverageNote": "Bu turda Alpha Vantage'a 16 çağrı yapıldı; USD/TRY, BTC, ETH, ARB canlı ve güncel (26 Temmuz ~08:0x UTC) verilerle güncellendi. AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY için de çağrı yapıldı ve hepsi başarılı sonuç döndü, ancak ABD borsaları hafta sonu (Pazar) kapalı olduğundan dönen veriler 24 Temmuz Cuma kapanışıyla birebir aynı; bu holding'lerde bugün gün içi yeni bir fiyat hareketi yoktur. XAU (altın) için deneme yapıldı; beklendiği gibi Alpha Vantage'ın ücretsiz planında desteklenmediği için 'Invalid API call' hatası döndü, demo/0 olarak bırakıldı ve analiz dışı tutuldu. THYAO (BIST) ve GTF (fon) kapsam dışı, analiz dışı. priceHistory yalnızca 4-5 günlük veri içerdiğinden aylık/YTD/yıllık getiri hesaplanamıyor, bu alanlarda 'veri birikiyor' kabul edildi. SEC/KAP dosyaları, bilanço detay tabloları, içeriden öğrenen işlemleri, analist hedef fiyat geçmişinin tam listesi ve teknik göstergelere (RSI/MACD vb.) erişimim yok; bu turda WebSearch ile Bitcoin fiyat/trend durumu, PYPL/Stripe-Advent teklif sürecinin güncel durumu (ret kararı), AUR bilanço tarihi (iki bağımsız kaynakla teyit) ve Fed'in 28-29 Temmuz toplantısı için güncel kontrol yapıldı; diğer isimler (UNH, AVGO detay haberleri) için yeni bir haber taraması yapılmadı ve önceki turdaki bulgular geçerli kabul edildi (öneriler şema sınırı gereği en fazla 6 kalemle sınırlı).",
+    "generatedAt": "2026-07-26T16:10:00Z",
+    "healthScore": 54,
+    "summary": "Bu, 26 Temmuz Pazar günü için üçüncü kontrol turu (00:01, 08:01, ~16:03 UTC); Alpha Vantage'ın günlük 25 çağrı limiti bu turda 10 çağrı sonrasında doldu, bu yüzden yalnızca USD/TRY, BTC, ETH, ARB canlı güncellenebildi, 11 ABD hissesi 08:01 turundaki (24 Temmuz Cuma kapanışıyla aynı) verilerini taşıyor. Canlı takip edilen varlıklarda maliyete göre toplam K/Z yaklaşık +%10,5 (~+1.635$); BTC son 8 saatte +%0,66, ETH +%1,80 yükseldi, ARB hafif pozitif; en güçlü katkı yine BTC (+%112,0) ve UNH (+%47,6)'dan, en derin zarar ise ARB (-%94,3) ve EVTL (-%48,5)'ten geliyor. Kripto varlıklar (BTC+ETH+ARB) canlı (nakit hariç) portföy toplamının ~%34,3'ünü, tek başına BTC ise ~%27,6'sını oluşturuyor; bu yoğunlaşma önemli bir izleme noktası olmaya devam ediyor. WebSearch'e göre PYPL/Stripe-Advent teklif sürecinde (ret kararı, daha yüksek fiyat beklentisi) ve Bitcoin'in genel görünümünde bu 8 saatlik pencerede yeni/farklı bir gelişme tespit edilmedi; AUR'un 29 Temmuz bilançosu ve 28-29 Temmuz Fed toplantısı önümüzdeki günler için hâlâ geçerli oynaklık riskleri.",
+    "dataCoverageNote": "Bu turda Alpha Vantage'a sırasıyla USD/TRY, BTC, ETH, ARB, XAU, AUR, AVGO, UNH, BABA, LULU çağrıları yapıldı; ilk 4'ü (USD/TRY, BTC, ETH, ARB) başarılı ve canlı, XAU beklendiği gibi 'Invalid API call' ile başarısız (kapsam dışı, dokunulmadı). AUR/AVGO/UNH/BABA sorguları başarılı döndü ama 08:01 turundaki (Cuma kapanışı) değerlerle birebir aynıydı, bu yüzden index.html'de değişiklik yapılmadı. LULU sorgusunda 'standart API rate limit günde 25 istek' hatası alındı ve bu noktadan sonra GTLB/NVO/PYPL/TMDX/EVTL/UAMY için çağrı denenmedi (aynı hatayı alacağı doğrulanmış kabul edildi); bu 7 hissenin fiyat/prevClose/priceHistory alanları bugünkü 08:01 turundaki (24 Temmuz Cuma kapanışı) haliyle korunuyor, bugün için yeni bir canlı veri noktası yok. XAU (altın), THYAO (BIST) ve GTF (fon) her zamanki gibi kapsam dışı ve analiz dışı tutuldu. priceHistory kısa olduğundan aylık/YTD/yıllık getiri hâlâ 'veri birikiyor' kabul ediliyor. SEC/KAP dosyaları, bilanço detay tabloları, içeriden öğrenen işlemleri, analist hedef fiyat geçmişi ve teknik göstergelere (RSI/MACD vb.) erişimim yok. Bu turda WebSearch ile yalnızca Bitcoin fiyat/trend durumu ve PYPL/Stripe-Advent süreci hızlıca teyit edildi (8 saat önceki bulgularla tutarlı, yeni gelişme yok); diğer isimler için yeni tarama yapılmadı, önceki turun bulguları geçerli kabul edildi (öneriler şema sınırı gereği en fazla 6 kalemle sınırlı).",
     "recommendations": [
       {
         "symbol": "BTC",
         "action": "AZALT",
         "confidence": 45,
-        "rationale": "Pozisyon maliyete göre +%110,7 gibi çok güçlü bir kazançta ve tek başına canlı (nakit hariç) portföy toplamının ~%27,5'ini oluşturuyor; bu tek varlık yoğunlaşması risk yönetimi açısından dikkat gerektiriyor. WebSearch'e göre Bitcoin 64.300$ civarında dar bir bantta konsolide oluyor, 200 günlük ortalamanın (~74.400$) altında kalarak yapısal olarak zayıf bir trend sinyali veriyor ve 67.500$ direnci kırılmadan görünüm temkinli kabul ediliyor. Güncel fiyat bu turda 64.297,29$ olarak doğrulandı (günlük ~değişim yok, -%0,04). Derin kârdaki ve yoğunlaşmış bu pozisyonda kısmi kâr realizasyonu sermaye korumasını ve çeşitlendirmeyi destekleyebilir; bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
+        "rationale": "Pozisyon maliyete göre +%112,0 gibi çok güçlü bir kazançta ve tek başına canlı (nakit hariç) portföy toplamının ~%27,6'sını oluşturuyor; bu tek varlık yoğunlaşması risk yönetimi açısından dikkat gerektiriyor. Fiyat bu turda 64.719,93$'a yükseldi (son 8 saatte +%0,66), WebSearch'e göre Bitcoin son dönemde 60.000$'ın hemen üzerinde dar bir bantta, temmuz başındaki 72.500-74.000$ aralığından belirgin şekilde geride konsolide oluyor; yapısal görünüm hâlâ temkinli kabul ediliyor. Derin kârdaki ve yoğunlaşmış bu pozisyonda kısmi kâr realizasyonu sermaye korumasını ve çeşitlendirmeyi destekleyebilir; bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "PYPL",
         "action": "AZALT",
         "confidence": 38,
-        "rationale": "Pozisyon maliyete göre +%34,2 kazançta, fiyat 24 Temmuz kapanışıyla 56,15$ (hafta sonu değişim yok, bu turda da aynı doğrulandı). WebSearch'e göre PayPal yönetim kurulu, Stripe-Advent International'ın hisse başına 60,50$ (~53,4 milyar$) teklifini 20 Temmuz'da resmen reddetti ve daha yüksek bir fiyat için pazarlık sinyali verdi; bu, anlaşmanın daha yüksek bir teklifle devam mı edeceği yoksa tamamen sonlanacağı yönünde belirsizliği artırıyor. Bu artan M&A belirsizliği ortamında kısmi kâr realizasyonu sermaye korumasını önceliklendirebilir. Bu bir zamanlama tahmini değildir.",
+        "rationale": "Pozisyon maliyete göre +%34,2 kazançta, fiyat bu turda güncellenemedi (08:01 turundaki 56,15$ taşınıyor, 24 Temmuz Cuma kapanışıyla aynı). WebSearch'e göre PayPal yönetim kurulu, Stripe-Advent International'ın hisse başına 60,50$ (~53,4 milyar$) teklifini 20 Temmuz'da resmen reddetti ve daha yüksek bir fiyat için pazarlık sinyali verdi; bu süreçte bu turda yeni bir gelişme tespit edilmedi, belirsizlik sürüyor. Bu artan M&A belirsizliği ortamında kısmi kâr realizasyonu sermaye korumasını önceliklendirebilir. Bu bir zamanlama tahmini değildir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "UNH",
         "action": "BEKLE",
         "confidence": 48,
-        "rationale": "Pozisyon maliyete göre +%47,6 gibi güçlü bir kazançta, fiyat 24 Temmuz kapanışıyla 420,74$ (bir önceki kapanışa göre günlük -%0,67, hafta sonu için yeni veri yok, bu turda da aynı doğrulandı). Bu turda yeni bir haber taraması yapılmadı, önceki turdaki bulgu (Ç2 bilançosunun beklentileri aştığı, analist hedef yükseltmeleri) geçerli kabul edildi. Net bir azaltma/artırma yerine mevcut pozisyonun korunması makul; bu bir zamanlama tahmini değildir.",
+        "rationale": "Pozisyon maliyete göre +%47,6 gibi güçlü bir kazançta, fiyat bu turda güncellenemedi (08:01 turundaki 420,74$ taşınıyor, 24 Temmuz Cuma kapanışıyla aynı, günlük -%0,67). Bu turda yeni bir haber taraması yapılmadı, önceki turdaki bulgu (Ç2 bilançosunun beklentileri aştığı, analist hedef yükseltmeleri) geçerli kabul edildi. Net bir azaltma/artırma yerine mevcut pozisyonun korunması makul; bu bir zamanlama tahmini değildir.",
         "risk": "Orta"
       },
       {
         "symbol": "AVGO",
         "action": "BEKLE",
         "confidence": 38,
-        "rationale": "Pozisyon maliyete göre yalnızca +%0,3 ile başabaş civarında; fiyat 24 Temmuz kapanışıyla 381,92$, günlük -%2,69 düşüş (hafta sonu için yeni veri yok, bu turda da aynı doğrulandı). Bu turda yeni bir haber taraması yapılmadı; önceki turdaki bulgu (düşüşün şirkete özgü olmayıp yapay zeka sermaye harcamalarının sürdürülebilirliğine dair sektör geneli bir endişeden kaynaklandığı) geçerli kabul edildi. Ayrıca 28-29 Temmuz'daki Fed toplantısı öncesinde piyasa genelinde oynaklık artabilir. Mevcut pozisyonun korunması makul; bu bir zamanlama tahmini değildir.",
+        "rationale": "Pozisyon maliyete göre yalnızca +%0,3 ile başabaş civarında; fiyat bu turda güncellenemedi (08:01 turundaki 381,92$ taşınıyor, 24 Temmuz Cuma kapanışıyla aynı, günlük -%2,69). Bu turda yeni bir haber taraması yapılmadı; önceki turdaki bulgu (düşüşün şirkete özgü olmayıp yapay zeka sermaye harcamalarının sürdürülebilirliğine dair sektör geneli bir endişeden kaynaklandığı) geçerli kabul edildi. Ayrıca 28-29 Temmuz'daki Fed toplantısı öncesinde piyasa genelinde oynaklık artabilir. Mevcut pozisyonun korunması makul; bu bir zamanlama tahmini değildir.",
         "risk": "Orta"
       },
       {
         "symbol": "AUR",
         "action": "BEKLE",
         "confidence": 40,
-        "rationale": "Pozisyon maliyete göre +%10,0 kazançta, fiyat 24 Temmuz kapanışıyla 5,95$ (hafta sonu için yeni veri yok, bu turda da aynı doğrulandı). WebSearch'e göre şirketin Ç2 bilançosu 29 Temmuz'da piyasa kapanışından sonra açıklanacak (iki bağımsız kaynakla teyit edildi); bu tarih aynı zamanda Fed'in faiz kararını açıklayacağı 28-29 Temmuz toplantısına denk geliyor, bu da o hafta için belirgin bir oynaklık kümelenmesi anlamına geliyor. Bilanço öncesi pozisyon artırmak yerine mevcut pozisyonu koruyup sonucu beklemek risk yönetimi açısından daha ihtiyatlı.",
+        "rationale": "Pozisyon maliyete göre +%10,0 kazançta, fiyat bu turda güncellenemedi (08:01 turundaki 5,95$ taşınıyor, 24 Temmuz Cuma kapanışıyla aynı). Önceki turda WebSearch ile teyit edildiği üzere şirketin Ç2 bilançosu 29 Temmuz'da piyasa kapanışından sonra açıklanacak; bu tarih Fed'in faiz kararını açıklayacağı 28-29 Temmuz toplantısına denk geliyor, bu da o hafta için belirgin bir oynaklık kümelenmesi anlamına geliyor. Bilanço öncesi pozisyon artırmak yerine mevcut pozisyonu koruyup sonucu beklemek risk yönetimi açısından daha ihtiyatlı.",
         "risk": "Yüksek"
       },
       {
         "symbol": "EVTL",
         "action": "BEKLE",
         "confidence": 28,
-        "rationale": "Pozisyon maliyete göre -%48,5 gibi derin bir zararda; fiyat 24 Temmuz kapanışıyla 1,38$, o gün tek başına -%8,6 düşmüştü (hafta sonu için yeni veri yok, bu turda da aynı doğrulandı). Şirket hâlâ gelir öncesi, yüksek riskli bir işletme; pozisyon derin zararda, sermaye korumasını önceliklendirerek mevcut pozisyon korunabilir, ek alım için henüz erken. Bu turda yeni bir haber taraması yapılmadı.",
+        "rationale": "Pozisyon maliyete göre -%48,5 gibi derin bir zararda; fiyat bu turda güncellenemedi (08:01 turundaki 1,38$ taşınıyor, 24 Temmuz Cuma kapanışıyla aynı, o gün tek başına -%8,6 düşmüştü). Şirket hâlâ gelir öncesi, yüksek riskli bir işletme; pozisyon derin zararda, sermaye korumasını önceliklendirerek mevcut pozisyon korunabilir, ek alım için henüz erken. Bu turda yeni bir haber taraması yapılmadı.",
         "risk": "Yüksek"
       }
     ]
   },
   "opportunityReport": {
-    "generatedAt": "2026-07-26T08:20:00Z",
-    "dataCoverageNote": "Bu liste tamamen WebSearch ile bulunan güncel haber/KAP bildirimi/analist raporlarına dayanmaktadır (22-25 Temmuz 2026 civarı; Pazar günü olduğu için bazı kaynaklar bir önceki iş haftasına ait). Alpha Vantage BIST hisselerini desteklemediği ve bu turda yalnızca fiyat güncelleme adımında kullanıldığı için, aşağıdaki fiyat/hedef rakamları doğrudan haber kaynaklarından alınmıştır ve bu turda bağımsız olarak canlı borsa verisiyle teyit edilmemiştir. SEC/KAP dosyalarının tam metnine, fon akışı verilerine, içeriden öğrenen işlemlerine ve doğrudan borsa fiyat/hacim verisine erişimim yok. Önceki turlarda önerilen isimler (ASTOR, BOSSA, DARDL, AXP, DECK, CAT, CIMSA, AVGYO, GESAN, OXY, VLO, NOC, BIMAS, AKFYE, METEN, HAL, CVX, RTX, MP, GPI, KMX, GLD, AKSEN, BALSU, EFOR, SMCI, T, PGSUS, TUPRS, ICBCT, GOOGL, NOW, TXN, YEOTK, EKGYO, ISCTR, GM, EQT, MMM, CVKMD, ARDYZ, GOLDA, KARCL, KLSYN, TLMAN, HAS, CCK, LMT, KOZAL, ARCLK, AHGAZ, DOCN, GMAB, CRWV, ASELS, GARAN, HALKB, MEDP, JPM, XOM, KARSN, KCAER, TMSN, DLR, THC, OBDC, ALVES, TURSG, DERHL, INTC, SLB, V, KRDMD, MIATK, METRO, FRVO, DUK, LITE, ONC) bu turda tekrarlanmadı, tamamen yeni isimlere geçildi. Portföyde zaten bulunan semboller (AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY, BTC, ETH, ARB, THYAO, XAU, GTF) bu listeye dahil edilmedi.",
+    "generatedAt": "2026-07-26T16:20:00Z",
+    "dataCoverageNote": "Bu, 26 Temmuz Pazar için üçüncü (16:0x UTC) tur; BIST ve ABD borsaları hafta sonu kapalı olduğundan aşağıdaki tüm veriler haber/KAP bildirimi/analist hedef fiyat revizyonlarına dayanır, canlı fiyat/hacim verisiyle bu turda bağımsız teyit edilmedi. Alpha Vantage BIST hisselerini zaten desteklemiyor ve bu turda günlük çağrı limiti (25/gün) 10. çağrıda dolduğu için fiyat adımında ABD hisselerinin çoğu da güncellenemedi; bu durum opportunityReport'u etkilemez çünkü bu rapor zaten yalnızca WebSearch'e dayanır. TRILC (Türk İlaç ve Serum) aday olarak değerlendirildi ancak şirketin konkordato ilan ettiği ve hisselerinin Yakın İzleme Pazarı'na alındığı tespit edildiği için (yüksek risk, olumsuz sinyal) listeye dahil EDİLMEDİ — bu, gerçek zamanlı tarama sırasında elenen bir örnektir. ANSGR için kullanılan hedef fiyat/kâr verisi Nisan-Mayıs 2026 (1Ç26 sonrası) tarihli, bu turda daha taze bir katalizör bulunamadı, bu açıkça belirtilir. SEC/KAP dosyalarının tam metnine, fon akışı verilerine, içeriden öğrenen işlemlerine ve doğrudan borsa fiyat/hacim verisine erişimim yok. Önceki turlarda önerilen isimler (ATATP, ALBRK, TSKB, CLF, DOV, CHYM — bugünkü 08:20 turu dahil; ayrıca ASTOR, BOSSA, DARDL, AXP, DECK, CAT, CIMSA, AVGYO, GESAN, OXY, VLO, NOC, BIMAS, AKFYE, METEN, HAL, CVX, RTX, MP, GPI, KMX, GLD, AKSEN, BALSU, EFOR, SMCI, T, PGSUS, TUPRS, ICBCT, GOOGL, NOW, TXN, YEOTK, EKGYO, ISCTR, GM, EQT, MMM, CVKMD, ARDYZ, GOLDA, KARCL, KLSYN, TLMAN, HAS, CCK, LMT, KOZAL, ARCLK, AHGAZ, DOCN, GMAB, CRWV, ASELS, GARAN, HALKB, MEDP, JPM, XOM, KARSN, KCAER, TMSN, DLR, THC, OBDC, ALVES, TURSG, DERHL, INTC, SLB, V, KRDMD, MIATK, METRO, FRVO, DUK, LITE, ONC) bu turda tekrarlanmadı. Portföyde zaten bulunan semboller (AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY, BTC, ETH, ARB, THYAO, XAU, GTF) bu listeye dahil edilmedi.",
     "items": [
       {
         "market": "BIST",
-        "symbol": "ATATP",
-        "name": "ATP Yazılım ve Teknoloji A.Ş.",
+        "symbol": "CCOLA",
+        "name": "Coca-Cola İçecek A.Ş.",
+        "opportunityScore": 48,
+        "confidence": 42,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "WebSearch'e göre Şeker Yatırım'ın 24 Temmuz 2026 tarihli 2Ç26 kâr beklentileri raporunda, banka dışı şirketler arasında Coca-Cola İçecek'in operasyonel performansıyla öne çıkabileceği değerlendiriliyor; büyüyen uluslararası hacimler ve marj iyileşmesi sayesinde yıllık bazda çift haneli reel FAVÖK ve net kâr büyümesi bekleniyor. Bu henüz açıklanmamış bir bilanço tahminidir (resmi sonuç tarihi bu turda teyit edilmedi); ayrıca 1Ç26 sonrası (Mayıs başı) 7 aracı kurumun ortalama 110 TL hedef fiyat verdiği biliniyor ancak bu rakam güncel değildir. Tek kaynaklı tahmin ve bilanço öncesi zamanlama riski nedeniyle orta risk ve orta güvenle İZLE önerilir, bu bir zamanlama tahmini değildir."
+      },
+      {
+        "market": "BIST",
+        "symbol": "MPARK",
+        "name": "MLP Sağlık Hizmetleri A.Ş. (Medical Park)",
+        "opportunityScore": 45,
+        "confidence": 36,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "WebSearch'e göre MLP Sağlık 1Ç26'da 1.668 milyon TL net kârla piyasa beklentisini (1.171 milyon TL) aştı ve bunun ardından birden fazla aracı kurum hedef fiyatını yukarı revize etti (ör. Oyak Yatırım 565,40 TL'den 633,10 TL'ye, 'endeks üstü getiri' notuyla); 2026 FAVÖK marjı beklentileri de yukarı yönlü güncellendi. Bu 1Ç26 sonrası bir görünüm olup bu turda daha güncel bir katalizör (ör. 2Ç26 bilanço tarihi) doğrulanmadı; sağlık hizmetleri sektörü düzenleyici/fiyatlandırma riski taşıyor. Orta risk ve orta güvenle İZLE önerilir, bu bir zamanlama tahmini değildir."
+      },
+      {
+        "market": "BIST",
+        "symbol": "ANSGR",
+        "name": "Anadolu Sigorta T.A.Ş.",
+        "opportunityScore": 38,
+        "confidence": 28,
+        "risk": "Orta-Yüksek",
+        "action": "İZLE",
+        "reason": "WebSearch'e göre Anadolu Sigorta 1Ç26'da beklenti üstü kâr açıkladıktan sonra (Nisan sonu) İş Yatırım 'AL' tavsiyesiyle 49,88 TL hedef fiyat vermişti (~%73 potansiyel iddia edilmişti), Destek Yatırım da 45,73 TL ile 'AL' başlatmıştı. Bu veriler yaklaşık 3 ay eski olup bu turda taze bir teyit/güncelleme bulunamadı; 2026 için beklenen iskonto oranı düşüşünün kombine rasyoya baskısı ile yüksek faiz gelirinin dengelediği karışık bir tablo var. Bilgi bayatlığı nedeniyle güven düşük tutuldu, orta-yüksek risk ile İZLE önerilir, bu bir zamanlama tahmini değildir."
+      },
+      {
+        "market": "US",
+        "symbol": "AMD",
+        "name": "Advanced Micro Devices, Inc.",
+        "opportunityScore": 52,
+        "confidence": 42,
+        "risk": "Orta-Yüksek",
+        "action": "İZLE",
+        "reason": "WebSearch'e göre Bank of America, AMD'nin 23 Temmuz'da San Francisco'da yaptığı yapay zeka pazarlama etkinliğinin ardından 24 Temmuz'da hedef fiyatını 560$'dan 620$'a yükseltti ve 'Al' notunu korudu; analist AMD'nin AI pazar fırsatına dair görüşünü genişlettiğini belirtti. Hisse 24 Temmuz'da 554,23$ civarında işlem görüyordu. Tek kaynaklı analist görüşü, yarı iletken/AI sermaye harcaması döngüsüne duyarlılık ve yüksek değerleme nedeniyle orta-yüksek risk ile İZLE önerilir, bu bir zamanlama tahmini değildir."
+      },
+      {
+        "market": "US",
+        "symbol": "VRSK",
+        "name": "Verisk Analytics, Inc.",
         "opportunityScore": 44,
-        "confidence": 35,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "Şirketin Çin'deki iştiraki, 23 Temmuz'da Burger King China ile Zenia yazılım lisanslarının 2 yıl uzatılmasına ilişkin bir mutabakat zaptı imzaladığını KAP'a bildirdi; buna göre Burger King China 31 Ekim 2026'ya kadar 12 milyon ABD doları + KDV, yıl sonuna kadar da 31 milyon RMB + KDV ödeyecek. Somut ve tarihli bir gelir kalemi olması olumlu, ancak bu tutarın şirketin toplam cirosuna oranı, marj etkisi ve sözleşmenin bağlayıcılık derecesi (mutabakat zaptı, nihai sözleşme değil) bu turda bağımsız doğrulanmadı."
-      },
-      {
-        "market": "BIST",
-        "symbol": "ALBRK",
-        "name": "Albaraka Türk Katılım Bankası A.Ş.",
-        "opportunityScore": 50,
-        "confidence": 38,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "WebSearch'e göre bir aracı kurum araştırması, Albaraka Türk'ün 2Ç26 solo net kârının çeyreklik %114,2 (yıllık %54,2) artışla ~1,9 milyar TL'ye ulaşmasını bekliyor; net faiz/kâr payı gelirindeki güçlü artış ve operasyonel giderlerdeki çeyreklik düşüş ana sürükleyici olarak gösteriliyor ve banka sektörün 'pozitif ayrışan' ismi olarak nitelendiriliyor. Bu bir tahmindir, henüz açıklanmış bir bilanço değildir; katılım bankacılığı modeline özgü likidite/regülasyon riskleri ve tek kaynaklı tahmin olması nedeniyle orta risk ve orta güvenle İZLE önerilir, bilanço öncesi pozisyon almak zamanlama riski taşır."
-      },
-      {
-        "market": "BIST",
-        "symbol": "TSKB",
-        "name": "Türkiye Sınai Kalkınma Bankası A.Ş.",
-        "opportunityScore": 40,
         "confidence": 34,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "WebSearch'e göre TSKB'nin 2Ç26 net kârının çeyreklik ~%2 artışla (yıllık bazda gerileme ile) 2.906 milyon TL olması bekleniyor; halka arz gelirleri ve Türkiye Kalkınma Fonu yatırımlarıyla desteklenen net ücret/komisyon gelirlerinin güçlü seyretmesi nedeniyle banka yine 'sektörün pozitif ayrışan isimlerinden' biri olarak gösteriliyor. Yıllık bazda kâr düşüşü beklentisi karışık bir sinyal; bu bir tahmindir ve bilanço öncesi pozisyon almak zamanlama riski taşır, orta risk ve orta-altı güvenle İZLE önerilir."
+        "reason": "WebSearch'e göre Jefferies, 23 Temmuz'da hisseyi 'Hold'dan 'Buy'a yükseltti ve hedef fiyatını 192$'dan 235$'a çıkardı. Veri analitiği/sigorta risk yazılımı işi görece istikrarlı ve tekrarlayan gelir modeline sahip; ancak tek kaynaklı yükseltme olması ve şirketin güncel büyüme/rekabet dinamiklerinin bu turda bağımsız incelenmemiş olması nedeniyle orta risk ve orta güvenle İZLE önerilir, bu bir zamanlama tahmini değildir."
       },
       {
         "market": "US",
-        "symbol": "CLF",
-        "name": "Cleveland-Cliffs Inc.",
-        "opportunityScore": 35,
-        "confidence": 30,
-        "risk": "Yüksek",
-        "action": "İZLE",
-        "reason": "WebSearch'e göre BNP Paribas, 23-24 Temmuz civarında hisseyi 'Underperform'dan 'Neutral'a yükseltti ve 11,50$ hedef fiyat belirledi. Bu bir yükseltme olsa da hâlâ 'Al' seviyesinde değil, yani sinyal zayıf/nötr; çelik sektörü döngüsel talep ve girdi maliyeti oynaklığına duyarlı, tek kaynaklı analist görüşü ve şirketin güncel finansal durumu bu turda bağımsız incelenmedi; yüksek risk ile değerlendirildi, bu bir zamanlama tahmini değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "DOV",
-        "name": "Dover Corporation",
-        "opportunityScore": 42,
+        "symbol": "DELL",
+        "name": "Dell Technologies Inc.",
+        "opportunityScore": 43,
         "confidence": 33,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "WebSearch'e göre BMO Capital, 24 Temmuz'da hisseyi 'Market Perform'dan 'Outperform'a yükseltti, ancak aynı raporda hedef fiyatını 255$'dan 240$'a düşürdü — derecelendirme yükselirken hedef fiyat aşağı revize edildi, karışık bir sinyal. Çeşitlendirilmiş bir sanayi şirketi olarak görece istikrarlı bir iş modeline sahip, ancak tek kaynaklı analist görüşü ve şirketin güncel segment bazlı talep durumu bu turda bağımsız incelenmedi; orta risk ile İZLE önerilir, bu bir zamanlama tahmini değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "CHYM",
-        "name": "Chime Financial, Inc.",
-        "opportunityScore": 46,
-        "confidence": 28,
-        "risk": "Yüksek",
-        "action": "İZLE",
-        "reason": "WebSearch'e göre Freedom Capital, 24 Temmuz'da hisseyi 26$ hedef fiyatla 'Al' notuyla ilk kez kapsama aldı. Şirket 2026'da halka arz olmuş yeni bir dijital bankacılık/neobank oyuncusu; tek kaynaklı ve yeni bir kapsama başlangıcı olması, kısa halka arz sonrası fiyat geçmişi ve kârlılık/regülasyon profilinin bu turda bağımsız incelenmemiş olması nedeniyle yüksek risk ve düşük-orta güvenle İZLE önerilir, bu bir zamanlama tahmini değildir."
+        "reason": "WebSearch'e göre analist Asiya Merchant, 24 Temmuz'daki notunda Dell için 'Al' tavsiyesini korudu ve hedef fiyatını 475$'dan 515$'a yükseltti (~%17 yukarı potansiyel iddia edildi). Sunucu/AI altyapısı talebine dayalı bir tez söz konusu; tek kaynaklı analist görüşü, donanım sektörünün marj baskısına duyarlılığı ve şirketin güncel sipariş/marj detaylarının bu turda bağımsız incelenmemiş olması nedeniyle orta risk ve orta güvenle İZLE önerilir, bu bir zamanlama tahmini değildir."
       }
     ]
   },
