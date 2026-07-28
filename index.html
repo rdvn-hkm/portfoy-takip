@@ -33,128 +33,108 @@
   "lastUpdated": "2026-07-28T16:06:00Z",
   "aiNote": "",
   "advisorReport": {
-    "generatedAt": "2026-07-28T08:15:00Z",
-    "healthScore": 56,
-    "summary": "28 Temmuz Salı 08:15 UTC turu: Alpha Vantage'dan USD/TRY, BTC, ETH, ARB, AUR, AVGO, UNH, BABA, LULU ve GTLB için canlı fiyat alınabildi; bu 10 çağrıdan sonra günlük 25 istek limiti dolduğu için NVO, PYPL, TMDX, EVTL, UAMY eski (27 Temmuz) fiyatlarıyla taşınıyor. Canlı fiyatlı pozisyonlarda toplam K/Z yaklaşık +%10,8 (~+1.670$). WebSearch'e göre PayPal bugün (28 Temmuz) piyasa açılışından önce Ç2 sonuçlarını açıklıyor (konsensüs 1,28$ EPS) ve board'un Stripe/Advent teklifini resmi reddi 20 Temmuz'da gerçekleşmiş; FOMC kararı yarın (29 Temmuz) açıklanacak, bazı kaynaklar enflasyon endişesiyle faiz artırım riskine işaret ederken olasılık tahminleri kaynaktan kaynağa büyük fark gösteriyor, tek bir rakama güvenilmemeli.",
-    "dataCoverageNote": "Bu turda gerçekten canlı çekilen fiyatlar: USD/TRY 47,375 (önceki 47,344), BTC 63.435,80$ (önceki 64.565,59$, -%1,7), ETH 1.881,19$ (önceki 1.924,95$), ARB 0,0778$ (önceki 0,0791$), AUR 6,21$ (+%4,4), AVGO 383,22$, UNH 417,64$ (-%0,7), BABA 115,00$, LULU 117,83$ (+%3,1), GTLB 32,88$ (+%5,1); bu 10 çağrının ardından NVO çağrısında 'günlük 25 istek limiti dolu' hatası alındı, bu yüzden NVO/PYPL/TMDX/EVTL/UAMY'nin price/prevClose/priceHistory alanlarına dokunulmadı (27 Temmuz kapanış verisiyle taşınıyor). XAU için deneme yine 'Invalid API call' hatası döndürdü (ücretsiz planda desteklenmiyor, beklenen); THYAO ve GTF Alpha Vantage kapsamı dışında olduğu için hiç denenmedi. WebSearch ile teyit edilenler: PayPal bugün açılış öncesi Ç2 sonuçlarını açıklıyor (konsensüs 1,28$ EPS / 8,48 milyar$ gelir; Alphastreet/TipRanks), sonuçlar bu tur taramasında henüz görünmüyordu; board Stripe/Advent'in 53,4 milyar$ (60,50$/hisse) teklifini 20 Temmuz'da resmen reddetti (TechTimes/MSN/ad-hoc-news.de), Forbes (27 Temmuz) bunu 'PayPal'ın reddinin doğru olduğunu kanıtlaması gereken an' olarak nitelendiriyor. UNH için bu turda önemli yeni gelişme yok; 17 Temmuz'daki hedef fiyat yükseltmeleri (Morgan Stanley 529$, BofA 512$, Truist 500$, Bernstein 512$) hâlâ güncel veri, ayrıca UnitedHealthcare hizmetlerin %30'unda ön onay şartını kaldırdı (unitedhealthgroup.com). LULU'da Haziran'daki beklenti indirimine ek olarak Wells Fargo 21 Temmuz'da hedefi 110$'dan 105$'a indirdi, Straton aynı gün Sat/93$ hedefini yineledi. AUR Ç2 sonuçları henüz açıklanmadı, yarın (29 Temmuz) kapanış sonrası 17:00 ET'de açıklanacağı Aurora IR'dan teyit edildi (konsensüs EPS -0,12$); bilanço öncesi olumlu fiyat hareketine dair 'güvenlik doğrulaması' anlatısı tek kaynaklı ve spekülatif (StocksToTrade). GTLB'deki yükseliş büyük olasılıkla birikimli analist hedef artışlarıyla (BofA 38$, UBS 35$, Truist 30$) ilişkili ama tek bir kesin tetikleyici bulunamadı. BABA'nın bugünkü yönü/yüzdesi konusunda kaynaklar birbiriyle çelişiyor, bu rakam temkinli değerlendirilmeli. EVTL'de haber akışı aslında olumlu (Farnborough'da eVTOL geçiş uçuşu, İngiltere CAA izin genişletmesi, ~1.500 koşullu ön sipariş) ama bugünkü sert düşüşü açıklayan doğrulanmış bir olumsuz haber bulunamadı. UAMY için de kaynaklar arasında çelişki var (bir kaynak +%5,4 gösteriyor, elimizdeki veri -%6,2), bu yüzden UAMY'ye özel öneri bu turda verilmedi. FOMC kararı henüz açıklanmadı, yarın (29 Temmuz) 14:00 ET'de (Warsh basın toplantısı 14:30 ET) bekleniyor; faiz artırım/sabit tutma olasılık tahminleri kaynaktan kaynağa çok farklı (ör. %26 ile %79,5 arası), tek bir rakama güvenilmemeli. BTC/ETH'deki bugünkü ~%2-3 düşüş kripto'ya özgü değil, Asya borsalarındaki geniş satış dalgasıyla (Kore Kospi ~%10 geriledi) ve FOMC öncesi pozisyonlanmayla ilişkilendiriliyor (CoinDesk). SEC/KAP dosyaları, bilanço detay tabloları, içeriden öğrenen işlemleri ve teknik göstergelere (RSI/MACD vb.) erişimim yok. priceHistory kısa olduğundan aylık/YTD/yıllık getiri hâlâ 'veri birikiyor' kabul ediliyor. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
+    "generatedAt": "2026-07-28T16:20:00Z",
+    "healthScore": 59,
+    "summary": "28 Temmuz Salı 16:20 UTC turu: bu kez tüm hedeflenen semboller için Alpha Vantage'dan canlı fiyat alınabildi (günlük istek limiti sorunu yok); en dikkat çekici gelişme PayPal'ın bugün Ç2 sonuçlarını beklentilerin üzerinde açıklaması (EPS 1,38$ / beklenti 1,28$). Canlı fiyatlı pozisyonlarda toplam K/Z yaklaşık +%12,2 (~+1.889$'a) yükseldi. FOMC kararı yarın (29 Temmuz) 14:00 ET'de açıklanacak; piyasa beklentisi ağırlıklı olarak faizin sabit tutulması yönünde (CME verilerine göre %64 olasılık) ama bu bir kesinlik değil.",
+    "dataCoverageNote": "Bu turda canlı çekilen fiyatlar: USD/TRY 47,3746 (önceki 47,3753), BTC 63.833,41$ (önceki 63.435,80$, +%0,63), ETH 1.917,10$ (önceki 1.881,19$, +%1,91), ARB 0,0793$ (önceki 0,0778$, +%1,93), AUR 6,21$ (değişmedi, Alpha Vantage 'latest trading day' hâlâ 27 Temmuz), AVGO 383,22$ (değişmedi), UNH 417,64$ (değişmedi), BABA 115,00$ (değişmedi), LULU 117,83$ (değişmedi), GTLB 32,88$ (değişmedi) — bu 9 sembolde API son işlem gününü hâlâ 27 Temmuz olarak veriyor, bu yüzden fiyatlar bir önceki turla aynı. Buna karşın NVO 49,67$ (önceki 48,77$, +%1,85), PYPL 56,07$ (önceki 56,15$, -%0,14), TMDX 74,28$ (önceki 72,26$, +%2,80), EVTL 1,42$ (önceki 1,38$, +%2,90), UAMY 5,45$ (önceki 5,17$, +%5,42) için bu turda ilk kez güncel veri alınabildi (önceki turda günlük istek limiti nedeniyle atlanmıştı). XAU için CURRENCY_EXCHANGE_RATE çağrısı yine 'Invalid API call' hatası döndürdü (ücretsiz planda desteklenmiyor, beklenen, dokunulmadı); THYAO ve GTF Alpha Vantage kapsamı dışında olduğu için hiç denenmedi, demo veri olarak kalıyor. WebSearch ile teyit edilenler: PayPal bugün (28 Temmuz) Ç2 2026 sonuçlarını açıkladı — EPS 1,38$ (beklenti 1,28$), gelir 8,68 milyar$ (beklenti 8,47 milyar$, +%5), ödeme hacmi %10 artışla 486,4 milyar$, aktif hesap sayısı 439 milyona ulaştı, şirket 2026 tam yıl düzeltilmiş EPS hedefini 5,38$'a yükseltti (PRNewswire/StockTitan/StockStory); buna rağmen hisse fiyatı günü hafif eksi (-%0,14) kapattı, bu 'haberi sat' tepkisi veya beklentinin zaten fiyatlanmış olması olabilir, kesin neden doğrulanamadı. FOMC kararı yarın (29 Temmuz) 14:00 ET'de (Warsh basın toplantısı 14:30 ET) açıklanacak; CME Group vadeli işlem verilerine göre piyasa %64 olasılıkla faizin 3,50-3,75% aralığında sabit tutulacağını fiyatlıyor, bu beşinci ardışık değişikliksiz toplantı olur, ancak bu bir kesinlik değil. NVO için Wegovy hap formunun AB'de onaylanması (15 Temmuz) ve Eli Lilly'e karşı yanıltıcı reklam iddiasıyla dava açılması (21 Temmuz) zaten bilinen gelişmeler; bugünkü %1,85 yükselişi açıklayan yeni/tarihli bir haber bulunamadı. TMDX'in bir sonraki bilançosu 4 Ağustos'ta (piyasa kapanışından sonra) açıklanacak (StockTitan); hisse yıl başından bu yana ~%41,5 gerilemiş durumda ve son haftalarda sert günlük dalgalanmalar gösteriyor, bugünkü %2,8 yükselişi açıklayan spesifik bir haber bulunamadı. EVTL'deki toparlanma muhtemelen 20 Temmuz Farnborough'daki tarihi eVTOL geçiş uçuşu gösterisi, İngiltere hükümetinin üretim tesisi desteği ve 22 Temmuz'daki Suudi Arabistan sivil havacılık otoritesiyle stratejik anlaşmanın devam eden etkisiyle ilişkili; H.C. Wainwright analisti gösteriden sonra Al tavsiyesini 15$ hedefle korudu. UAMY'deki güç, şirketin Savunma Lojistik Ajansı (DLA) ile 245 milyon$'lık tedarik sözleşmesi kapsamında Haziran'da ilk sevkiyatları (~82.000 pound antimon, ~2,6 milyon$ fatura) teslim etmesi ve kümülatif devlet siparişlerinin 57,3 milyon$'a ulaşmasıyla teyit ediliyor (StockTitan) — çoklu operasyonel teyit, göreceli yüksek güven. SEC/KAP dosyaları, bilanço detay tabloları, içeriden öğrenen işlemleri ve teknik göstergelere (RSI/MACD vb.) erişimim yok. priceHistory hâlâ kısa olduğundan aylık/YTD/yıllık getiri 'veri birikiyor' kabul ediliyor. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
     "recommendations": [
       {
         "symbol": "PYPL",
         "action": "BEKLE",
-        "confidence": 30,
-        "rationale": "Pozisyon maliyete göre +%34,2 kazançta ve bugün (28 Temmuz) piyasa açılışından önce Ç2 sonuçlarını açıklıyor (konsensüs 1,28$ EPS / 8,48 milyar$ gelir; Alphastreet/TipRanks). WebSearch'e göre board Stripe/Advent'in 53,4 milyar$ (60,50$/hisse) teklifini 20 Temmuz'da resmen reddetti ve daha yüksek fiyat arıyor (TechTimes/MSN); Forbes (27 Temmuz) bu bilançoyu 'PayPal'ın reddinin doğru olduğunu kanıtlaması gereken an' olarak nitelendiriyor; sonuçlar bu tur taramasında henüz görünmüyordu. Hem bilanço hem M&A süreci aynı anda belirsizlik yarattığından net bir yön önerisi yok; sonuçlar netleşene kadar BEKLE daha ihtiyatlı, bu bir zamanlama tahmini değildir.",
-        "risk": "Yüksek"
+        "confidence": 42,
+        "rationale": "Pozisyon maliyete göre +%34,0 kazançta. WebSearch'e göre bugün (28 Temmuz) açıklanan Ç2 2026 sonuçları beklentilerin üzerinde: EPS 1,38$ (beklenti 1,28$), gelir 8,68 milyar$ (+%5, beklenti 8,47 milyar$), ödeme hacmi %10 artışla 486,4 milyar$, 2026 tam yıl EPS hedefi 5,38$'a yükseltildi (PRNewswire/StockTitan). Buna rağmen hisse günü hafif eksi (-%0,14) kapattı; bu tutarsızlık (güçlü bilanço + durağan fiyat) net bir yön sinyali vermiyor, kesin neden doğrulanamadı. Temelde olumlu ama fiyat tepkisi belirsizken BEKLE daha ihtiyatlı; bu bir zamanlama tahmini değildir.",
+        "risk": "Orta"
       },
       {
         "symbol": "BTC",
         "action": "AZALT",
-        "confidence": 40,
-        "rationale": "Pozisyon maliyete göre +%107,8 kazançta ve canlı (nakit hariç) portföy toplamının ~%27'sini tek başına oluşturuyor; bu yoğunlaşma risk yönetimi açısından hâlâ dikkat gerektiriyor. Bugün fiyat ~%1,7 geriledi (63.435,80$); WebSearch'e göre bu düşüş kripto'ya özgü değil, Asya borsalarındaki geniş satış dalgasıyla (Kore Kospi ~%10 geriledi) ve yarın (29 Temmuz) açıklanacak FOMC kararı öncesi pozisyonlanmayla ilişkilendiriliyor (CoinDesk, 28 Temmuz). Derin kârdaki bu yoğunlaşmış pozisyonda FOMC belirsizliği öncesi kısmi kâr realizasyonu sermaye korumasını destekler; bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
+        "confidence": 38,
+        "rationale": "Pozisyon maliyete göre +%109,1 kazançta ve canlı (nakit hariç) portföy toplamının ~%26,8'ini tek başına oluşturuyor; bu yoğunlaşma risk yönetimi açısından hâlâ dikkat gerektiriyor. Fiyat bugün ~%0,6 toparlandı (63.833,41$) ama yarın (29 Temmuz) 14:00 ET'de açıklanacak FOMC kararı öncesi piyasa genelinde belirsizlik yüksek (CME verisine göre %64 olasılıkla sabit faiz bekleniyor, ancak kesin değil). Derin kârdaki bu yoğunlaşmış pozisyonda FOMC öncesi kısmi kâr realizasyonu sermaye korumasını destekler; bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
         "risk": "Yüksek"
       },
       {
-        "symbol": "UNH",
+        "symbol": "UAMY",
         "action": "BEKLE",
-        "confidence": 38,
-        "rationale": "Pozisyon maliyete göre +%46,5 kazançta. WebSearch'e göre bu turda önemli yeni bir gelişme bulunamadı; 17 Temmuz'daki hedef fiyat yükseltmeleri (Morgan Stanley 529$, BofA 512$, Truist 500$, Bernstein 512$) hâlâ en güncel veri ve büyük olasılıkla fiyata yansımış durumda. Ayrıca UnitedHealthcare'in hizmetlerin %30'unda ön onay şartını kaldırdığı, yıl sonuna kadar bir %30 daha kaldırmayı hedeflediği doğrulandı (unitedhealthgroup.com); bu operasyonel olarak olumlu ama kısa vadeli bir fiyat sinyali değil. Net bir zamanlama sinyali yokken mevcut pozisyonun korunması makul.",
-        "risk": "Orta"
-      },
-      {
-        "symbol": "LULU",
-        "action": "AZALT",
-        "confidence": 35,
-        "rationale": "Pozisyon maliyete göre -%29,1 zararda. WebSearch'e göre Haziran'daki satış/kâr beklentisi indirimine ek olarak Wells Fargo 21 Temmuz'da hedef fiyatı 110$'dan 105$'a indirdi, Straton aynı gün Sat tavsiyesini 93$ hedefle yineledi; yeni olumsuz analist hareketleri zayıflayan fundamentalleri teyit ediyor. Zarardaki bu pozisyonda ek risk almaktansa kısmi azaltım sermaye korumasını destekleyebilir; bu bir zamanlama tahmini değildir.",
-        "risk": "Orta-Yüksek"
-      },
-      {
-        "symbol": "AUR",
-        "action": "BEKLE",
-        "confidence": 22,
-        "rationale": "Pozisyon maliyete göre +%14,8 kazançta, fiyat bugün 6,21$'a yükseldi (+%4,4). WebSearch'e göre Ç2 sonuçları henüz açıklanmadı, yarın (29 Temmuz) kapanış sonrası 17:00 ET'de açıklanacağı Aurora IR'dan teyit edildi (konsensüs EPS -0,12$); bilanço öncesi 'güvenlik doğrulaması' anlatısına dayalı olumlu fiyat hareketi tek kaynaklı ve spekülatif (StocksToTrade, 22 Temmuz). Bilanço öncesi pozisyon değiştirmek yerine sonuçları beklemek risk yönetimi açısından daha ihtiyatlı; bu bir zamanlama tahmini değildir.",
+        "confidence": 48,
+        "rationale": "Pozisyon maliyete göre -%10,1 zararda ama fiyat bugün 5,45$'a yükseldi (+%5,4, ikinci gündür güçlü). WebSearch'e göre şirket Savunma Lojistik Ajansı (DLA) ile 245 milyon$'lık tedarik sözleşmesi kapsamında Haziran'da ilk sevkiyatları (~82.000 pound antimon, ~2,6 milyon$ fatura) teslim etti ve kümülatif devlet siparişleri 57,3 milyon$'a ulaştı (StockTitan) — bu somut, operasyonel ve çoklu kaynaklı bir gelişme. Zarardaki pozisyonda momentum olumlu olsa da tek bir haber üzerine pozisyon artırmak yerine bir sonraki bilanço/sevkiyat haberini beklemek daha ihtiyatlı; bu bir zamanlama tahmini değildir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "EVTL",
         "action": "BEKLE",
-        "confidence": 20,
-        "rationale": "Pozisyon maliyete göre -%48,5 gibi derin bir zararda; fiyat bu turda güncellenemedi ama piyasada bugün %8,6 gerilediği görülüyor (1,38$ taşınıyor). WebSearch'e göre şirketin haber akışı aslında olumlu yönde yoğun (Farnborough'da ilk kamuya açık eVTOL geçiş uçuşu gösterisi, İngiltere CAA uçuş izninin genişletilmesi, ~1.500 koşullu ön sipariş) ama bugünkü düşüşü açıklayan doğrulanmış bir olumsuz haber bulunamadı; bu tutarsızlık net bir yorum yapmayı zorlaştırıyor. Derin zarardaki bu pozisyonda belirsizlik yüksekken sermaye korumasını önceliklendirerek mevcut pozisyonun korunması, ek alım için beklemek makul.",
+        "confidence": 30,
+        "rationale": "Pozisyon maliyete göre -%47,0 gibi derin bir zararda; fiyat bugün 1,42$'a yükseldi (+%2,9), iki gündür toparlanıyor. WebSearch'e göre 20 Temmuz'daki Farnborough'daki tarihi eVTOL geçiş uçuşu gösterisi, İngiltere hükümetinin üretim tesisi desteği ve 22 Temmuz'daki Suudi Arabistan sivil havacılık otoritesiyle stratejik anlaşma gibi olumlu haber akışı sürüyor; H.C. Wainwright analisti gösteriden sonra Al tavsiyesini 15$ hedefle korudu (çoklu kaynak). Derin zarardaki bu pozisyonda haber akışı olumlu olsa da erken evre bir şirket olarak yüksek belirsizlik sürüyor; sermaye korumasını önceliklendirerek mevcut pozisyonun korunması, ek alım için beklemek makul.",
         "risk": "Yüksek"
+      },
+      {
+        "symbol": "TMDX",
+        "action": "BEKLE",
+        "confidence": 28,
+        "rationale": "Pozisyon maliyete göre +%7,7 kazançta, fiyat bugün 74,28$'a yükseldi (+%2,8). WebSearch'e göre bir sonraki Ç2 2026 bilançosu 4 Ağustos'ta piyasa kapanışından sonra açıklanacak (StockTitan); hisse yıl başından bu yana ~%41,5 gerilemiş durumda ve son haftalarda tek günde %8'i aşan sert dalgalanmalar gösteriyor, bugünkü yükselişi açıklayan spesifik bir haber bulunamadı. Bilanço öncesi yüksek oynaklık gösteren bu pozisyonda sonuçları beklemek risk yönetimi açısından daha ihtiyatlı; bu bir zamanlama tahmini değildir.",
+        "risk": "Yüksek"
+      },
+      {
+        "symbol": "NVO",
+        "action": "BEKLE",
+        "confidence": 25,
+        "rationale": "Pozisyon maliyete göre +%1,0 gibi sınırlı bir kazançta, fiyat bugün 49,67$'a yükseldi (+%1,85). WebSearch'e göre Wegovy hap formunun AB'de onaylanması (15 Temmuz) ve Eli Lilly'e karşı yanıltıcı reklam iddiasıyla dava açılması (21 Temmuz) zaten bilinen gelişmeler; bugünkü yükselişi açıklayan yeni ve tarihli bir haber bulunamadı, bu belirsiz bırakıyor. Net bir zamanlama sinyali yokken mevcut pozisyonun korunması makul; bu bir zamanlama tahmini değildir.",
+        "risk": "Orta"
       }
     ]
   },
   "opportunityReport": {
-    "generatedAt": "2026-07-28T08:20:00Z",
-    "dataCoverageNote": "28 Temmuz Salı 08:20 UTC turu; önceki turlarda önerilen isimler (TUPRS, EREGL, TCELL, ASELS, AMD, F, STX, RIVN, AKBNK, FROTO, TKNSA, MOH, DAL, MRK, PGNY, CCOLA, MAVI, AEFES, VAKBN, W, RKLB, WULF) bilinçli olarak tekrarlanmadı, tamamen yeni isimler tarandı. BIST tarafında TURSG (Türkiye Sigorta) 2Ç26'da yıllık %45,9 net kâr artışıyla (7,02 milyar TL, piyasa beklentisi 6,46 milyar TL) beklentileri aştı ve bilanço sonrası 12 farklı aracı kurumdan hedef fiyat/yorum geldi (GCM Yatırım, İş Yatırım, Pusula Yatırım dahil) — çoklu kaynaklı, yüksek güven. SISE (Şişecam) için aynı hafta içinde üç ayrı kurum hedef yükseltti: Gedik Yatırım 60'tan 68 TL'ye, GCM Yatırım 51,73'ten 69 TL'ye, ÜNLÜ&Co tavsiyeyi TUT'tan AL'a çıkarıp hedefi 53'ten 56,9 TL'ye yükseltti — çoklu kaynaklı. TRALT (Türk Altın İşletmeleri) için Ünlü&Co 71,40 TL (AL) ve Gedik Yatırım 60'tan 70 TL'ye hedef yükseltti; iki kurum ama hedeflerle mevcut fiyat (~49,5 TL) arasındaki fark bu turda bağımsız teyit edilemedi, temkinli değerlendirildi. ABD tarafında GM'i Jefferies 27 Temmuz'da Hold'dan Buy'a yükseltti (hedef 90'dan 99$'a), güçlü 2Ç26 sonuçları/serbest nakit akışı gerekçesiyle — çoklu kaynak (CNBC, Benzinga, TipRanks). RTX'i TD Cowen bugün (28 Temmuz) 225'ten 240$'a yükseltti, 23 Temmuz'daki 2Ç26 bilançosunda EPS 1,89$ (beklenti 1,66$) ve yükseltilmiş tam yıl rehberliği (7,10-7,25$ EPS) sonrası; Baird de hedef yükseltti — çoklu kaynak. DOCN'yi (DigitalOcean) Stifel 22 Temmuz'da Hold'dan Buy'a yükseltti (hedef 135'ten 160$'a), GPU/AI kapasite fiyat artışı haberi sonrası hisse %14,6 sıçradı — çoklu kaynak ama küçük ölçekli/yüksek oynaklık bir bulut sağlayıcısı. RNG (RingCentral) 23 Temmuz bilançosunda EPS 1,22$ (beklenti 1,16$) ile beklentileri aştı, bugün Mizuho hedefini 38'den 40$'a yükseltti ve hisse günü %7 kazandı; ÖNEMLİ NÜANS: Mizuho hedefi yükseltirken notunu hâlâ 'Nötr' olarak koruyor, bu karışık bir sinyal. Elenen/zayıf adaylar: TTRAK (hedef artışına rağmen 1Ç26 net zarar ve %40 ciro düşüşü, çelişkili sinyal), SOFI (Truist hedefi sadece 1$ artırdı, Hold notu korundu, zayıf sinyal), SAP (bulut geliri güçlü ama kâr görünümü düşürüldü, karışık sinyal) — bunlar bu yüzden listeye alınmadı. SEC/KAP dosyalarının tam metnine, bilanço detay tablolarına, fon akışı verilerine, içeriden öğrenen işlemlerine, doğrudan borsa fiyat/hacim verisine ve teknik göstergelere (RSI/MACD vb.) erişimim yok; burada aktarılan tüm hedef fiyatlar ve yüzdeler üçüncü taraf haber özetlerinden alınmıştır ve bağımsız doğrulanmamıştır. Portföyde zaten bulunan semboller (AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY, BTC, ETH, ARB, THYAO, XAU, GTF) bu listeye dahil edilmedi.",
+    "generatedAt": "2026-07-28T16:35:00Z",
+    "dataCoverageNote": "28 Temmuz Salı 16:35 UTC turu; hem bugünün kendi önceki turunda (TURSG, SISE, TRALT, RTX, GM, DOCN, RNG) hem de daha önceki turlarda önerilen isimler (TUPRS, EREGL, TCELL, ASELS, AMD, F, STX, RIVN, AKBNK, FROTO, TKNSA, MOH, DAL, MRK, PGNY, CCOLA, MAVI, AEFES, VAKBN, W, RKLB, WULF) bilinçli olarak tekrarlanmadı. BIST tarafında ANHYT (Anadolu Hayat ve Emeklilik) bugün 2Ç26 sonuçlarını açıkladı: ilk yarı net kârı yıllık %44 artışla 3,63 milyar TL'ye ulaştı, 2Ç26 net kârı 1,88 milyar TL (beklenti 1,85 milyar TL ile büyük ölçüde uyumlu); Deniz Yatırım hedef fiyatını 168,86 TL'de koruyup AL tavsiyesini sürdürdü (İş Yatırım, borsagundem, paraajansi çoklu kaynak). PGSUS (Pegasus) için bilanço sonrası 17 aracı kurumdan gelen ortalama hedef fiyat 265,26 TL (en düşük 187, en yüksek 364,70 TL) iken hisse 166,50 TL'den kapandı — büyük görünen bir fark ama ÖNEMLİ NÜANS: HSBC 6 Temmuz'da hedefini 290 TL'den 240 TL'ye düşürdü (yine de AL tavsiyesini korudu), bu karışık bir sinyal ve güveni sınırlıyor. TAVHL, BIMAS, MGROS, ENKAI için bulunan veriler yalnızca bilanço ÖNCESİ analist tahminleriydi, bu turda gerçek açıklanmış sonuç teyit edilemediği için listeye alınmadı. ABD tarafında üç şirket bugün (28 Temmuz) Ç2 2026 sonuçlarını beklentilerin belirgin üzerinde açıkladı ve rehberliğini yükseltti: Sherwin-Williams (SHW) EPS 3,70$ (beklenti 3,50$), gelir 6,79 milyar$ (+%7,5, beklenti 6,61 milyar$), 2026 EPS rehberliğini 11,50-11,90$'dan 11,80-12,20$'a yükseltti, hisse %7,5 fırladı (Seeking Alpha, Investing.com, Benzinga — çoklu kaynak). IQVIA (IQV) EPS 3,15$ (beklenti 3,04$, +%3,6 sürpriz), gelir 4,37 milyar$ (+%8,7), tam yıl gelir/EBITDA/EPS rehberliğinin tamamı yükseltildi, hisse prim seansında S&P 500'de en çok kazanan oldu (+%10'un üzeri) (TradingView, MarketScreener, Seeking Alpha, StockStory — çoklu kaynak). Coca-Cola (KO) EPS 0,97$ (beklenti 0,93$), gelir 13,38 milyar$ (+%7, beklenti 13,16 milyar$), 2026 EPS büyüme hedefini %8-9'dan %9-10'a yükseltti, hisse rekor seviyeye çıktı (CNBC, Yahoo Finance, Investing.com, StockStory — çoklu kaynak, kaynaklar arası günlük yüzde değişim biraz farklılık gösteriyor, temkinli değerlendirilmeli). SEC/KAP dosyalarının tam metnine, bilanço detay tablolarına, fon akışı verilerine, içerden öğrenen işlemlerine, doğrudan borsa fiyat/hacim verisine ve teknik göstergelere (RSI/MACD vb.) erişimim yok; burada aktarılan tüm hedef fiyatlar ve yüzdeler üçüncü taraf haber özetlerinden alınmıştır ve bağımsız doğrulanmamıştır. Bu turda kalite barajını geçen sadece 2 BIST adayı bulunduğundan (3-4 hedefinin altında) nicelie değil kaliteye öncelik verildi. Portföyde zaten bulunan semboller (AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY, BTC, ETH, ARB, THYAO, XAU, GTF) bu listeye dahil edilmedi.",
     "items": [
       {
-        "market": "BIST",
-        "symbol": "TURSG",
-        "name": "Türkiye Sigorta A.Ş.",
-        "opportunityScore": 62,
-        "confidence": 55,
+        "market": "US",
+        "symbol": "IQV",
+        "name": "IQVIA Holdings Inc.",
+        "opportunityScore": 70,
+        "confidence": 62,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "WebSearch'e göre TURSG 2Ç26'da net kârını yıllık %45,9 artışla 7,02 milyar TL'ye çıkardı, piyasa beklentisi 6,46 milyar TL idi; bilanço sonrası 12 farklı aracı kurumdan (GCM Yatırım, İş Yatırım, Pusula Yatırım dahil) hedef fiyat/yorum geldi, bu da göreli olarak güçlü bir çoklu kaynak doğrulaması sağlıyor. Sigorta sektörü faiz ve enflasyon ortamına duyarlı; orta risk ve göreli yüksek güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
+        "reason": "WebSearch'e göre IQVIA bugün (28 Temmuz) Ç2 2026 sonuçlarını açıkladı: EPS 3,15$ (beklenti 3,04$, +%3,6 sürpriz), gelir 4,37 milyar$ (+%8,7 yıllık, organik büyüme %6'ya hızlandı), tam yıl gelir/Düzeltilmiş FAVÖK/EPS rehberliğinin tamamı yükseltildi; hisse prim seansında S&P 500'ün en çok kazananı oldu (+%10'un üzeri). Çoklu kaynaklı (TradingView, MarketScreener, Seeking Alpha, StockStory) ve somut bir rehber yükseltmesine dayanıyor; ilaç araştırma/danışmanlık sektörü müşteri bütçe döngülerine duyarlı. Orta risk ve göreli yüksek güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
+      },
+      {
+        "market": "US",
+        "symbol": "SHW",
+        "name": "Sherwin-Williams Company",
+        "opportunityScore": 67,
+        "confidence": 60,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "WebSearch'e göre Sherwin-Williams bugün (28 Temmuz) Ç2 2026 sonuçlarını açıkladı: EPS 3,70$ (beklenti 3,50$), gelir 6,79 milyar$ (+%7,5 yıllık, beklenti 6,61 milyar$), 2026 tam yıl EPS rehberliğini 11,50-11,90$'dan 11,80-12,20$'a yükseltti; yönetim 'talepte anlamlı bir iyileşme yok' derken bile pazar payı kazanımıyla büyüdüklerini vurguladı, hisse %7,5 fırladı. Çoklu kaynaklı (Seeking Alpha, Investing.com, Benzinga, StockTitan). Boya/kaplama sektörü inşaat döngüsüne duyarlı; orta risk ve göreli yüksek güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
       },
       {
         "market": "BIST",
-        "symbol": "SISE",
-        "name": "Türkiye Şişe ve Cam Fabrikaları A.Ş.",
-        "opportunityScore": 58,
+        "symbol": "ANHYT",
+        "name": "Anadolu Hayat ve Emeklilik A.Ş.",
+        "opportunityScore": 54,
         "confidence": 50,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "WebSearch'e göre aynı hafta içinde üç ayrı aracı kurum SISE için hedef yükseltti: Gedik Yatırım 60'tan 68 TL'ye, GCM Yatırım 51,73'ten 69 TL'ye, ÜNLÜ&Co tavsiyeyi TUT'tan AL'a çıkarıp hedefi 53'ten 56,9 TL'ye çıkardı; çoklu kaynaklı olması güveni artırıyor. Cam/kimya sektörü döngüsel, doğalgaz maliyeti ve kur riskine duyarlı; orta risk ve orta-yüksek güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
+        "reason": "WebSearch'e göre ANHYT bugün (28 Temmuz) 2Ç26 sonuçlarını açıkladı: ilk yarı net kârı yıllık %44 artışla 3,63 milyar TL'ye ulaştı, 2Ç26 net kârı 1,88 milyar TL (beklenti 1,85 milyar TL ile büyük ölçüde uyumlu, sürpriz büyüklüğü sınırlı); Deniz Yatırım hedef fiyatını 168,86 TL'de koruyup AL tavsiyesini sürdürdü. Çoklu kaynaklı (İş Yatırım, borsagundem, paraajansi) ama beklentiyle uyumlu bir sonuç olduğundan güçlü bir sürpriz sinyali değil. Hayat/emeklilik sigortacılığı faiz ve enflasyon ortamına duyarlı; orta risk ve orta güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
+      },
+      {
+        "market": "US",
+        "symbol": "KO",
+        "name": "The Coca-Cola Company",
+        "opportunityScore": 58,
+        "confidence": 55,
+        "risk": "Düşük-Orta",
+        "action": "İZLE",
+        "reason": "WebSearch'e göre Coca-Cola bugün (28 Temmuz) Ç2 2026 sonuçlarını açıkladı: EPS 0,97$ (beklenti 0,93$), gelir 13,38 milyar$ (+%7 yıllık, beklenti 13,16 milyar$), 2026 EPS büyüme hedefini %8-9'dan %9-10'a yükseltti, organik gelir büyüme hedefini ~%5'e çıkardı; hisse rekor seviyeye çıktı. Çoklu kaynaklı (CNBC, Yahoo Finance, Investing.com, StockStory) ama kaynaklar arası günlük yüzde değişim rakamları biraz farklılık gösteriyor (%2 ile %7 arası), bu temkinli değerlendirilmeli. Büyük ölçekli, göreli düşük oynaklı bir tüketici şirketi; düşük-orta risk ve orta-yüksek güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
       },
       {
         "market": "BIST",
-        "symbol": "TRALT",
-        "name": "Türk Altın İşletmeleri A.Ş.",
-        "opportunityScore": 47,
-        "confidence": 36,
+        "symbol": "PGSUS",
+        "name": "Pegasus Hava Taşımacılığı A.Ş.",
+        "opportunityScore": 50,
+        "confidence": 38,
         "risk": "Orta-Yüksek",
         "action": "İZLE",
-        "reason": "WebSearch'e göre Ünlü&Co 71,40 TL hedefle AL, Gedik Yatırım da hedefini 60'tan 70 TL'ye yükseltti; iki farklı kurum olması olumlu ama bu hedeflerin mevcut fiyata (~49,5 TL) göre ima ettiği yükseliş potansiyeli bu turda bağımsız teyit edilemedi ve büyük görünüyor, temkinli yaklaşılmalı. Tek maden operasyonel riski ve altın fiyatı emtia dalgalanmasına duyarlı; orta-yüksek risk ve orta-düşük güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "RTX",
-        "name": "RTX Corporation",
-        "opportunityScore": 64,
-        "confidence": 52,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "WebSearch'e göre RTX 23 Temmuz'daki 2Ç26 bilançosunda EPS 1,89$ ile beklentiyi (1,66$) aştı ve tam yıl EPS rehberliğini 7,10-7,25$'a yükseltti; bugün (28 Temmuz) TD Cowen hedefini 225'ten 240$'a çıkardı, Baird de hedef yükseltti, hisse günü ~%2,7 kazandı. Çoklu kaynaklı ve somut bir bilanço beklenti aşımına dayanıyor; savunma bütçesi/politika riski ve yüksek değerleme dikkate alınmalı. Orta risk ve göreli yüksek güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "GM",
-        "name": "General Motors Company",
-        "opportunityScore": 56,
-        "confidence": 48,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "WebSearch'e göre Jefferies 27 Temmuz'da GM'i Hold'dan Buy'a yükseltti, hedef fiyatı 90'dan 99$'a çıkardı; gerekçe güçlü 2Ç26 sonuçları ve serbest nakit akışı güveni. Çoklu kaynakla (CNBC, Benzinga, TipRanks) teyit edildi. EV geçiş maliyetleri, gümrük tarifeleri ve döngüsel otomotiv talebi risk unsurları; orta risk ve orta-yüksek güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "DOCN",
-        "name": "DigitalOcean Holdings, Inc.",
-        "opportunityScore": 53,
-        "confidence": 40,
-        "risk": "Orta-Yüksek",
-        "action": "İZLE",
-        "reason": "WebSearch'e göre Stifel 22 Temmuz'da DOCN'yi Hold'dan Buy'a yükseltti, hedefi 135'ten 160$'a çıkardı; GPU/AI kapasite fiyat artışı haberi sonrası hisse tek günde %14,6 sıçradı. Çoklu kaynakla teyit edildi ama bu büyüklükte tek günlük bir sıçrama oynaklığın yüksek olduğunu gösteriyor; küçük ölçekli bulut sağlayıcısı olarak büyük hyperscaler'larla rekabet riski taşıyor. Orta-yüksek risk ve orta güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "RNG",
-        "name": "RingCentral, Inc.",
-        "opportunityScore": 41,
-        "confidence": 30,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "WebSearch'e göre RNG 23 Temmuz bilançosunda EPS 1,22$ ile beklentiyi (1,16$) aştı, bugün Mizuho hedefini 38'den 40$'a yükseltti ve hisse günü ~%7 kazandı; ANCAK Mizuho hedefi yükseltirken notunu hâlâ 'Nötr' olarak koruyor, bu karışık bir sinyal ve güveni sınırlıyor. Orta ölçekli UCaaS şirketinde rekabet yoğun; orta risk ve düşük-orta güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
+        "reason": "WebSearch'e göre bilanço sonrası 17 aracı kurumdan gelen ortalama hedef fiyat 265,26 TL (166,50 TL kapanışa göre büyük bir fark ima ediyor) ama ÖNEMLİ NÜANS: HSBC 6 Temmuz'da hedefini 290 TL'den 240 TL'ye indirdi (AL tavsiyesini korurken), bu karışık bir sinyal ve ortalama hedefin ne kadar güncel olduğunu belirsizleştiriyor. Havacılık sektörü yakıt fiyatı, döviz kuru ve jeopolitik risklere duyarlı; ortalama hedef ile hedef kesintisi arasındaki çelişki nedeniyle orta-yüksek risk ve düşük-orta güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
       }
     ]
   },
