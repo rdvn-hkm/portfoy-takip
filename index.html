@@ -33,108 +33,98 @@
   "lastUpdated": "2026-07-30T00:05:00Z",
   "aiNote": "",
   "advisorReport": {
-    "generatedAt": "2026-07-30T00:20:00Z",
-    "healthScore": 58,
-    "summary": "30 Temmuz Perşembe 00:20 UTC turu: USD/TRY, BTC, ETH, ARB, AUR, AVGO, UNH ve BABA için canlı fiyat güncellendi; Alpha Vantage'ın günlük 25 istek limiti dolduğu için LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY güncellenemedi (önceki doğrulanmış canlı değerleri korunuyor). Canlı fiyatlı pozisyonlarda toplam K/Z yaklaşık +%11,9'a (~+1.845$'a) geriledi; AVGO (-%2,8) ve UNH (-%1,9) bugün sert geriledi, kripto tarafı (BTC +%0,1, ETH +%1,1, ARB +%1,5) hafif yükseldi. BTC tek başına canlı portföyün ~%26,9'unu oluşturmaya devam ediyor. WebSearch'e göre FOMC dün (29 Temmuz) faizi %3,50-3,75 aralığında sabit tuttu (9-3 oyla, 3 muhalif üye artış istedi); piyasa artık Eylül toplantısında artış bekliyor, bu kısa vadede risk iştahını baskılayabilir.",
-    "dataCoverageNote": "Bu turda canlı çekilen/güncellenen fiyatlar (önceki kapanışa göre): USD/TRY 47,40027 (önceki 47,39360); BTC 63.941,40$ (+%0,12), ETH 1.908,36$ (+%1,09), ARB 0,0791$ (+%1,54); AUR 5,98$ (-%3,70), AVGO 370,32$ (-%2,78), UNH 420,57$ (-%1,92), BABA 115,03$ (-%0,14). Alpha Vantage'ın günlük 25 istek limiti bu 8 çağrıdan sonra doldu (aynı API anahtarı gün içinde başka turlarda da kullanılmış olabilir); bu yüzden LULU (120,32$), GTLB (32,965$), NVO (50,96$), PYPL (58,32$), TMDX (76,29$), EVTL (1,35$), UAMY (5,21$) bu turda güncellenemedi — bunlar bir önceki turdan devralınan, doğrulanmış canlı verilerdir, uydurma değildir, dokunulmadı. XAU için CURRENCY_EXCHANGE_RATE çağrısı yine 'Invalid API call' hatası döndürdü (ücretsiz planda desteklenmiyor, beklenen, dokunulmadı); THYAO ve GTF Alpha Vantage kapsamı dışında olduğu için hiç denenmedi, demo veri olarak kalıyor. WebSearch ile teyit edilen gelişmeler: FOMC 29 Temmuz'da faizi sabit tuttu (%3,50-3,75, 9-3 oy), Eylül toplantısında artış beklentisi güçlendi; UnitedHealth'in Ç2 bilançosu beklentileri aştı ve 2026 EPS rehberliği 19,50-20,00$'a yükseltildi ancak bazı kaynaklar hissenin son 1 yıldaki ~%68-69'luk yükseliş sonrası 'tam fiyatlandığını' tartışıyor; Broadcom için WebSearch'te olumsuz bir şirket-özel haber bulunamadı (analist görüşü hâlâ Al, Samsung ile AI çip anlaşması güncel), bugünkü düşüş geniş tabanlı bir yarı iletken/piyasa baskısı gibi görünüyor; TMDX'in Ç2 2026 bilanço tarihi artık KESİNLEŞTİ: 4 Ağustos 2026 (StockTitan/MarketBeat, çoklu kaynak) — önceki turdaki 30 Temmuz/4 Ağustos çelişkisi bu şekilde çözüldü; EVTL için Farnborough'da dünyanın ilk halka açık eVTOL geçiş uçuşu (20 Temmuz) ve analist hedef fiyat yükseltmesi (H.C. Wainwright, 15$'a) olumlu ama şirket ayrıca 60 milyon$'lık halka arz açıkladı (Ar-Ge finansmanı için, mevcut hissedarlar için sulanma riski) ve hisse ay içinde hâlâ -%6,3 civarında; 13 Ağustos'ta H1 2026 sonuçları açıklanacak. SEC/KAP dosyaları, bilanço detay tabloları, içeriden öğrenenlerin işlemleri ve teknik göstergelere (RSI/MACD vb.) erişimim yok; ARB için bu turda spesifik bir haber/katalizör bulunamadı. priceHistory hâlâ kısa (8-9 gün) olduğundan aylık/YTD/yıllık getiri 'veri birikiyor' kabul ediliyor. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
+    "generatedAt": "2026-07-30T08:07:58Z",
+    "healthScore": 56,
+    "summary": "30 Temmuz Perşembe 08:07 UTC turu: Alpha Vantage API anahtarının günlük 25 istek kotası bu tur başlamadan önce zaten dolmuştu (muhtemelen 00:05 UTC turunun ve/veya başka süreçlerin tükettiği kota), bu yüzden hiçbir fiyat güncellenemedi; tüm pozisyonlar 00:05 UTC turundaki son doğrulanmış canlı verilerle aynı kaldı. Canlı fiyatlı pozisyonlarda toplam K/Z yaklaşık +%11,9 (~+1.847$) seviyesinde; BTC tek başına canlı (nakit hariç) portföyün ~%26,9'unu oluşturmaya devam ediyor, bu yoğunlaşma risk yönetimi açısından öncelikli konu olmayı sürdürüyor. WebSearch'e göre TMDX'in Ç2 2026 bilanço tarihi 4 Ağustos 2026 olarak teyit edildi (5 gün kaldı), bu da kısa vadede oynaklık riskini artırıyor.",
+    "dataCoverageNote": "Bu turda Alpha Vantage'a iki deneme yapıldı (USD/TRY kuru ve AAPL GLOBAL_QUOTE) ve ikisi de aynı 'günlük 25 istek limiti doldu' mesajını döndürdü; bu, kotanın anahtar bazında olduğunu ve muhtemelen bu turdan önce (00:05 UTC turu ve/veya başka bir süreç tarafından) tükendiğini gösteriyor. Bu yüzden hiçbir holding'in price/prevClose/priceHistory alanına dokunulmadı — tüm fiyatlar 2026-07-30T00:05:00Z turundaki doğrulanmış canlı değerlerdir, uydurma değildir. XAU (Gold) ve GTF (Fund) ile THYAO (BIST) zaten Alpha Vantage kapsamı dışında/demo durumda, bu turda da denenmedi. WebSearch ile teyit edilen güncellemeler: UnitedHealth (UNH) Ç2 2026'da 112 milyar$ gelir ve 6,38$ düzeltilmiş EPS (%56,4 YoY artış) açıkladı, tam yıl EPS rehberliğini 19,50-20,00$'a yükseltti ve ~10,6 milyon hisseyi 4,0 milyar$'a geri aldı; çoğu analist hedef fiyatını yükseltti (Yahoo Finance, Simply Wall St, çoklu kaynak). Broadcom (AVGO) için 26 analistin konsensüsü hâlâ Al, ortalama hedef fiyat ~501,58$; AI altyapısı/ağ çipleri temasına vurgu sürüyor (Simply Wall St, StockAnalysis, çoklu kaynak). TMDX'in Ç2 2026 bilanço tarihi StockTitan'ın resmi şirket duyurusuna göre 4 Ağustos 2026 olarak teyit edildi (bazı eski MarketBeat başlıkları 30 Temmuz'u işaret ediyordu, bu çelişki resmi kaynakla çözüldü); TD Cowen 'Al' notunu 120$ hedefle korurken Evercore ISI hedefini 6 Temmuz'da 100$'dan 90$'a indirmişti. EVTL (Vertical Aerospace) için: hisse Temmuz ayında ay başından bu yana ~%30,5 geriledi, halka arzdan bu yana ~%98 değer kaybetti (piyasa değeri 2,1 milyar$'dan 278 milyon$'a düştü), Farnborough'daki gösteri uçuşları tamamlandı, H1 2026 sonuçları 13 Ağustos'ta açıklanacak; son bir ayda 1 analist düşürdü, 1 analist yükseltti (AAII, Simply Wall St, çoklu kaynak). Bitcoin/FOMC bağlamı bir önceki turdan (00:20 UTC) beri özünde değişmedi: Fed 29 Temmuz'da faizi %3,50-3,75'te sabit tuttu, piyasa Eylül'de artış bekliyor. ARB için bu turda da spesifik bir haber/katalizör bulunamadı. SEC/KAP dosyaları, bilanço detay tabloları, içeriden öğrenenlerin işlemleri ve teknik göstergelere (RSI/MACD vb.) erişimim yok. priceHistory hâlâ kısa (8-9 gün) olduğundan aylık/YTD/yıllık getiri 'veri birikiyor' kabul ediliyor. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
     "recommendations": [
       {
         "symbol": "BTC",
         "action": "AZALT",
         "confidence": 42,
-        "rationale": "Pozisyon maliyete göre +%109,5 kazançta ve canlı (nakit hariç) portföy toplamının ~%26,9'unu tek başına oluşturuyor; bu yoğunlaşma risk yönetimi açısından öncelikli konu olmaya devam ediyor. FOMC dün faizi beklendiği gibi sabit tuttu ancak WebSearch'e göre piyasa artık Eylül'de artış bekliyor, bu da risk iştahını kısa vadede baskılayabilir. Derin kârdaki bu yoğunlaşmış pozisyonda kısmi kâr realizasyonu ile riskin dağıtılması sermaye korumasını destekler; bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
+        "rationale": "Pozisyon maliyete göre +%109,5 kazançta ve canlı (nakit hariç) portföy toplamının ~%26,9'unu tek başına oluşturuyor; bu yoğunlaşma risk yönetimi açısından öncelikli konu olmaya devam ediyor. Fiyat verisi bu turda güncellenemedi (Alpha Vantage kotası doldu), ancak bir önceki turdan bu yana makro çerçevede (FOMC'nin sabit faiz kararı, Eylül artış beklentisi) belirgin bir değişim yok. Derin kârdaki bu yoğunlaşmış pozisyonda kısmi kâr realizasyonu ile riskin dağıtılması sermaye korumasını destekler; bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "UNH",
         "action": "BEKLE",
         "confidence": 44,
-        "rationale": "Pozisyon maliyete göre +%47,6 kazançta; WebSearch'e göre Ç2 bilançosu beklentileri aştı ve EPS rehberliği 19,50-20,00$'a yükseltildi, ancak fiyat bugün -%1,92 geriledi ve bazı kaynaklar hissenin son 1 yıldaki güçlü yükseliş sonrası 'tam fiyatlandığını' tartışıyor. İyi temellere rağmen kısa vadeli değerleme endişesi var; sermaye korumasını önceliklendirerek mevcut pozisyonun korunması makul, bu bir zamanlama tahmini değildir.",
+        "rationale": "Pozisyon maliyete göre +%47,6 kazançta; WebSearch'e göre Ç2 bilançosu beklentileri aştı (112 milyar$ gelir, 6,38$ düzeltilmiş EPS, %56,4 YoY) ve EPS rehberliği 19,50-20,00$'a yükseltildi, şirket ayrıca 4,0 milyar$'lık hisse geri alımı yaptı; çoğu analist hedef fiyatını yükseltti. İyi temellere rağmen son 1 yıldaki güçlü yükseliş sonrası kısa vadeli değerleme endişesi sürüyor; sermaye korumasını önceliklendirerek mevcut pozisyonun korunması makul, bu bir zamanlama tahmini değildir.",
         "risk": "Orta"
       },
       {
         "symbol": "AVGO",
         "action": "BEKLE",
         "confidence": 40,
-        "rationale": "Pozisyon maliyete göre hafif -%2,74 zararda; fiyat bugün -%2,78 geriledi ancak WebSearch'te şirkete özgü olumsuz bir haber bulunamadı (analist konsensüsü hâlâ Al, Samsung ile AI çip anlaşması güncel ve olumlu). Düşüş geniş tabanlı bir yarı iletken/piyasa baskısı gibi görünüyor; temel görünüm değişmediği için mevcut pozisyonun korunması makul, bu bir zamanlama tahmini değildir.",
+        "rationale": "Pozisyon maliyete göre hafif -%2,74 zararda; WebSearch'e göre 26 analistin konsensüsü hâlâ Al, ortalama hedef fiyat ~501,58$ (mevcut fiyata göre belirgin yukarı potansiyel işaret ediyor) ve AI veri merkezi altyapısı/ağ çipleri temasına vurgu sürüyor, şirkete özgü olumsuz bir haber yok. Temel görünüm olumlu kaldığı için mevcut pozisyonun korunması makul, bu bir zamanlama tahmini değildir.",
         "risk": "Orta"
       },
       {
         "symbol": "TMDX",
         "action": "BEKLE",
-        "confidence": 35,
-        "rationale": "Pozisyon maliyete göre +%10,6 kazançta. WebSearch'e göre bir sonraki Ç2 2026 bilanço tarihi artık kesinleşti: 4 Ağustos 2026 (StockTitan/MarketBeat, çoklu kaynak); önceki turdaki tarih çelişkisi böylece çözüldü. Bilanço öncesi genelde yüksek oynaklık görülür; kesin tarih netleşmiş olsa da sonuç bilinmediğinden beklemek risk yönetimi açısından ihtiyatlı; bu bir zamanlama tahmini değildir.",
+        "confidence": 33,
+        "rationale": "Pozisyon maliyete göre +%10,6 kazançta. WebSearch'e göre Ç2 2026 bilanço tarihi StockTitan'ın resmi duyurusuyla 4 Ağustos 2026 olarak teyit edildi — yani sadece ~5 gün kaldı; TD Cowen 'Al/120$' hedefini korurken Evercore ISI hedefini 90$'a indirmişti (6 Temmuz). Bilanço öncesi dönemde oynaklık riski artar; yaklaşan katalizör netleştiği için kesin sonucu beklemeden pozisyon değiştirmemek risk yönetimi açısından ihtiyatlı; bu bir zamanlama tahmini değildir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "EVTL",
         "action": "BEKLE",
-        "confidence": 28,
-        "rationale": "Pozisyon maliyete göre -%49,6 gibi derin bir zararda. WebSearch'e göre 20 Temmuz'da dünyanın ilk halka açık eVTOL geçiş uçuşu gerçekleştirildi ve bir analist hedef fiyatı 15$'a yükseltti (H.C. Wainwright) — olumlu operasyonel gelişmeler; ancak şirket ayrıca 60 milyon$'lık halka arz açıkladı (mevcut hissedarlar için sulanma riski) ve hisse ay içinde hâlâ ~%6,3 geride, 13 Ağustos'ta H1 sonuçları açıklanacak. Karışık sinyaller ve sulanma riski nedeniyle derin zarardaki bu pozisyonda beklemek makul; bu bir zamanlama tahmini değildir.",
+        "confidence": 25,
+        "rationale": "Pozisyon maliyete göre -%49,6 gibi derin bir zararda (sistemdeki fiyat 2026-07-29 tarihli son doğrulanmış canlı veri). WebSearch'e göre hisse Temmuz ayında ~%30,5 geriledi ve halka arzdan bu yana ~%98 değer kaybetti (piyasa değeri 278 milyon$'a düştü); Farnborough gösteri uçuşları tamamlandı ama net bir fiyat tepkisi yok, H1 2026 sonuçları 13 Ağustos'ta açıklanacak, son 1 ayda 1 analist düşürüp 1 analist yükseltti. Karışık sinyaller ve derin zarar nedeniyle beklemek makul; bu bir zamanlama tahmini değildir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "ARB",
         "action": "BEKLE",
         "confidence": 22,
-        "rationale": "Pozisyon maliyete göre -%94,5 gibi ağır bir zararda (pozisyon büyüklüğü küçük, ~11$); fiyat bugün 0,0791$'a hafif yükseldi (+%1,5). Bu varlık için WebSearch'te spesifik bir haber/katalizör bulunamadı; belirsizlik yüksek. Sermaye korumasını önceliklendirerek ne ek alım ne de acil satış önerilmiyor, pozisyonun mevcut haliyle izlenmesi makul; bu bir zamanlama tahmini değildir.",
+        "rationale": "Pozisyon maliyete göre -%94,5 gibi ağır bir zararda (pozisyon büyüklüğü küçük, ~11$). Bu turda da fiyat güncellenemedi ve WebSearch'te spesifik bir haber/katalizör bulunamadı; belirsizlik yüksek. Sermaye korumasını önceliklendirerek ne ek alım ne de acil satış önerilmiyor, pozisyonun mevcut haliyle izlenmesi makul; bu bir zamanlama tahmini değildir.",
         "risk": "Yüksek"
       }
     ]
   },
 "opportunityReport": {
-    "generatedAt": "2026-07-30T00:35:00Z",
-    "dataCoverageNote": "30 Temmuz Perşembe 00:35 UTC turu; bir önceki turda (29 Temmuz 16:04 UTC) önerilen isimler (WEX, TSLA, IOND, ALBTN) ile sabah turundakiler (BE, CVKMD, OTLK, YKBNK, CRL) ve kümülatif dışlanan liste (IQV, SHW, ANHYT, KO, PGSUS, TURSG, SISE, TRALT, RTX, GM, DOCN, RNG, TUPRS, EREGL, TCELL, ASELS, AMD, F, STX, RIVN, AKBNK, FROTO, TKNSA, MOH, DAL, MRK, PGNY, CCOLA, MAVI, AEFES, VAKBN, W, RKLB, WULF, TAVHL, KARCL, UPS, RCL, BA, MU) bilinçli olarak tekrarlanmadı. BIST tarafında bu turda güçlü/taze bir katalizör bulmak zor oldu (saat itibarıyla Türkiye piyasası henüz açılmadı, 03:35 TSİ): Kuzey Boru (KBORU), Yunanistan'daki bir sulama projesi dahil olmak üzere yurt dışı altyapı projelerine yönelik toplam ~3,93 milyon$'lık ihracat sözleşmeleri imzaladığını KAP'a bildirdi (BorsaninGündemi, Yatirimx, çoklu kaynak) — ancak bu haber 14 Temmuz tarihli, yani ~2 hafta eski, muhtemelen fiyata büyük ölçüde yansımış durumda; düşük güvenle ve sadece izleme amaçlı dahil edildi. Golda Gıda (GOLDA, yeni halka arz), yurt dışı müşterilerle ~3,04 milyon$'lık makarna satış sözleşmeleri imzaladığını duyurdu (CNBC-E, Paratic, çoklu kaynak) ancak bir yatırımcı forumu paylaşımına göre hisse bu olumlu habere rağmen taban fiyatın altına sarkıp günü -%8 civarında tamamladı — haber ile fiyat arasında olumsuz bir ayrışma var, bu yüzden 'fırsat' olarak değil açıkça 'karışık sinyal/yüksek riskli izleme' olarak işaretlendi. ABD tarafında üç isim öne çıktı: Nasdaq Inc. (NDAQ), 23 Temmuz'da Ç2 2026 sonuçlarını açıkladı (EPS 1,07$, beklenti 0,98$'ı %9,2 aştı; gelir 1,5 milyar$, SpaceX halka arzı dahil güçlü IPO/veri gelirleri) ancak haber ~1 hafta eski ve hisse haber sonrası sadece sınırlı tepki verdi (ChartMill, Yahoo Finance, Simply Wall St, çoklu kaynak); PolyPid Ltd. (PYPD), FDA'nın D-PLEX100 (cerrahi alan enfeksiyonu önleyici) NDA başvurusunu öncelikli inceleme statüsüyle kabul ettiğini açıkladı, bu karar Azurity Pharmaceuticals ile olan ortaklık kapsamında 15 milyon$'lık kilometre taşı ödemesini tetikledi, hisse %11,2 yükseldi, PDUFA hedef tarihi 28 Kasım 2026 (Investing.com, TipRanks, StockTitan, çoklu kaynak) — küçük ölçekli biyoteknoloji şirketi olduğu için yüksek riskli; 3M (MMM), Ç2 2026 bilançosu beklentilerin üzerinde geldi ve hisse haber öncesinde zaten Microsoft ile AI veri merkezi altyapısı ortaklığı sonrası momentum kazanmıştı (Forbes, çoklu kaynak) ancak kesin bilanço rakamlarını (EPS/gelir) doğrulayan bir kaynak bulamadım, bu yüzden düşük güvenle dahil edildi. Değerlendirilip listeye ALINMAYAN diğer adaylar: Outlook Therapeutics (OTLK) sabah turunda zaten önerildi; Coca-Cola (KO) ve Sherwin-Williams (SHW) kümülatif dışlama listesinde (bugün de güçlü bilanço haberleri çıktı ama tekrar önerilmedi); YKBNK'nin Yapı Kredi Portföy paylarını Azimut'a (AZ International) 20,74 milyar TL'ye devretme anlaşması gerçek bir KAP haberi ama YKBNK sabah turunda zaten önerildiği için tekrarlanmadı; General Motors (GM) kümülatif dışlama listesinde. SEC/KAP dosyalarının tam metnine, bilanço detay tablolarına, fon akışı verilerine, içerden öğrenen işlemlerine, doğrudan borsa fiyat/hacim verisine ve teknik göstergelere (RSI/MACD vb.) erişimim yok; burada aktarılan tüm rakamlar ve yüzdeler üçüncü taraf haber özetlerinden alınmıştır ve bağımsız doğrulanmamıştır. Portföyde zaten bulunan semboller (AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY, BTC, ETH, ARB, THYAO, XAU, GTF) bu listeye dahil edilmedi.",
+    "generatedAt": "2026-07-30T08:12:00Z",
+    "dataCoverageNote": "30 Temmuz Perşembe 08:12 UTC turu; bir önceki turda (30 Temmuz 00:35 UTC) önerilen isimler (PYPD, NDAQ, MMM, KBORU, GOLDA) ile daha önceki turlarda önerilenler (WEX, TSLA, IOND, ALBTN, BE, CVKMD, OTLK, YKBNK, CRL) ve kümülatif dışlanan liste (IQV, SHW, ANHYT, KO, PGSUS, TURSG, SISE, TRALT, RTX, GM, DOCN, RNG, TUPRS, EREGL, TCELL, ASELS, AMD, F, STX, RIVN, AKBNK, FROTO, TKNSA, MOH, DAL, MRK, PGNY, CCOLA, MAVI, AEFES, VAKBN, W, RKLB, WULF, TAVHL, KARCL, UPS, RCL, BA, MU) bilinçli olarak tekrarlanmadı. BIST tarafında bu turda (piyasa artık açık, ~11:12 TSİ) taze ve somut bir KAP katalizörü bulunan tek isim Tera Yatırım Teknoloji Holding (TEHOL) oldu: 29 Temmuz'da bağlı ortaklığı Tera Robotik'in, Lumison Teknoloji ile robotik ürünlerde münhasır alt-distribütörlük ve sistem entegrasyonu/stratejik iş birliği anlaşması imzaladığı KAP'a bildirildi (Yeni Şafak/KAP özet kaynağı) — küçük ölçekli, muhtemelen düşük likidite, orta-uzun vadeli ciro etkisi belirsiz; düşük güvenle sadece izleme amaçlı dahil edildi. Genel BIST 'en çok yükselenler' listesine (arama sonuçlarında METEN, HEDEF, BIGTK gibi isimler görüldü) somut bir haber/katalizör eşlik etmediği için bunlar dahil edilmedi — sadece fiyat hareketine dayanan, gerekçesiz öneri üretilmedi. ABD tarafında bugün (30 Temmuz) yoğun bir bilanço günü: Quad/Graphics (QUAD) Ç2 EPS'i 0,24$ (beklenti 0,20$'ı aştı) ve geliri 578 milyon$ ile beklentileri geçti, hisse %13,4 yükseldi (StockTitan, Daily Political, çoklu kaynak); ancak 2026 ilk yarı serbest nakit akışı -66 milyon$ ve borç/özkaynak oranı 3,04 ile yüksek kaldıraç riski taşıyor, bu yüzden orta güvenle ve kaldıraç uyarısıyla dahil edildi. Mastercard (MA), bugün açılış öncesi Ç2 sonuçlarını açıklayacak; son 4 çeyrektir beklentileri aştı, 39 analistin büyük çoğunluğu Güçlü Al diyor, ortalama hedef fiyat ~%23 yukarı potansiyel gösteriyor (Yahoo Finance/Zacks, çoklu kaynak) — sonuç henüz açıklanmadığı için bu bir tahmin değil, mevcut analist görüşünün özeti. Coinbase (COIN), bugün kapanış sonrası Ç2 sonuçlarını açıklayacak; Zacks Earnings ESP'si negatif (-%5,23) ki bu beklenti-üstü sonuç ihtimalinin düşük olduğuna işaret ediyor, opsiyon fiyatlaması ~%7,3'lük bir hareket bekliyor (Investing.com, Zacks, çoklu kaynak) — net bir ikili (binary) sonuç riski taşıyor ve portföyün mevcut BTC/ETH pozisyonlarıyla dolaylı korelasyonu olabilir, bu yüzden yüksek riskli olarak işaretlendi ve sadece izleme önerildi. Değerlendirilip listeye ALINMAYAN adaylar: PYPD/NDAQ/MMM bir önceki turda (bu sabah) zaten önerildiği için tekrarlanmadı; Ford (F) ve AMD kümülatif dışlama listesinde; Çukurova Holding-Trafigura ön ödeme anlaşması gerçek bir haber ama Çukurova Holding'in kendisi BIST'te doğrudan işlem görmüyor, bu yüzden dahil edilmedi. SEC/KAP dosyalarının tam metnine, bilanço detay tablolarına, fon akışı verilerine, içerden öğrenen işlemlerine, doğrudan borsa fiyat/hacim verisine ve teknik göstergelere (RSI/MACD vb.) erişimim yok; burada aktarılan tüm rakamlar ve yüzdeler üçüncü taraf haber özetlerinden alınmıştır ve bağımsız doğrulanmamıştır. Portföyde zaten bulunan semboller (AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY, BTC, ETH, ARB, THYAO, XAU, GTF) bu listeye dahil edilmedi.",
     "items": [
       {
         "market": "US",
-        "symbol": "PYPD",
-        "name": "PolyPid Ltd.",
-        "opportunityScore": 58,
-        "confidence": 42,
-        "risk": "Yüksek",
-        "action": "İZLE",
-        "reason": "WebSearch'e göre FDA, PolyPid'in D-PLEX100 (cerrahi alan enfeksiyonlarını önleyici) yeni ilaç başvurusunu öncelikli inceleme statüsüyle kabul etti; bu karar Azurity Pharmaceuticals ile olan ortaklık kapsamında 15 milyon$'lık kilometre taşı ödemesini tetikledi ve hisse %11,2 yükseldi (Investing.com, TipRanks, StockTitan, çoklu kaynak). PDUFA hedef karar tarihi 28 Kasım 2026. Bu somut bir düzenleyici gelişme, ancak küçük ölçekli bir biyoteknoloji şirketi olduğu için yüksek riskli; orta güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "NDAQ",
-        "name": "Nasdaq, Inc.",
-        "opportunityScore": 50,
-        "confidence": 40,
+        "symbol": "MA",
+        "name": "Mastercard Incorporated",
+        "opportunityScore": 48,
+        "confidence": 35,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "WebSearch'e göre Nasdaq Inc., 23 Temmuz'da Ç2 2026 sonuçlarını açıkladı: EPS 1,07$ (beklenti 0,98$'ı %9,2 aştı), gelir 1,5 milyar$ (%15 artış), SpaceX halka arzı gibi güçlü IPO ve veri gelirleri katkı sağladı (ChartMill, Yahoo Finance, çoklu kaynak). Ancak haber yaklaşık bir hafta eski ve hisse haber sonrası sadece sınırlı bir tepki verdi, bu yüzden fiyata büyük ölçüde yansımış olabilir. Orta risk ve orta güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
+        "reason": "WebSearch'e göre Mastercard bugün açılış öncesi Ç2 2026 sonuçlarını açıklayacak (konsensüs: 4,77$ EPS, 9,06 milyar$ gelir); şirket son 4 çeyrektir beklentileri aştı, 39 analistin büyük çoğunluğu Güçlü Al diyor ve ortalama hedef fiyat mevcut seviyeye göre ~%23 yukarı potansiyel gösteriyor (Yahoo Finance/Zacks, çoklu kaynak). Sonuç henüz açıklanmadı, bu bir tahmin değil, mevcut piyasa/analist beklentisinin özeti; orta güvenle sadece izleme önerilir, kesinlikle bir zamanlama tahmini değildir."
       },
       {
         "market": "US",
-        "symbol": "MMM",
-        "name": "3M Company",
-        "opportunityScore": 42,
+        "symbol": "QUAD",
+        "name": "Quad/Graphics, Inc.",
+        "opportunityScore": 38,
         "confidence": 30,
-        "risk": "Orta",
+        "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "WebSearch'e göre 3M, Ç2 2026 bilançosunda beklentilerin üzerinde sonuçlar açıkladı ve hisse haber öncesinde Microsoft ile AI veri merkezi altyapısı ortaklığı sonrası zaten momentum kazanmıştı (Forbes, çoklu kaynak); ancak kesin EPS/gelir rakamlarını doğrulayan bir kaynak bulamadım, bu belirsizliği açıkça belirtiyorum. Orta risk ve düşük-orta güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
+        "reason": "WebSearch'e göre Quad/Graphics Ç2 2026'da EPS ve gelirde beklentileri aştı (0,24$ EPS, 578 milyon$ gelir) ve hisse %13,4 yükseldi (StockTitan, çoklu kaynak). Ancak ilk yarı serbest nakit akışı -66 milyon$ ve borç/özkaynak oranı 3,04 ile yüksek kaldıraç riski taşıyor, net borç 308 milyon$'dan 394 milyon$'a yükselmiş; bu yüzden olumlu bilanço tepkisine rağmen yüksek risk taşıyan bir isim olarak işaretlendi, düşük-orta güvenle sadece izleme önerilir."
+      },
+      {
+        "market": "US",
+        "symbol": "COIN",
+        "name": "Coinbase Global, Inc.",
+        "opportunityScore": 33,
+        "confidence": 25,
+        "risk": "Yüksek",
+        "action": "İZLE",
+        "reason": "WebSearch'e göre Coinbase bugün kapanış sonrası Ç2 2026 sonuçlarını açıklayacak; Zacks Earnings ESP'si negatif (-%5,23), bu da beklenti-üstü sonuç olasılığının düşük olduğuna işaret ediyor, opsiyon fiyatlaması ise ~%7,3'lük bir hareket bekliyor (Investing.com, Zacks, çoklu kaynak). Bu net bir ikili (binary) olay riski taşıyor ve portföyün mevcut BTC/ETH pozisyonlarıyla dolaylı korelasyonu olabilir; düşük-orta güvenle ve açık risk uyarısıyla sadece izleme önerilir, bu bir zamanlama tahmini değildir."
       },
       {
         "market": "BIST",
-        "symbol": "KBORU",
-        "name": "Kuzey Boru Sanayi ve Ticaret A.Ş.",
-        "opportunityScore": 32,
-        "confidence": 20,
+        "symbol": "TEHOL",
+        "name": "Tera Yatırım Teknoloji Holding A.Ş.",
+        "opportunityScore": 28,
+        "confidence": 18,
         "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "WebSearch'e göre Kuzey Boru, Yunanistan'daki bir sulama/altyapı restorasyon projesi dahil olmak üzere yurt dışı projelere yönelik toplam ~3,93 milyon$'lık ihracat sözleşmeleri imzaladığını KAP'a bildirdi (BorsaninGündemi, Yatirimx, çoklu kaynak). Ancak bu haber 14 Temmuz tarihli, yaklaşık iki hafta eski, muhtemelen büyük ölçüde fiyatlanmış durumda; küçük ölçekli bir şirket olması nedeniyle yüksek risk taşıyor. Düşük güvenle sadece izleme önerilir, bu bir zamanlama tahmini değildir."
-      },
-      {
-        "market": "BIST",
-        "symbol": "GOLDA",
-        "name": "Golda Gıda Sanayi ve Ticaret A.Ş.",
-        "opportunityScore": 20,
-        "confidence": 15,
-        "risk": "Yüksek",
-        "action": "İZLE",
-        "reason": "WebSearch'e göre Golda Gıda, yurt dışı müşterilerle ~3,04 milyon$'lık makarna satış sözleşmeleri imzaladığını KAP'a bildirdi (CNBC-E, Paratic, çoklu kaynak); ancak bir yatırımcı forumu paylaşımına göre hisse bu olumlu habere rağmen taban fiyatın altına sarkarak günü yaklaşık -%8 ile tamamladı. Haber ile fiyat hareketi arasındaki bu olumsuz ayrışma net bir uyarı işareti; bu bir 'fırsat' değil, sadece dikkatle izlenmesi gereken karışık sinyalli, yüksek riskli, yeni halka arz edilmiş bir hisse; çok düşük güvenle sadece izleme önerilir, kesinlikle bir alım tavsiyesi değildir."
+        "reason": "WebSearch'e göre şirketin bağlı ortaklığı Tera Robotik, Lumison Teknoloji ile robotik ürünlerde münhasır alt-distribütörlük ve sistem entegrasyonu/stratejik iş birliği anlaşması imzaladığını 29 Temmuz'da KAP'a bildirdi; anlaşmanın orta-uzun vadede ciro/işlem hacmine olumlu katkı yapması bekleniyor. Küçük ölçekli bir şirket olması ve olası düşük likidite nedeniyle yüksek risk taşıyor; çok düşük güvenle sadece izleme önerilir, kesinlikle bir alım tavsiyesi değildir."
       }
     ]
   },
