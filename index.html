@@ -33,108 +33,118 @@
   "lastUpdated": "2026-08-01T00:05:00Z",
   "aiNote": "",
   "advisorReport": {
-    "generatedAt": "2026-07-31T16:20:00Z",
-    "healthScore": 57,
-    "summary": "31 Temmuz Cuma 16:20 UTC turu (bugünkü üçüncü güncelleme): Alpha Vantage'ın ücretsiz GLOBAL_QUOTE uç noktası ABD borsası açık olmasına rağmen (piyasa 13:30 UTC'de açıldı) hâlâ 30 Temmuz kapanış verisi döndürüyor; bu nedenle 11 ABD hissesinin price/prevClose alanı bu turda değişmedi (gecikmeli/EOD veri sınırlaması, doğrulandı). BTC/ETH/ARB ve USD/TRY canlı olarak güncellendi ve kripto varlıklar sabahki 08:20 UTC turundan bu yana yeniden geriledi (BTC -%1,9, ETH -%1,5, ARB -%0,1); WebSearch'e göre Bitcoin ve Ethereum bu sabah güçlü bir açılışın ardından geri çekilmede (Yahoo Finance). Canlı fiyatlı pozisyonlarda toplam K/Z yaklaşık +%11,7 (~+1.820$) seviyesinde; BTC tek başına canlı (nakit hariç) portföyün ~%26,4'ünü oluşturmaya devam ediyor, bu yoğunlaşma risk yönetimi açısından öncelikli konu olmayı sürdürüyor. Genel piyasada bugün S&P 500 %0,67 yükseldi (10 yıllık tahvil getirisindeki sert artışa rağmen, büyük teknoloji şirketlerinin yapay zeka yatırım iştahının sürmesiyle); TMDX için yeni bulgular var: Evercore ISI 6 Temmuz'da hedef fiyatı 100$'dan 90$'a indirdi ve bir mahkeme, şirkete karşı açılan 'zorla paketleme' iddialı yatırımcı davasının ilerlemesine izin verdi (Yahoo Finance/Seeking Alpha, bu turda doğrulandı) — bu yeni bir risk faktörü; bilançoya (4 Ağustos) 4 gün kaldı.",
-    "dataCoverageNote": "Bu turda Alpha Vantage'a 16 istek yapıldı: USD/TRY ve 3 kripto (BTC/ETH/ARB) başarıyla güncellendi (fiyatlar değişti); 11 ABD hissesi de sorgulandı ve başarıyla yanıt alındı ancak API 'latest trading day' alanında hâlâ 2026-07-30 döndürdüğü için fiyatlar önceki turdan (08:20 UTC) değişmedi — bu Alpha Vantage'ın ücretsiz planındaki veri gecikmesinden kaynaklanıyor, gerçek piyasa fiyatları farklı olabilir (WebSearch'e göre S&P 500 bugün yükseliyor). XAU (Gold) yine 'Invalid API call' hatası döndürdü (ücretsiz plan kapsamı dışı, doğrulandı), bu holding'e dokunulmadı. THYAO (BIST) ve GTF (Fund) Alpha Vantage kapsamı dışında olduğu için hiç denenmedi, demo durumda kaldı. Bu turda TMDX için WebSearch ile yeni doğrulanmış haberler bulundu (analist hedef fiyat indirimi, mahkeme kararı); UAMY/AVGO/EVTL/AUR/BTC için ise bu sabahki (00:08 ve 08:20 UTC) turlarda doğrulanan haberlerin hâlâ geçerli olduğu varsayıldı, bu bir varsayımdır, yeni doğrulanmış haber değildir. SEC/KAP dosyalarının tam metnine, bilanço detay tablolarına, içeriden öğrenenlerin işlemlerine ve teknik göstergelere (RSI/MACD vb.) erişimim yok. priceHistory hâlâ kısa (9-10 gün) olduğundan aylık/YTD/yıllık getiri 'veri birikiyor' kabul ediliyor. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
+    "generatedAt": "2026-08-01T00:25:00Z",
+    "healthScore": 53,
+    "summary": "1 Ağustos Cumartesi 00:25 UTC turu: Bu turda Alpha Vantage tüm sorgulanan varlıklar için 31 Temmuz kapanış verisini başarıyla döndürdü (14/14 canlı pozisyon güncellendi). Portföyün en sert hareketi NVO'da yaşandı: WebSearch'e göre şirketin deneysel kalp ilacı ziltivekimab'ın Faz 3 ZEUS çalışması birincil hedefine ulaşamadı, hisse günü ~%9,4 düşüşle kapattı (Yahoo Finance, TradingKey, çoklu kaynak) — bu NVO pozisyonunu maliyete göre hafif zarara çevirdi. BABA ise Çin platform ekonomisine yönelik düzenleyici yumuşama sinyalleri ve bulut/AI iyimserliğiyle %5,1 yükseldi (Benzinga, TradingKey). Canlı fiyatlı pozisyonlarda toplam K/Z yaklaşık +%10,6 (~+1.643$) seviyesinde; BTC tek başına canlı (nakit hariç) portföyün ~%26,8'ini oluşturmaya devam ediyor, bu yoğunlaşma risk yönetimi açısından öncelikli konu olmayı sürdürüyor. TMDX'in Ç2 2026 bilançosuna 3 gün kaldı ve yatırımcı davası (zorla paketleme iddiası) sürüyor.",
+    "dataCoverageNote": "Bu turda Alpha Vantage'a 15 istek yapıldı: USD/TRY, 3 kripto (BTC/ETH/ARB) ve 11 ABD hissesi (AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY) hepsi '2026-07-31' kapanış verisiyle başarıyla döndü; bu turda hiçbir istek başarısız olmadı. XAU (Gold) yine 'Invalid API call' hatası döndürdü (ücretsiz plan kapsamı dışı, doğrulandı), bu holding'e dokunulmadı, hâlâ demo. THYAO (BIST) ve GTF (Fund) Alpha Vantage kapsamı dışında olduğu için hiç denenmedi, demo durumda kaldı. Bu turda WebSearch ile doğrulanan haberler: Novo Nordisk (NVO) ziltivekimab ZEUS Faz 3 çalışması başarısız oldu (Yahoo Finance/TradingKey/Investing.com/Schaeffer's, çoklu kaynak); Alibaba (BABA) Çin platform ekonomisi düzenleme yumuşaması ve bulut/AI iyimserliğiyle yükseldi (Benzinga/TradingKey/GuruFocus, çoklu kaynak); TransMedics (TMDX) için bilanço tarihi 4 Ağustos 2026 olarak teyitli ve 'zorla paketleme' iddialı yatırımcı davasının bazı taleplerinin mahkemece ilerlemesine izin verildiği teyit edildi, ayrıca Jewik v. TransMedics adlı ayrı bir menkul kıymet davası da mevcut (StockTitan/MarketBeat, çoklu kaynak). Bitcoin ve Ethereum için üçüncü taraf teknik analiz kaynakları (RSI, hareketli ortalamalar) bulundu ancak bunlar benim kendi hesapladığım göstergeler DEĞİL, dış kaynaklardan (coinpedia.org, çoklu kaynak) aktarılan üçüncü taraf yorumlardır, bağımsız doğrulanmamıştır. SEC/KAP dosyalarının tam metnine, bilanço detay tablolarına, içeriden öğrenenlerin işlemlerine erişimim yok ve kendi hesapladığım hiçbir teknik gösterge (RSI/MACD vb.) yok. priceHistory hâlâ kısa (9-11 gün) olduğundan aylık/YTD/yıllık getiri 'veri birikiyor' kabul ediliyor. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
     "recommendations": [
       {
         "symbol": "BTC",
         "action": "AZALT",
         "confidence": 40,
-        "rationale": "Pozisyon maliyete göre hâlâ +%105,3 kazançta ve canlı (nakit hariç) portföy toplamının ~%26,4'ünü tek başına oluşturuyor; bu yoğunlaşma risk yönetimi açısından öncelikli konu olmaya devam ediyor. Alpha Vantage verisine göre BTC bu sabahki 08:20 UTC turundan bu yana yaklaşık %1,9 geriledi ve WebSearch'e göre kripto piyasası bu sabahki güçlü açılışın ardından geri çekilme yaşıyor (Yahoo Finance, bu turda doğrulandı); bu kısa vadeli bir dalgalanma olup tek başına bir sinyal olarak değerlendirilmiyor. Derin kârdaki bu yoğunlaşmış pozisyonda kısmi kâr realizasyonu ile riskin dağıtılması sermaye korumasını destekler; bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
+        "rationale": "Pozisyon maliyete göre +%105,8 kazançta ve canlı (nakit hariç) portföy toplamının ~%26,8'ini tek başına oluşturuyor; bu yoğunlaşma risk yönetimi açısından öncelikli konu olmaya devam ediyor. WebSearch'te bulunan üçüncü taraf teknik yorumlara göre BTC ~62.800$ civarında, kısa vadeli momentum zayıflıyor (bu benim kendi hesabım değil, dış kaynak aktarımıdır, doğrulanmamıştır). Derin kârdaki bu yoğunlaşmış pozisyonda kısmi kâr realizasyonu ile riskin dağıtılması sermaye korumasını destekler; bu bir zamanlama tahmini değil, risk yönetimi önerisidir.",
         "risk": "Yüksek"
       },
       {
-        "symbol": "UAMY",
+        "symbol": "NVO",
         "action": "BEKLE",
-        "confidence": 36,
-        "rationale": "Pozisyon maliyete göre hâlâ -%13,9 zararda; Alpha Vantage'ın 'latest trading day' alanı hâlâ 30 Temmuz olduğu için fiyat bu turda değişmedi (%6,3'lük yükseliş korunuyor). WebSearch'e göre şirket DLA ile 245 milyon$'lık tedarik sözleşmesi kapsamında Ç2'de ilk sevkiyatları tamamladı (kümülatif hükümet siparişleri 57,3 milyon$) ve Montana'daki flotasyon değirmenini devreye almaya başladı (StockTitan, çoklu kaynak, bugünkü sabah turunda doğrulandı, bu turda yeni bir haber taraması yapılmadı). Somut sözleşme haberi olumlu bir katalizör, ancak son günlerdeki sert yükseliş sonrası kısa vadeli fiyata büyük ölçüde yansımış olabilir; mevcut pozisyonun korunması ve gelişmelerin izlenmesi makul, bu bir zamanlama tahmini değildir.",
-        "risk": "Orta"
-      },
-      {
-        "symbol": "AVGO",
-        "action": "BEKLE",
-        "confidence": 40,
-        "rationale": "Pozisyon maliyete göre +%1,86 kazançta; Alpha Vantage'ın 'latest trading day' alanı hâlâ 30 Temmuz olduğu için fiyat bu turda değişmedi (%4,7'lik yükseliş korunuyor). WebSearch'e göre bugün genel piyasada büyük teknoloji şirketlerinin yapay zeka yatırım iştahının sürmesiyle S&P 500 %0,67 yükseldi; AVGO'ya özgü yeni bir katalizör bu turda tespit edilmedi (bu sabahki turda doğrulanan 26 analistin Al konsensüsü ve ~501,58$ ortalama hedef fiyat hâlâ geçerli varsayılıyor). Temel görünüm olumlu kaldığı için mevcut pozisyonun korunması makul, dünkü sert hareketin ardından ek alım için acele edilmemesi sermaye korumasını destekler; bu bir zamanlama tahmini değildir.",
+        "confidence": 35,
+        "rationale": "Pozisyon maliyete göre -%4,27 zararda; WebSearch'e göre 31 Temmuz'da deneysel kalp ilacı ziltivekimab'ın Faz 3 ZEUS çalışması birincil hedefine (MACE azaltımı) ulaşamadığı açıklandı ve hisse günü ~%9,4 düşüşle kapattı, bu son 5 ayın en sert günlük düşüşü (Yahoo Finance/TradingKey/Schaeffer's, çoklu kaynak, bu turda doğrulandı). Diğer iki geç dönem çalışma (Hermes, Artemis) 2027 ilk yarısında sonuçlanacak; bu tek bir endikasyondaki başarısızlık olup şirketin ana GLP-1 franchise'ını doğrudan etkilemiyor görünüyor, ancak kısa vadeli oynaklık riski yüksek. Panik satışı yerine gelişmelerin izlenmesi sermaye korumasını destekler; bu bir zamanlama tahmini değildir.",
         "risk": "Orta"
       },
       {
         "symbol": "TMDX",
         "action": "BEKLE",
-        "confidence": 30,
-        "rationale": "Pozisyon maliyete göre +%10,4 kazançta; Alpha Vantage'ın 'latest trading day' alanı hâlâ 30 Temmuz olduğu için fiyat bu turda değişmedi (%2,4'lük düşüş korunuyor). Bu turda WebSearch'te yeni gelişmeler doğrulandı: Evercore ISI 6 Temmuz'da hedef fiyatı 100$'dan 90$'a indirdi (Outperform notu korunarak) ve bir mahkeme, şirkete karşı açılan 'zorla paketleme' (forced bundling) iddialı yatırımcı davasının bazı taleplerinin ilerlemesine izin verdi (Yahoo Finance/Seeking Alpha, çoklu kaynak) — bu yeni bir hukuki risk faktörüdür. TD Cowen ise şirketin gelir büyümesi konusunda iyimserliğini korudu. Ç2 2026 bilanço tarihi 4 Ağustos 2026 olarak teyitli, sadece ~4 gün kaldı; hem bilanço hem dava süreci öncesi oynaklık riski yüksek, pozisyon değiştirmemek risk yönetimi açısından ihtiyatlı; bu bir zamanlama tahmini değildir.",
+        "confidence": 28,
+        "rationale": "Pozisyon maliyete göre +%10,9 kazançta. WebSearch'e göre Ç2 2026 bilanço tarihi 4 Ağustos 2026 olarak teyitli (sadece 3 gün kaldı) ve bir mahkeme, şirkete karşı açılan 'zorla paketleme' iddialı yatırımcı davasının bazı taleplerinin ilerlemesine izin verdi; ayrıca Jewik v. TransMedics adlı ayrı bir menkul kıymetler sınıf davası da mevcut (StockTitan/MarketBeat, çoklu kaynak, bu turda doğrulandı). Hem yaklaşan bilanço hem de süregelen hukuki süreç kısa vadeli oynaklık riskini artırıyor; kesin sonuçları beklemeden pozisyon değiştirmemek risk yönetimi açısından ihtiyatlı; bu bir zamanlama tahmini değildir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "EVTL",
         "action": "BEKLE",
-        "confidence": 25,
-        "rationale": "Pozisyon maliyete göre -%51,5 gibi derin bir zararda; Alpha Vantage'ın 'latest trading day' alanı hâlâ 30 Temmuz olduğu için fiyat bu turda değişmedi (%7,4'lük yükseliş korunuyor). WebSearch'e göre 20 Temmuz'daki Farnborough'da tamamlanan dünyanın ilk halka açık eVTOL geçiş uçuşunun etkisi sürüyor olabilir, ancak son 1 ayda 1 analist düşürüp 1 analist yükseltti ve Deutsche Bank hedef fiyatını 12$'dan 8$'a indirdi; H1 2026 sonuçları 13 Ağustos'ta açıklanacak (bu sabahki turda doğrulandı, bu turda yeni bir haber taraması yapılmadı). Karışık sinyaller ve derin zarar nedeniyle beklemek makul; bu bir zamanlama tahmini değildir.",
+        "confidence": 24,
+        "rationale": "Pozisyon maliyete göre -%53,7 gibi derin bir zararda; bu turda fiyat %4,6 daha geriledi. Önceki turlarda WebSearch'e göre son 1 ayda 1 analist düşürüp 1 analist yükseltti ve Deutsche Bank hedef fiyatını 12$'dan 8$'a indirmişti; H1 2026 sonuçları 13 Ağustos'ta açıklanacak (bu turda yeni bir haber taraması yapılmadı, önceki doğrulama geçerli varsayıldı). Derin zarar ve karışık sinyaller nedeniyle acil bir aksiyon yerine gelişmelerin izlenmesi makul; bu bir zamanlama tahmini değildir.",
         "risk": "Yüksek"
       },
       {
-        "symbol": "AUR",
+        "symbol": "BABA",
         "action": "BEKLE",
-        "confidence": 30,
-        "rationale": "Pozisyon maliyete göre +%15,4 kazançta; Alpha Vantage'ın 'latest trading day' alanı hâlâ 30 Temmuz olduğu için fiyat bu turda değişmedi (%4,3'lük yükseliş korunuyor). WebSearch'e göre şirket 29 Temmuz kapanışı sonrası Ç2 2026 sonuçlarını açıkladı: EPS -0,14$ ile beklentiyi (-0,12$) ıskaladı ancak gelir beklentiyi aştı; yönetim yıl sonuna kadar 200+ sürücüsüz kamyon hedefini vurguladı (BusinessWire/Investing.com, çoklu kaynak, bu sabahki turda doğrulandı, bu turda yeni bir haber taraması yapılmadı). Karışık sinyaller nedeniyle mevcut pozisyonun korunması makul, bu bir zamanlama tahmini değildir.",
+        "confidence": 33,
+        "rationale": "Pozisyon maliyete göre +%24,7 kazançta; WebSearch'e göre hisse bugün %5,1 yükseldi, Çin platform ekonomisine yönelik düzenleyici yumuşama sinyalleri ve Bulut Intelligence Group'taki AI entegrasyonu iyimserliğiyle (Benzinga/TradingKey/GuruFocus, çoklu kaynak, bu turda doğrulandı). Pozisyon küçük (1 adet) olduğu için portföy etkisi sınırlı; güçlü kısa vadeli ralli sonrası ek alım için acele edilmemesi, mevcut pozisyonun korunması sermaye korumasını destekler; bu bir zamanlama tahmini değildir.",
         "risk": "Orta"
+      },
+      {
+        "symbol": "ARB",
+        "action": "BEKLE",
+        "confidence": 20,
+        "rationale": "Pozisyon maliyete göre -%94,6 gibi ağır bir zararda (pozisyon büyüklüğü küçük, ~11$). Bu turda fiyat %1,8 yükseldi ancak WebSearch'te spesifik bir haber/katalizör bulunamadı; belirsizlik yüksek. Sermaye korumasını önceliklendirerek ne ek alım ne de acil satış önerilmiyor, pozisyonun mevcut haliyle izlenmesi makul; bu bir zamanlama tahmini değildir.",
+        "risk": "Yüksek"
       }
     ]
   },
 "opportunityReport": {
-    "generatedAt": "2026-07-31T16:20:00Z",
-    "dataCoverageNote": "31 Temmuz Cuma 16:20 UTC turu (bugünkü üçüncü tarama); bu sabahki turlarda önerilen isimler (MSFT, LRCX, EME, ALTNY, KRDMD, KLYPV, AMZN, CMG, SNDK, SDTTR, ASTOR) ve daha önceki turlarda önerilenler (MA, QUAD, COIN, TEHOL, PYPD, NDAQ, MMM, KBORU, GOLDA, WEX, TSLA, IOND, ALBTN, BE, CVKMD, OTLK, YKBNK, CRL) ile kümülatif dışlanan liste (IQV, SHW, ANHYT, KO, PGSUS, TURSG, SISE, TRALT, RTX, GM, DOCN, RNG, TUPRS, EREGL, TCELL, ASELS, AMD, F, STX, RIVN, AKBNK, FROTO, TKNSA, MOH, DAL, MRK, PGNY, CCOLA, MAVI, AEFES, VAKBN, W, RKLB, WULF, TAVHL, KARCL, UPS, RCL, BA, MU) bilinçli olarak tekrarlanmadı; bugünkü aramada tekrar karşıma çıkan GOLDA ve CVKMD (CVK Maden) haberleri de bu nedenle dahil edilmedi. ABD tarafında bugün (31 Temmuz) Ç2 2026 bilançosunu açıklayan Gates Industrial (GTES) hisse başına 0,44$ EPS ile 0,42$ beklentiyi aştı, gelir 941,6 milyon$ ile 926,1 milyon$'lık beklentiyi geçti ve yönetim 2026 satış/kârlılık öngörüsünü yukarı revize etti (StockStory/PRNewswire/Investing.com, çoklu kaynak). Moog Inc (MOG.A) Ç3 sonuçlarında 3,72$ EPS ile 2,67$ beklentiyi %39 farkla aştı; ancak hisse yılbaşından bu yana zaten ~%72 yükselmiş durumda, bu da haberin fiyata büyük ölçüde yansımış olabileceği anlamına gelir (Zacks/Yahoo Finance, çoklu kaynak). Enbridge (ENB) 0,46$ EPS ile beklentiyi aştı ve geliri 21,18 milyar$'a ulaşarak konsensüsün %95 üzerinde gerçekleşti; ancak bu sıçramanın organik mi yoksa tek seferlik bir kalemden mi kaynaklandığı bu kaynaklardan doğrulanamadı, bu bir belirsizliktir. BIST tarafında Alfa Solar Enerji (ALFAS), bugün EUREN ile 21,3 milyon dolarlık solar cam satış sözleşmesi imzaladığını KAP'a bildirdi (Yatirimx.com.tr, bugünkü haber). Betaturk Enerji (BETAE), Hidrolik Santrallar Daire Başkanlığı'nın açtığı ihaleyi 13,5 milyon TL bedelle kazandığını duyurdu (borsamatik.com.tr) — bu görece küçük ölçekli bir sözleşme (~285 bin$), bu nedenle düşük güven ve düşük opportunityScore ile dahil edildi, kalite eşiği zorlanarak eklendi. Diğer taranan KAP haberleri (GOLDA'nın 3,04 milyon$'lık makarna sözleşmesi, Saray Matbaacılık'ın 17,6 milyon euroluk elektrik hattı sözleşmesi) ya daha önce önerilmiş bir sembole (GOLDA) ait olduğu ya da haber tarihi bu tura özgü olarak teyit edilemediği için dahil edilmedi. SEC/KAP dosyalarının tam metnine, bilanço detay tablolarına, fon akışı verilerine, içerden öğrenen işlemlerine, doğrudan borsa fiyat/hacim verisine ve teknik göstergelere (RSI/MACD vb.) erişimim yok; burada aktarılan tüm rakamlar ve yüzdeler üçüncü taraf haber özetlerinden alınmıştır ve bağımsız doğrulanmamıştır. Portföyde zaten bulunan semboller (AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY, BTC, ETH, ARB, THYAO, XAU, GTF) bu listeye dahil edilmedi.",
+    "generatedAt": "2026-08-01T00:35:00Z",
+    "dataCoverageNote": "1 Ağustos Cumartesi 00:35 UTC turu; önceki turlarda önerilen isimler (MA, QUAD, COIN, TEHOL, GTES, MOG.A, ENB, ALFAS, BETAE, MSFT, LRCX, EME, ALTNY, KRDMD, KLYPV, AMZN, CMG, SNDK, SDTTR, ASTOR, PYPD, NDAQ, MMM, KBORU, GOLDA, WEX, TSLA, IOND, ALBTN, BE, CVKMD, OTLK, YKBNK, CRL) ve kümülatif dışlanan liste (IQV, SHW, ANHYT, KO, PGSUS, TURSG, SISE, TRALT, RTX, GM, DOCN, RNG, TUPRS, EREGL, TCELL, ASELS, AMD, F, STX, RIVN, AKBNK, FROTO, TKNSA, MOH, DAL, MRK, PGNY, CCOLA, MAVI, AEFES, VAKBN, W, RKLB, WULF, TAVHL, KARCL, UPS, RCL, BA, MU) bilinçli olarak tekrarlanmadı; AMZN bugünkü güçlü Ç2 bilançosuna (AWS +%37) rağmen bu sabahki bir önceki turda zaten önerildiği için bu turda tekrar dahil edilmedi. ABD tarafında Dexcom (DXCM) 31 Temmuz'da Ç2 2026 sonuçlarını açıkladı ve 2026 gelir rehberliğini yükseltti, hisse %11 yükseldi (StocksToTrade, çoklu kaynak). Monolithic Power Systems (MPWR) Ç2 gelirini 980,6 milyon$ ile 902,0 milyon$'lık konsensüsün %9 üzerinde açıkladı, hisse %9 yükseldi (Investrade/Barchart, çoklu kaynak). Apple (AAPL) ise Ç2 beklentilerini aşmasına rağmen zayıf Ç4 gelir rehberliği ve hizmetler segmentindeki beklenti altı büyüme nedeniyle %9'un üzerinde geriledi (TheStreet, bu turda doğrulandı) — bu düşüş bir 'ucuzlama fırsatı' olabilir ama zayıf rehberlik gerçek bir risk faktörü, spekülatif bir zamanlama önerisi değildir. BIST tarafında Tınaztepe Sağlık (TNZTP), İzmir'deki Galen Hastanesi binasını Kuveyt Türk'e 1,05 milyar TL'ye 'sat ve geri kirala' modeliyle sattığını KAP'a bildirdi; bu şirketin bu yöntemi kullandığı ikinci işlem (daha önce Buca'daki hastane binası 581 milyon TL'ye QNB Finansal Kiralama'ya satılmıştı) — likidite güçlendirme amaçlı olabileceği gibi, tekrarlanan varlık monetizasyonu borç baskısına da işaret edebilir, bu belirsizlik açıkça not edilmiştir (Dokuz Eylül/Emlaknews/borsamatik.com.tr, çoklu kaynak). Bülbüloğlu Vinç (BVSAN), yurt dışı bir köprü imalatı projesi için 5,14 milyon euroluk ihracat sözleşmesi imzaladığını duyurdu, teslimat 2026 Ç4-2027 Ç1 döneminde tamamlanacak (borsamatik.com.tr/borsagundem.com.tr, çoklu kaynak). Türk İlaç ve Serum Sanayi (TRILC), TURKFLEKS markalı ürünlerinin Azerbaycan Sağlık Bakanlığı'nca ruhsatlandırıldığını ve bunun ihracat hacmine olumlu katkı beklendiğini KAP'a bildirdi (borsagundem.com.tr, çoklu kaynak). Değerlendirilip dahil edilmeyen adaylar: Kalyon Güneş Teknolojileri'nin 141,5 milyon TL'lik sözleşmesi ve Özata Denizcilik'in 2,3 milyon dolarlık bakım sözleşmesi, şirketlerin BIST'te doğrudan/ayrı işlem gördüğü teyit edilemediği için dahil edilmedi; Prizma Pres'in 370 milyon TL'lik gayrimenkul satışı somut bir büyüme katalizörü olmadığı için dahil edilmedi. SEC/KAP dosyalarının tam metnine, bilanço detay tablolarına, fon akışı verilerine, içerden öğrenen işlemlerine, doğrudan borsa fiyat/hacim verisine ve teknik göstergelere (RSI/MACD vb.) erişimim yok; burada aktarılan tüm rakamlar ve yüzdeler üçüncü taraf haber özetlerinden alınmıştır ve bağımsız doğrulanmamıştır. Portföyde zaten bulunan semboller (AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY, BTC, ETH, ARB, THYAO, XAU, GTF) bu listeye dahil edilmedi.",
     "items": [
       {
         "market": "US",
-        "symbol": "GTES",
-        "name": "Gates Industrial Corporation plc",
-        "opportunityScore": 46,
-        "confidence": 38,
+        "symbol": "DXCM",
+        "name": "DexCom, Inc.",
+        "opportunityScore": 44,
+        "confidence": 35,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "WebSearch'e göre Gates Industrial bugün (31 Temmuz) Ç2 2026 sonuçlarını açıkladı: EPS 0,44$ ile 0,42$'lık beklentiyi aştı, gelir 941,6 milyon$ ile 926,1 milyon$'lık konsensüsü geçti ve yönetim 2026 satış/kârlılık/EPS öngörüsünü yukarı revize etti (StockStory/PRNewswire/Investing.com, çoklu kaynak). Hem beklenti üstü sonuç hem de yukarı yönlü rehberlik revizyonu somut ve doğrulanmış bir katalizör; orta güvenle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "WebSearch'e göre Dexcom 31 Temmuz'da Ç2 2026 sonuçlarını açıkladı, beklentileri aştı ve 2026 tam yıl gelir rehberliğini yukarı revize etti (%11-13 YoY büyüme); hisse günü %11 yükselişle kapattı (StocksToTrade, çoklu kaynak, bu turda doğrulandı). Hem beklenti üstü sonuç hem yukarı yönlü rehberlik revizyonu somut ve doğrulanmış bir katalizör; orta güvenle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
         "market": "US",
-        "symbol": "MOG.A",
-        "name": "Moog Inc. (Class A)",
-        "opportunityScore": 34,
-        "confidence": 28,
+        "symbol": "MPWR",
+        "name": "Monolithic Power Systems, Inc.",
+        "opportunityScore": 40,
+        "confidence": 32,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "WebSearch'e göre Monolithic Power Systems Ç2 2026 gelirini 980,6 milyon$ ile 902,0 milyon$'lık konsensüsün %9 üzerinde açıkladı, hisse %9 yükseldi (Investrade/Barchart, çoklu kaynak, bu turda doğrulandı). Yarı iletken/güç yönetimi sektöründe güçlü bir talep sinyali; orta güvenle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "US",
+        "symbol": "AAPL",
+        "name": "Apple Inc.",
+        "opportunityScore": 33,
+        "confidence": 26,
         "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "WebSearch'e göre Moog Ç3 2026'da 3,72$ EPS ile 2,67$'lık beklentiyi %39,3 farkla aştı (Zacks/Yahoo Finance, çoklu kaynak). Güçlü bir kazanç sürprizi, ancak hisse yılbaşından bu yana zaten ~%72 yükselmiş durumda (S&P 500'ün ~%8,7'lik artışının çok üzerinde); bu, olumlu haberin büyük ölçüde fiyata yansımış olabileceği ve geri çekilme riski taşıdığı anlamına gelebilir. Düşük-orta güvenle ve yüksek risk uyarısıyla sadece izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "ENB",
-        "name": "Enbridge Inc.",
-        "opportunityScore": 30,
-        "confidence": 24,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "WebSearch'e göre Enbridge 0,46$ EPS ile beklentiyi %6,98 farkla aştı ve geliri 21,18 milyar$'a ulaşarak konsensüsün %95 üzerinde gerçekleşti. Rakamlar beklenti üstü olsa da, gelirdeki bu denli büyük bir sıçramanın organik büyümeden mi yoksa tek seferlik/muhasebesel bir kalemden mi kaynaklandığı bu kaynaklardan doğrulanamadı — bu önemli bir belirsizliktir. Düşük-orta güvenle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "WebSearch'e göre Apple Ç2 2026 beklentilerini aşmasına rağmen zayıf Ç4 gelir rehberliği ve hizmetler segmentindeki beklenti altı büyüme nedeniyle hisse günü %9'un üzerinde geriledi (TheStreet, bu turda doğrulandı). Bu, olası bir 'ucuzlama/dip' fırsatı olarak izlenebilir, ancak zayıf rehberlik gerçek ve doğrulanmış bir risk faktörüdür, hafife alınmamalı; düşük-orta güvenle ve yüksek risk uyarısıyla sadece izleme önerilir, bu kesinlikle bir zamanlama tahmini değildir."
       },
       {
         "market": "BIST",
-        "symbol": "ALFAS",
-        "name": "Alfa Solar Enerji Sanayi ve Ticaret A.Ş.",
+        "symbol": "BVSAN",
+        "name": "Bülbüloğlu Vinç Sanayi ve Ticaret A.Ş.",
         "opportunityScore": 36,
         "confidence": 28,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "WebSearch'e göre Alfa Solar Enerji, bugün (31 Temmuz) EUREN ile 21,3 milyon dolarlık solar cam satış sözleşmesi imzaladığını KAP'a bildirdi (Yatirimx.com.tr). Güneş enerjisi tedarik zincirine somut bir katkı ve tarih itibarıyla taze bir haber; ancak sözleşmenin şirketin toplam gelirine oranı ve fiyata yansıma durumu bağımsız olarak doğrulanamadı; düşük-orta güvenle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "WebSearch'e göre Bülbüloğlu Vinç, yurt dışında gerçekleştirilecek bir köprü imalatı ve teslimi projesi kapsamında 5,14 milyon euroluk ihracat sözleşmesi imzaladığını KAP'a bildirdi; teslimatların 2026 Ç4 ile 2027 Ç1 arasında tamamlanması planlanıyor (borsamatik.com.tr/borsagundem.com.tr, çoklu kaynak, bu turda doğrulandı). Somut ve tarihli bir ihracat katalizörü; orta güvenle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
         "market": "BIST",
-        "symbol": "BETAE",
-        "name": "Betaturk Enerji Üretim A.Ş.",
-        "opportunityScore": 22,
+        "symbol": "TRILC",
+        "name": "Türk İlaç ve Serum Sanayi A.Ş.",
+        "opportunityScore": 32,
+        "confidence": 25,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "WebSearch'e göre Türk İlaç ve Serum Sanayi, TURKFLEKS markalı ürünlerinin Azerbaycan Sağlık Bakanlığı tarafından ruhsatlandırıldığını KAP'a bildirdi; şirket bunun ihracat hacmine ve finansal sonuçlara olumlu katkı beklediğini açıkladı (borsagundem.com.tr, çoklu kaynak, bu turda doğrulandı). Yeni pazar erişimi somut bir katalizör olsa da parasal büyüklüğü/gelire oranı bu kaynaklarda belirtilmedi; düşük-orta güvenle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "BIST",
+        "symbol": "TNZTP",
+        "name": "Tınaztepe Sağlık Hizmetleri A.Ş.",
+        "opportunityScore": 24,
         "confidence": 18,
         "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "WebSearch'e göre Betaturk Enerji, Hidrolik Santrallar Daire Başkanlığı'nın açtığı ihaleyi 13,5 milyon TL (~285 bin$) bedelle kazandığını KAP'a bildirdi (borsamatik.com.tr). Sözleşme büyüklüğü şirket ölçeğine göre görece küçük olduğundan tek başına güçlü bir katalizör olarak değerlendirilmiyor; düşük güven ve yüksek risk uyarısıyla, sadece bilgilendirme amaçlı dahil edildi, bu bir alım tavsiyesi değildir."
+        "reason": "WebSearch'e göre Tınaztepe Sağlık, İzmir'deki Galen Hastanesi binasını Kuveyt Türk'e 1,05 milyar TL'ye 'sat ve geri kirala' modeliyle sattı; bu şirketin ikinci benzer işlemi (önceki: Buca'daki hastane binası, 581 milyon TL, QNB Finansal Kiralama'ya) (Dokuz Eylül/Emlaknews/borsamatik.com.tr, çoklu kaynak, bu turda doğrulandı). Bu tür tekrarlanan varlık monetizasyonu likidite güçlendirme amaçlı olabileceği gibi borç/nakit akışı baskısına da işaret edebilir — bu belirsizlik açıkça belirtilir; düşük güven ve yüksek risk uyarısıyla sadece bilgilendirme amaçlı dahil edildi, bu kesinlikle bir alım tavsiyesi değildir."
       }
     ]
   },
