@@ -33,90 +33,120 @@
   "lastUpdated": "2026-08-12T00:03:48Z",
   "aiNote": "",
   "advisorReport": {
-    "healthScore": 57,
-    "summary": "11 Ağustos 16:10 UTC turunda (bugünün üçüncü turu) Alpha Vantage'ın günlük 25 isteklik kotası önceki iki turda (00:04 ve 08:10 UTC) tükendiği için hiçbir fiyat güncellenemedi; fiyat/prevClose/priceHistory verileri 08:12 UTC raporundakiyle birebir aynı, yalnızca güncel haberler tazelendi. Live (nakit/demo hariç) varlıklar maliyete göre toplamda yaklaşık %16,5 kârda kalmaya devam ediyor; bugünün öne çıkan gelişmeleri BABA'ya karşı açılan davanın 9-10 Ağustos'ta hukuk büroları tarafından yaygınlaştırılması, UAMY'nin bu akşam (20:15 UTC) 2Ç2026 sonuçlarını açıklayacak olması ve NVO'nun yükseltilmiş kılavuza rağmen bugün ~%6 düşmesi.",
-    "dataCoverageNote": "11 Ağustos 2026, ~16:10 UTC turu (aynı günün üçüncü fiyat güncelleme turu). Test amaçlı yapılan USD/TRY isteği Alpha Vantage'dan 'standart günlük limit (25 istek)' hatası döndürdü (sabahki 00:04 ve 08:10 UTC turlarında kota zaten tükenmişti); bu nedenle bu turda hiçbir holding/USD-TRY güncellemesi denenmedi, fiyat/prevClose/priceHistory değerleri 08:12 UTC raporuyla birebir aynı kaldı. XAU (altın), GTF (fon) ve THYAO (BIST) talimat gereği zaten Alpha Vantage kapsamı dışında, demo kaldı. Bu turda yalnızca WebSearch ile doğrulanan güncel haberler eklendi: (1) UAMY — bugün (11 Ağustos) 16:15 ET/20:15 UTC'de 2Ç2026 (Haziran sonu) sonuçları için webcast planlandı, bu rapor hazırlandığı sırada henüz açıklanmamıştı (Morningstar/SEC 8-K doğrulandı). (2) EVTL — 10 Ağustos'taki ~100 milyon$'lık üç parçalı finansman (35M$ equity @1,05$/unit, 25M$ Yorkville convertible preferred, 40M$ Mudrick Capital) teyit edildi; 13 Ağustos'ta yarı yıl sonuçlarıyla güncel nakit/likidite kılavuzu açıklanacak (StockTitan/TipRanks doğrulandı). (3) BABA — 9-10 Ağustos'ta birden fazla yatırımcı hakları hukuk bürosu tarafından MIIT bağlantısı/AI model distilasyonu iddialarıyla açılan federal menkul kıymetler davaları yaygınlaştırıldı, hisse bugün ön seansta ~%2,7-3,3 geriledi; öte yandan Alibaba Cloud 10 Ağustos'ta CUBE 5.0 mimarisini duyurdu (AI veri merkezi kurulum süresini kısaltan) (TradingKey/Barchart doğrulandı). 38 analistin 'Strong Buy'/189,93$ ortalama hedef fiyatı üçüncü taraf veridir, bağımsız doğrulanmadı. (4) BTC — CPI raporu öncesi risk iştahı zayıfladı, ABD-İran müzakerelerindeki belirsizlik ve Brent petrolün 89$'ın üzerine çıkması fiyatı ~63,9-64,3 bin$ bandında baskılıyor (Yahoo Finance/CoinDesk doğrulandı). (5) NVO — 2Ç2026 sonuçlarında kılavuz yükseltilmesine (%0 ile -%6 satış büyümesi, önceki -%4/-%12'den iyileşme) rağmen ABD'de GLP-1 satış büyümesi endişesiyle hisse bugün ~%6 düştü (Stocktwits doğrulandı). KAP açıklamalarının tam metnine, SEC dosyalarının detayına, bilanço tablolarına, doğrulanmış içeriden öğrenenlerin işlemlerine ve teknik göstergelere (RSI/MACD) erişimim yok. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı; bu turda EVTL/UAMY/BABA/BTC/ARB/NVO öne çıkarıldı.",
+    "healthScore": 58,
+    "summary": "12 Ağustos 00:03-00:08 UTC turunda XAU/GTF/THYAO dışındaki tüm live varlıklar (11 ABD hissesi + BTC/ETH/ARB) ve USD/TRY kuru başarıyla güncellendi; live varlıklar maliyete göre toplamda yaklaşık %16,2 kârda. Bugünün öne çıkan gelişmeleri: UAMY dün akşam 2Ç2026 sonuçlarını açıkladı (gelir geriledi, brüt marj daraldı, ancak nakit pozisyonu güçlü kaldı ve net kâr pozitif); EVTL yarın (13 Ağustos) yarı yıl sonuçlarıyla güncel nakit/likidite kılavuzu açıklayacak; BTC bugünkü ABD TÜFE (CPI) verisi öncesi temkinli seyrediyor. Alpha Vantage'ın ücretsiz plan gecikmesi nedeniyle ABD hisse fiyatları dünün (11 Ağustos) resmi kapanışını yansıtıyor, gerçek zamanlı değil.",
+    "dataCoverageNote": "12 Ağustos 2026, ~00:03-00:08 UTC turu. GLOBAL_QUOTE (ABD hisseleri) ve CURRENCY_EXCHANGE_RATE (kripto + USD/TRY) uç noktaları üzerinden AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY, BTC, ETH, ARB ve USD/TRY başarıyla güncellendi (14/14 deneme başarılı). Alpha Vantage ücretsiz planı gerçek zamanlı değildir: ABD hisseleri için 'latest trading day' alanı 2026-08-11 (bir önceki resmi kapanış) olarak döndü, yani AUR-UAMY arası fiyatlar dünün kapanışı, bugünün intraday hareketini yansıtmıyor. Kripto (BTC/ETH/ARB) ve USD/TRY kurları ise 2026-08-12 00:02-00:03 UTC anlık verisi. XAU (altın, Alpha Vantage ücretsiz planda desteklenmiyor — 'Invalid API call' hatası bu turda da doğrulandı), GTF (fon) ve THYAO (BIST) talimat gereği bu turda da dokunulmadı, demo kaldı; bu üç varlığın K/Z hesaplaması yapılamıyor. priceHistory serisi yalnızca ~22 gün geriye gidiyor (22 Temmuz'dan itibaren), bu nedenle aylık/YTD/yıllık getiri hesaplaması için henüz yeterli veri yok — veri birikiyor, yalnızca günlük getiri (price vs prevClose) güvenilir şekilde hesaplanabiliyor. Bu turda WebSearch ile doğrulanan güncel haberler: (1) UAMY — 11 Ağustos'ta açıklanan 2Ç2026 sonuçlarında gelir 7,9 milyon$'a geriledi (2Ç2025'te 10,5 milyon$), brüt marj %27'den %7'ye daraldı, faaliyet zararı 7,0 milyon$ (3,4 milyon$'ı nakit dışı), buna karşın net kâr 0,1 milyon$ pozitif kaldı; bilançoda 41,4 milyon$ nakit + 20,7 milyon$ hazine tahvili yatırımı var (Junior Mining Network/SEC 8-K doğrulandı). (2) EVTL — Vertical Aerospace 13 Ağustos sabahı (08:30 ET) yarı yıl sonuçlarını ve güncel nakit/likidite kılavuzunu açıklayacak, henüz açıklanmadı (StockTitan/MarketBeat doğrulandı). (3) BABA — Rosen Law Firm, Hagens Berman ve diğer hukuk büroları 26 Haziran 2025 - 24 Haziran 2026 dönemini kapsayan menkul kıymetler davasında lead plaintiff başvurusu için yatırımcı çağrısını sürdürüyor (son tarih 5 Ekim 2026); bu çoklu duyurular rutin müvekkil arama sürecinin parçası, davanın esasına dair somut yeni bir gelişme değil (PRNewswire/GlobeNewswire doğrulandı). (4) BTC — bugünkü (12 Ağustos) ABD TÜFE verisi öncesi piyasa temkinli, fiyat ~63,9-64,3 bin$ bandında; sıcak bir TÜFE verisi Eylül faiz artırımı beklentisini güçlendirip riskli varlıklardan çıkışı hızlandırabilir (Yahoo Finance/CryptoNews doğrulandı). (5) NVO — 31 Temmuz'daki ZEUS çalışması sonuçlarının hayal kırıklığı yaratmasıyla hisse tek seansta ~%8,8 düşmüştü; güncel fiyat (~47,17$) üçüncü taraf analist ortalama hedef fiyatına (~47,48$, bağımsız doğrulanmadı) yakın seyrediyor, 17 Ağustos'ta temettü kesim tarihi (ex-date) var (Tickeron/CNBC doğrulandı). KAP açıklamalarının tam metnine, SEC dosyalarının detayına, tam bilanço tablolarına, doğrulanmış içeriden öğrenenlerin işlemlerine ve teknik göstergelere (RSI/MACD) erişimim yok. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı; bu turda UAMY/EVTL/BABA/BTC/NVO/ARB öne çıkarıldı.",
     "recommendations": [
-      {
-        "symbol": "EVTL",
-        "action": "BEKLE",
-        "confidence": 28,
-        "rationale": "Fiyat bu turda güncellenmedi (Alpha Vantage kotası tükendi, son çekilen değer 0,90$); 10 Ağustos'taki ~100 milyon$'lık üç parçalı finansman taahhüdü teyit edildi (35M$ equity @1,05$/unit, 25M$ Yorkville convertible preferred, 40M$ Mudrick Capital), ancak açıklama günü hisse ~%32-34 sert düşmüştü — piyasa bunu sulandırma riski olarak fiyatladı. 13 Ağustos'taki yarı yıl sonuçlarıyla birlikte güncel nakit/likidite kılavuzu açıklanacak, önemli bir yakın vadeli katalizör. Pozisyon maliyete göre ~%66,4 zararda; kılavuz netleşene kadar panik satışı ya da ortalama düşürme önerilmez. Bu bir fiyat tahmini değildir.",
-        "risk": "Yüksek"
-      },
       {
         "symbol": "UAMY",
         "action": "BEKLE",
+        "confidence": 34,
+        "rationale": "11 Ağustos'ta açıklanan 2Ç2026 sonuçlarında gelir yıllık bazda %25 geriledi (7,9 milyon$ vs 10,5 milyon$), brüt marj %27'den %7'ye sert daraldı ve faaliyet zararı 7,0 milyon$'a çıktı; buna karşın net kâr 0,1 milyon$ ile pozitif kaldı ve bilanço güçlü (41,4 milyon$ nakit + 20,7 milyon$ hazine tahvili) (Junior Mining Network/SEC doğrulandı). Güncel fiyat (6,58$) maliyete göre hâlâ ~%8,6 kârda, ancak marj daralması operasyonel baskıyı gösteriyor. Sonuç sonrası ilk fiyat tepkisi ölçülü (günlük ~-1,3%); ek pozisyon ya da satım için net bir sinyal yok, marj toparlanmasının sürüp sürmediğini görmek için izlemeye devam mantıklı. Bu bir fiyat tahmini değildir.",
+        "risk": "Yüksek"
+      },
+      {
+        "symbol": "EVTL",
+        "action": "BEKLE",
         "confidence": 30,
-        "rationale": "Fiyat bu turda güncellenmedi (son çekilen değer 6,67$); bugün (11 Ağustos) 16:15 ET/20:15 UTC'de 2Ç2026 sonuçları için webcast planlandı, bu rapor hazırlandığı sırada henüz açıklanmamıştı (Morningstar/SEC 8-K doğrulandı) — birkaç saat içinde önemli bir katalizör. Maliyete göre ~%10,1 kârda. Sonuç açıklaması öncesi pozisyon artırımı ya da azaltımı önerilmez, açıklama sonrası fiyat/haber akışı yeniden değerlendirilmeli. Bu bir fiyat tahmini değildir.",
+        "rationale": "Yarın (13 Ağustos, 08:30 ET) Vertical Aerospace yarı yıl sonuçlarını ve güncel nakit/likidite kılavuzunu açıklayacak, henüz açıklanmadı (StockTitan/MarketBeat doğrulandı) — çok yakın ve önemli bir katalizör. Pozisyon maliyete göre ~%66,9 derin zararda, güncel fiyat 0,89$. Kılavuz netleşmeden panikle satmak ya da ortalama düşürmek gerekçesiz olur; sonuç açıklaması sonrası yeniden değerlendirilmeli. Bu bir fiyat tahmini değildir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "BABA",
         "action": "BEKLE",
-        "confidence": 30,
-        "rationale": "Fiyat bu turda güncellenmedi (son çekilen değer 132,32$); 9-10 Ağustos'ta MIIT bağlantısı ve AI model distilasyonu iddialarıyla açılan federal menkul kıymetler davaları birden fazla yatırımcı hakları hukuk bürosu tarafından yaygınlaştırıldı, hisse bugün ön seansta ~%2,7-3,3 geriledi (TradingKey/Barchart doğrulandı) — hukuki risk önceki tura göre belirginleşti. Öte yandan Alibaba Cloud'un 10 Ağustos'ta duyurduğu CUBE 5.0 mimarisi (AI veri merkezi kurulum süresini kısaltan) operasyonel tarafta olumlu bir gelişme. Maliyete göre ~%35,0 kârda; hukuki sürecin netleşmesi ve yakında beklenen kazanç açıklaması öncesi ek alım önerilmez, izlemeye devam sermaye korumasını destekler. Analist hedef fiyatları (189,93$) üçüncü taraf veridir, bağımsız doğrulanmadı.",
+        "confidence": 32,
+        "rationale": "Rosen Law Firm, Hagens Berman ve diğer hukuk büroları 26 Haziran 2025 - 24 Haziran 2026 dönemini kapsayan menkul kıymetler davasında yatırımcı çağrısını sürdürüyor (lead plaintiff son tarihi 5 Ekim 2026); bu çoklu duyurular rutin müvekkil arama sürecinin parçası, davanın esasına dair somut yeni bir gelişme değil (PRNewswire/GlobeNewswire doğrulandı). Pozisyon maliyete göre ~%30,5 kârda, güncel fiyat 127,85$. Hukuki sürecin ilerleyişi ve şirketin operasyonel görünümü net değil; ek alım ya da satım için gerekçe yok, izlemeye devam sermaye korumasını destekler. Bu bir fiyat tahmini değildir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "BTC",
         "action": "AZALT",
-        "confidence": 40,
-        "rationale": "Live (nakit/demo hariç) varlıkların yaklaşık dörtte birini tek başına oluşturuyor; maliyete göre ~%109,8 derin kârda. CPI raporu öncesi risk iştahı zayıfladı, ABD-İran müzakerelerindeki belirsizlik ve Brent petrolün 89$'ın üzerine çıkması fiyatı ~63,9-64,3 bin$ bandında baskılıyor (Yahoo Finance/CoinDesk doğrulandı). Bu ölçekteki tek varlık yoğunlaşması portföy riskini artırıyor; kısmi kâr realizasyonuyla pozisyonun dağıtılması sermaye koruması açısından makul olur. Bu bir fiyat/zamanlama tahmini değildir.",
-        "risk": "Yüksek"
-      },
-      {
-        "symbol": "ARB",
-        "action": "BEKLE",
-        "confidence": 20,
-        "rationale": "Fiyat bu turda güncellenmedi (son çekilen değer 0,0799$); pozisyon maliyete göre ~%94,5 gibi neredeyse toptan bir zararda ve bu turda ARB'ye özel doğrulanmış bir haber/katalizör bulunamadı. Bu ölçekte gerçekleşmiş bir kayıptan sonra panikle satmak ek bir fayda sağlamaz, ancak ortalama düşürmek için de somut bir gerekçe yok; sermaye koruması açısından mevcut durumda izlemeye devam mantıklı. Pozisyonun portföydeki dolar bazlı ağırlığı artık çok küçük (~11,6$), genel portföy riskine etkisi sınırlı. Bu bir fiyat tahmini değildir.",
+        "confidence": 42,
+        "rationale": "Live (nakit/demo hariç) varlıkların yaklaşık dörtte birini tek başına oluşturuyor (~%19); maliyete göre ~%108,2 derin kârda. Bugün (12 Ağustos) açıklanacak ABD TÜFE verisi öncesi piyasa temkinli, sıcak bir okuma Eylül faiz artırımı beklentisini güçlendirip riskli varlıklardan çıkışı hızlandırabilir (Yahoo Finance/CryptoNews doğrulandı). Bu ölçekteki tek varlık yoğunlaşması + önemli bir makro veri öncesi kısmi kâr realizasyonuyla pozisyonun dağıtılması sermaye koruması açısından makul olur. Bu bir fiyat/zamanlama tahmini değildir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "NVO",
         "action": "BEKLE",
-        "confidence": 32,
-        "rationale": "Fiyat bu turda güncellenmedi (son çekilen değer 47,73$); 2Ç2026 sonuçlarında Novo Nordisk kılavuzunu yükseltti (satış büyümesi beklentisi %0 ile -%6 aralığına, önceki -%4/-%12'den iyileşti) ancak ABD'de GLP-1 (kilo verme/diyabet) satış büyümesinin yavaşlamasına dair endişelerle hisse bugün ~%6 düştü (Stocktwits doğrulandı). Maliyete göre ~%3,0 hafif zararda; kılavuz iyileşmesine rağmen piyasanın büyüme endişesine odaklanması karışık bir sinyal, ek alım ya da satım için net bir gerekçe yok, izlemeye devam önerilir. Bu bir fiyat tahmini değildir.",
+        "confidence": 33,
+        "rationale": "31 Temmuz'daki ZEUS çalışması sonuçlarının hayal kırıklığı yaratmasıyla hisse tek seansta ~%8,8 düşmüştü, o zamandan bu yana toparlanma sınırlı kaldı. Güncel fiyat (47,17$) üçüncü taraf analist ortalama hedef fiyatına (~47,48$, bağımsız doğrulanmadı) yakın seyrediyor; 17 Ağustos'ta temettü kesim tarihi (ex-date, 0,579$/hisse) var (Tickeron/CNBC doğrulandı). Pozisyon maliyete göre ~%4,1 hafif zararda; fiyat fair-value bandına yaklaşmışken ve temettü öncesinde ek alım ya da satım için net bir gerekçe yok, izlemeye devam önerilir. Bu bir fiyat tahmini değildir.",
         "risk": "Orta"
+      },
+      {
+        "symbol": "ARB",
+        "action": "BEKLE",
+        "confidence": 20,
+        "rationale": "Pozisyon maliyete göre ~%94,5 gibi neredeyse toptan bir zararda; bu turda ARB'ye özel doğrulanmış bir haber/katalizör bulunamadı, fiyat (0,0802$) günlük bazda hafif yükseldi (+%0,4). Bu ölçekte gerçekleşmiş bir kayıptan sonra panikle satmak ek bir fayda sağlamaz, ortalama düşürmek için de somut bir gerekçe yok. Pozisyonun portföydeki dolar bazlı ağırlığı çok küçük (~11,6$), genel portföy riskine etkisi sınırlı; sermaye koruması açısından izlemeye devam mantıklı. Bu bir fiyat tahmini değildir.",
+        "risk": "Yüksek"
       }
     ],
-    "generatedAt": "2026-08-11T16:15:00Z"
+    "generatedAt": "2026-08-12T00:30:00Z"
   },
   "opportunityReport": {
-    "dataCoverageNote": "11 Ağustos 2026, ~16:10 UTC turu, salt haber akışına dayanan tarama (güncel fiyat/hacim/değerleme çarpanı bağımsız sorgulanmadı, Alpha Vantage kotası tükendi). BIST tarafında bu turda tek bir yüksek güvenilirlikte aday bulundu: Tekfen Holding (TKFEN), bağlı ortaklığı Tekfen İnşaat'ın Fernas İnşaat ile oluşturduğu ortak girişimin Pursaklar-Esenboğa Raylı Sistem Hattı inşaatı ve elektromekanik sistemleri için 54,4 milyar TL'lik ihaleyi kazandığı BloombergHT/Ekonomim/Hibya kaynaklarıyla doğrulandı; sözleşme imza süreci teminat/belge tamamlanmasının ardından başlayacak. Diğer BIST taraması bugün yalnızca TURSG (Ocak-Temmuz prim üretimi 107,1 milyar TL'ye çıktı), TSPOR (oyuncu satışı) ve CCOLA (2026 yıl sonu beklentisinde değişiklik yok) gibi göreceli düşük etkili haberler buldu, bunlar opportunity eşiğini geçmedi. Önceki turlarda önerilen VAKBN/HALKB/TRHOL/LRCX/AMAT/APP (00:07 UTC turu) ve OYAKC/SREMF/NBIS/BRK.B (08:12 UTC turu) bu turda tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı). ABD tarafında iki güncel gelişme öne çıktı: Riot Platforms (RIOT), Anthropic ile 20 yıllık, 191 megavatlık (iki 5 yıllık uzatma opsiyonuyla toplam değeri 16,1 milyar$'a çıkabilecek) 9,1 milyar$'lık veri merkezi kira anlaşması imzaladığını duyurdu, hisse after-hours ~%16,5-25 yükseldi (Bloomberg/The Block/Yahoo Finance doğrulandı); erken inşaat finansmanı için Morgan Stanley aracılığıyla 573 milyon$'lık geçici finansman sağlandı, kalıcı finansman henüz netleşmedi. Plug Power (PLUG) 10 Ağustos'ta açıklanan 2Ç2026 sonuçlarında geliri (178,3 milyon$) beklentinin (168,8 milyon$) üzerinde açıkladı, brüt marj yıllık bazda -%30,7'den ~-%0,9'a iyileşti ve 2026 gelir büyüme kılavuzunu %13-15'ten %15-16'ya yükseltti; hisse ilk seansta %3,2 düşse de after-hours %7,1 toparladı (Investing.com/StockTitan doğrulandı). Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E veya hacim verisine, teknik göstergelere ve doğrulanmış analist konsensüs verisine erişimim yok; aktarılan üçüncü taraf rakamlar (fiyat hareketi ve resmi açıklama/haber kaynaklı temel finansal veriler hariç) bağımsız tekrar doğrulanmamıştır.",
+    "dataCoverageNote": "12 Ağustos 2026, ~00:10-00:20 UTC turu, salt haber akışına dayanan tarama (güncel fiyat/hacim/değerleme çarpanı bu turda bu semboller için bağımsız sorgulanmadı). BIST tarafında üç aday bulundu: ALARK (Alarko Holding'in Carrier'ın Alarko Carrier'daki payını devralma anlaşması), FONET (Batman İl Sağlık Müdürlüğü ihalesi) ve FORTE (DMO ihalesi) — KAP'a bildirilen sözleşme/ihale haberleri Paratic/BloombergHT/cnbce.com/borsagundem.com.tr kaynaklarıyla doğrulandı. Önceki turda önerilen TKFEN bu turda tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı); TURSG/TSPOR/CCOLA gibi düşük etkili haberler yine eşiği geçmedi. ABD tarafında üç gelişme öne çıktı: On Holding (ONON) 2Ç2026 satış tahminini büyük farkla ıskaladı ve hisse tek günde ~%22 çakılarak 2 yıllık dibe geriledi; Teledyne Technologies (TDY) 10 Ağustos'ta Varex Imaging'i (VREX) hisse başına 18,90$ nakit karşılığında (önceki kapanışa göre %52,3 prim) satın almayı kabul etti, kapanışın erken 2027'de olması bekleniyor; MarineMax (HZO) Blackstone Infrastructure'ın Safe Harbor Marinas birimine hisse başına 53$ nakit karşılığında satılmayı kabul etti, duyuru sonrası hisse ~%46 sıçradı. Önceki turlarda önerilen RIOT ve PLUG bu turda tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı) — bilgi amaçlı not: RIOT'un 10 Ağustos'ta açıklanan 2Ç2026 sonuçlarında geliri yıllık %14 arttı (174 milyon$) ancak GAAP net zararı 237 milyon$'a çıktı (Investing.com doğrulandı). Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E veya hacim verisine, teknik göstergelere ve doğrulanmış analist konsensüs verisine erişimim yok; VREX ve HZO için mevcut piyasa fiyatının anlaşma fiyatına göre ne kadar iskontolu işlem gördüğü (arbitraj spreadi) bu turda hesaplanamadı, bu nedenle somut bir getiri beklentisi verilmiyor.",
     "items": [
       {
         "market": "US",
-        "symbol": "RIOT",
-        "name": "Riot Platforms Inc.",
-        "opportunityScore": 55,
-        "confidence": 42,
-        "risk": "Yüksek",
-        "action": "İZLE",
-        "reason": "Anthropic ile 20 yıllık (2048'e kadar, iki 5 yıllık uzatma opsiyonuyla toplam değeri 16,1 milyar$'a çıkabilecek) 9,1 milyar$'lık, Rockdale/Teksas kampüsünde 191 megavatlık veri merkezi kira anlaşması imzaladı; hisse after-hours ~%16,5-25 yükseldi (Bloomberg/The Block, doğrulandı). Kapasite kademeli olarak devreye girecek (Aralık 2027'ye kadar 96MW, Haziran 2028'e kadar tam 191MW); erken inşaat finansmanı için Morgan Stanley aracılığıyla 573 milyon$'lık geçici kredi sağlandı, kalıcı finansman henüz netleşmedi. Bitcoin madenciliği şirketinin tek büyük AI veri merkezi kiracısına bağımlılığı ve büyük ölçekli sermaye harcaması riski taşıyor; yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "BIST",
-        "symbol": "TKFEN",
-        "name": "Tekfen Holding A.Ş.",
-        "opportunityScore": 45,
-        "confidence": 40,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "Bağlı ortaklığı Tekfen İnşaat'ın Fernas İnşaat ile oluşturduğu ortak girişim, Pursaklar-Esenboğa Raylı Sistem Hattı inşaatı ve elektromekanik sistemleri için 54,4 milyar TL'lik ihaleyi kazandı (BloombergHT/Ekonomim, doğrulandı); bu Tekfen Holding'in inşaat segmentine önemli büyüklükte yeni bir proje ekliyor. Sözleşme imzası teminat/belge süreçlerinin tamamlanmasına bağlı, henüz kesinleşmedi. Güncel fiyat/F-K çarpanı bu turda bağımsız hesaplanmadı; orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "PLUG",
-        "name": "Plug Power Inc.",
-        "opportunityScore": 38,
+        "symbol": "ONON",
+        "name": "On Holding AG",
+        "opportunityScore": 46,
         "confidence": 33,
         "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "10 Ağustos'ta açıklanan 2Ç2026 sonuçlarında gelir (178,3 milyon$) beklentiyi (168,8 milyon$) aştı, brüt marj yıllık bazda -%30,7'den ~-%0,9'a belirgin iyileşti ve 2026 gelir büyüme kılavuzu %13-15'ten %15-16'ya yükseltildi (Investing.com/StockTitan, doğrulandı). Hisse ilk seansta %3,2 düşse de after-hours %7,1 toparladı; şirket hâlâ zarar ediyor (hisse başına -0,07$) ve mutlak fiyat seviyesi düşük (~2$ civarı), bu da oynaklığı artırıyor. Hidrojen ekonomisi temasına erken/spekülatif bir bahis niteliğinde; yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "On Holding (ONON), 2Ç2026'da net satışları (850,3 milyon CHF) 1.114 milyon CHF'lik konsensüs tahmininin belirgin altında kaldı, FY2026 satış büyüme kılavuzunu 'en az %23'ten düşük-%20'ler aralığına indirdi; hisse tek günde ~%22 düşerek 2 yıllık dibe geriledi (Yahoo Finance/Stocktwits doğrulandı). Buna karşın DTC (doğrudan tüketiciye satış) kanalı sabit kur bazında %34,3 büyüdü, tüm bölgelerde beklentileri aştı — marka gücüne işaret ediyor. Sert düşüşün aşırı tepki mi yoksa toptan satış (wholesale) yavaşlamasının kalıcı bir trend mi olduğu bu turda netleşmedi; yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "US",
+        "symbol": "VREX",
+        "name": "Varex Imaging Corp.",
+        "opportunityScore": 38,
+        "confidence": 40,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "Teledyne Technologies, 10 Ağustos'ta Varex Imaging'i (VREX) hisse başına 18,90$ nakit karşılığında (önceki kapanışa göre %52,3 prim) satın almak için birleşme anlaşması imzaladı; her iki şirketin yönetim kurulu da oy birliğiyle onayladı, kapanış erken 2027'de bekleniyor (Yahoo Finance/AuntMinnie doğrulandı). Klasik bir birleşme-arbitraj kurulumu: hisse anlaşma fiyatının altında işlem görüyorsa aradaki fark düzenleyici onay riskini ve zaman değerini yansıtır; bu turda VREX için güncel fiyat sorgulanmadığından mevcut spread bağımsız doğrulanamadı. Orta riskle izleme önerilir, kesin bir getiri beklentisi verilmiyor, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "BIST",
+        "symbol": "ALARK",
+        "name": "Alarko Holding A.Ş.",
+        "opportunityScore": 40,
+        "confidence": 36,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "Alarko Holding, 7 Ağustos'ta Carrier HVACR Investment B.V.'nin Alarko Carrier'daki (ALCAR) %42,03'lük payını yaklaşık 16,8 milyon$ karşılığında (hisse başına 3,70$) devralmak için bağlayıcı anlaşma imzaladı; işlem tamamlandığında Alarko Holding'in ALCAR'daki payı %84,06'ya çıkacak (Paratic/BloombergHT doğrulandı). İşlem Rekabet Kurulu onayı ve diğer kapanış koşullarına bağlı, 4Ç2026'da tamamlanması bekleniyor — 1998'den beri süren ortaklığın sona ermesi anlamına geliyor. Konsolidasyonun Alarko Holding'in konsolide finansallarına net etkisi bu turda bağımsız hesaplanmadı; orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "BIST",
+        "symbol": "FONET",
+        "name": "Fonet Bilgi Teknolojileri A.Ş.",
+        "opportunityScore": 32,
+        "confidence": 28,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "FONET, Batman İl Sağlık Müdürlüğü'nün 36 ay süreli SBYS/YBYS hizmet alımı ihalesinde 137,7 milyon TL ile en uygun teklifi verdi (cnbce.com/borsagundem.com.tr doğrulandı). Küçük ölçekli bir sağlık bilişimi şirketi için gelir görünürlüğü katan bir sözleşme kazanımı, ancak kesin kâr marjı ve şirketin toplam gelirine oranı bu turda doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "US",
+        "symbol": "HZO",
+        "name": "MarineMax Inc.",
+        "opportunityScore": 24,
+        "confidence": 30,
+        "risk": "Düşük",
+        "action": "İZLE",
+        "reason": "MarineMax (HZO), Blackstone Infrastructure'ın Safe Harbor Marinas birimine hisse başına 53$ nakit karşılığında satılmayı kabul etti; duyuru sonrası hisse ~%46 sıçradı (Seeking Alpha doğrulandı). Büyük prim zaten fiyata yansımış durumda; kalan fırsat yalnızca kapanışa kadar küçük bir arbitraj spreadinden ibaret olabilir, güncel fiyat/spread bu turda doğrulanmadı. Düşük risk fakat sınırlı getiri potansiyeli; sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "BIST",
+        "symbol": "FORTE",
+        "name": "Forte Bilgi İletişim Teknolojileri A.Ş.",
+        "opportunityScore": 28,
+        "confidence": 26,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "FORTE, Devlet Malzeme Ofisi (DMO) tarafından düzenlenen bir ihaleyi 124,4 milyon TL bedelle kazandı (borsagundem.com.tr doğrulandı). Sözleşmenin şirketin toplam gelirine ve kâr marjına etkisi bu turda bağımsız doğrulanmadı, ihalenin büyüklüğü ve kesinleşme durumu net değil. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
       }
     ],
-    "generatedAt": "2026-08-11T16:15:00Z"
+    "generatedAt": "2026-08-12T00:30:00Z"
   },
   "holdings": [
     {
