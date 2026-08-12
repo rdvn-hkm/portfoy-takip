@@ -33,120 +33,110 @@
   "lastUpdated": "2026-08-12T16:04:39Z",
   "aiNote": "",
   "advisorReport": {
-    "healthScore": 57,
-    "summary": "12 Ağustos 08:05 UTC turunda BTC/ETH/ARB ve USD/TRY kuru anlık olarak güncellendi; 11 ABD hissesi Alpha Vantage'ın gecikmeli ücretsiz planı nedeniyle dünün (11 Ağustos) kapanışıyla aynı kaldı, değişiklik yok. Live varlıklar maliyete göre toplamda yaklaşık %16,3 kârda. Bugünün en önemli gelişmesi: ABD Temmuz TÜFE (CPI) raporu bugün 12:30 UTC'de (08:30 ET) açıklanacak, bu turun kapanışında henüz yayınlanmamıştı — BTC bu veri öncesi 63,5-64,4 bin$ bandında temkinli/yatay seyrediyor. EVTL yarın (13 Ağustos, 08:30 ET) yarı yıl sonuçlarını açıklayacak, henüz açıklanmadı.",
-    "dataCoverageNote": "12 Ağustos 2026, ~08:03-08:07 UTC turu. CURRENCY_EXCHANGE_RATE uç noktası üzerinden BTC, ETH, ARB ve USD/TRY başarıyla güncellendi (anlık, 08:04-08:05 UTC). GLOBAL_QUOTE ile sorgulanan 11 ABD hissesi (AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY) başarıyla yanıt döndü ancak 'latest trading day' alanı hâlâ 2026-08-11 (bir önceki resmi kapanış) — bu turda önceki turla (00:03-00:08 UTC) birebir aynı fiyat/prevClose değerleri geldi, gerçek bir değişiklik yok, sadece teyit edildi. XAU (altın, 'Invalid API call' hatası bu turda da doğrulandı — ücretsiz planda desteklenmiyor), GTF (fon) ve THYAO (BIST) talimat gereği bu turda da dokunulmadı, demo kaldı; bu üç varlığın K/Z hesaplaması yapılamıyor. priceHistory serisi ~22 gün geriye gidiyor, aylık/YTD/yıllık getiri için hâlâ yetersiz — veri birikiyor, yalnızca günlük getiri (price vs prevClose) güvenilir. Bu turda WebSearch ile doğrulanan güncel haberler: (1) ABD Temmuz CPI raporu bugün 8:30 ET'de (12:30 UTC) yayınlanacak, bu turun tamamlandığı saatte henüz açıklanmamıştı; sıcak bir okuma Eylül faiz artırımı beklentisini güçlendirebilir (BLS/Yahoo Finance doğrulandı). (2) BTC bugün CPI öncesi ~63,7-63,8 bin$ civarında yatay/temkinli, 24 saatlik değişim yaklaşık -%0,3; teknik sinyallerin çoğunluğu (27/30) kısa vadede ayı yönlü olarak okunuyor (bu bir Alpha Vantage verisi değil, üçüncü taraf teknik yorum — bağımsız doğrulanmamıştır) (CaptainAltcoin/Bybit doğrulandı). (3) GTLB — son 3 ayda içeriden öğrenenler 0,1 milyon$ alım, 6,2 milyon$ satım yaptı; buna karşın şirket 1 milyar$ ARR eşiğini geçti ve gelir CAGR'ı %42,2 (GuruFocus/Simply Wall St doğrulandı, bağımsız teyit edilmemiş üçüncü taraf veri). (4) EVTL — Vertical Aerospace yarın (13 Ağustos, piyasa açılışından önce) 2Ç2026 sonuçlarını açıklayacak, tahmini hisse başı zarar -0,40$; henüz açıklanmadı (MarketBeat doğrulandı). KAP açıklamalarının tam metnine, SEC dosyalarının detayına, tam bilanço tablolarına ve doğrulanmış RSI/MACD gibi teknik göstergelere erişimim yok. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı; bu turda BTC/EVTL/GTLB/UAMY/BABA/NVO öne çıkarıldı.",
+    "generatedAt": "2026-08-12T16:20:00Z",
+    "healthScore": 59,
+    "summary": "12 Ağustos 16:04 UTC turunda BTC/ETH/ARB ve USD/TRY canlı güncellendi; AUR/AVGO/UNH/BABA Alpha Vantage'ın gecikmeli planı nedeniyle dünün (11 Ağustos) kapanışıyla aynı kaldı, LULU sorgusunda günlük 25 istek kotası doldu ve GTLB/NVO/PYPL/TMDX/EVTL/UAMY bu turda güncellenemedi. Bugün açıklanan ABD Temmuz TÜFE verisi yıllık %3,4 ile beklentiyle uyumlu geldi (BLS doğrulandı) ve piyasalarda ölçülü bir rahatlama yarattı; live varlıklar maliyete göre toplamda yaklaşık %16,2 kârda. Yarın sabah (13 Ağustos, piyasa açılışından önce) EVTL 2Ç2026 sonuçlarını açıklayacak — portföydeki en yakın somut katalizör budur.",
+    "dataCoverageNote": "12 Ağustos 2026, ~16:03-16:04 UTC turu. CURRENCY_EXCHANGE_RATE ile BTC (63.400,00$), ETH (1.890,35$), ARB (0,0786$) ve USD/TRY (47,7517) başarıyla anlık güncellendi (crypto için prevClose alanı API'de yok, bu yüzden bir önceki turdaki price değeri prevClose olarak taşındı). GLOBAL_QUOTE ile AUR/AVGO/UNH/BABA sorgulandı, yanıt geldi ama 'latest trading day' hâlâ 2026-08-11 — bir önceki turla birebir aynı fiyat, gerçek bir değişiklik yok. LULU sorgusunda Alpha Vantage 'standard API rate limit is 25 requests per day' hatası döndü (ücretsiz anahtarın günlük kotası bu turda dolmuş durumda); bu yüzden LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY bu turda hiç sorgulanamadı, mevcut (11 Ağustos) fiyatlarıyla kaldı. XAU 'Invalid API call' hatası bu turda da doğrulandı (ücretsiz planda desteklenmiyor). GTF (fon) ve THYAO (BIST) talimat gereği bu turda da dokunulmadı, demo kaldı. priceHistory serisi ~22 gün geriye gidiyor, aylık/YTD/yıllık getiri için hâlâ yetersiz — veri birikiyor, yalnızca günlük getiri (price vs prevClose, sadece BTC/ETH/ARB için bugün gerçekten tazelendi) güvenilir. Bu turda WebSearch ile doğrulanan güncel haberler: (1) ABD Temmuz TÜFE yıllık %3,4 ile geldi, beklentiyle uyumlu, aylık %0,1 artış; Fed'in faiz konusunda bölünmüş kalması bekleniyor (BLS/Yahoo Finance doğrulandı). (2) BTC bugün CPI sonrası ~63,4-63,6 bin$ bandında, ETF çıkışları ve 65 bin$ direncinden geri çekilme baskı yapıyor; 20/50 günlük EMA'nın altına düştü (bu üçüncü taraf teknik bir yorum, Alpha Vantage verisi değil, bağımsız doğrulanmamıştır) (CoinDesk doğrulandı). (3) GitLab (GTLB) çalışan sayısının yaklaşık %14'ünü (~350 kişi) işten çıkardığını açıkladı; buna karşın analist ortalama 12 aylık hedef fiyatı (34,13$) güncel fiyatın (42,11$) altında kalıyor — karışık sinyal (Yahoo Finance/tickeron doğrulandı, bağımsız teyit edilmemiş üçüncü taraf konsensüs verisi). (4) EVTL yarın sabah (13 Ağustos, piyasa açılışından önce) 2Ç2026 sonuçlarını açıklayacak, henüz açıklanmadı (MarketBeat doğrulandı). (5) Novo Nordisk (NVO) 2Ç2026'da beklentileri aştı ve 2026 tam yıl satış/kâr büyüme kılavuzunu yukarı revize etti, ancak GLP-1 fiyat baskısı ve büyüme kalitesi endişeleriyle hisse karışık tepki verdi (StockTitan doğrulandı). (6) Alibaba (BABA) securities fraud davasında lead plaintiff son başvuru tarihi hâlâ 5 Ekim 2026, bu turda yeni bir gelişme yok, önceki turdan taşındı (PR Newswire doğrulandı). KAP açıklamalarının tam metnine, SEC dosyalarının detayına, tam bilanço tablolarına, doğrulanmış analist konsensüs verisine ve RSI/MACD gibi teknik göstergelere erişimim yok. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı; bu turda BTC/EVTL/GTLB/BABA/NVO/LULU öne çıkarıldı.",
     "recommendations": [
       {
         "symbol": "BTC",
         "action": "AZALT",
-        "confidence": 40,
-        "rationale": "Live (nakit/demo hariç) varlıkların yaklaşık dörtte birini tek başına oluşturuyor (~%25,8); maliyete göre ~%108,9 derin kârda. Bugün 12:30 UTC'de (8:30 ET) açıklanacak ABD Temmuz TÜFE verisi öncesi piyasa temkinli/yatay, fiyat 63,5-64,4 bin$ bandında konsolide oluyor; sıcak bir okuma riskli varlıklardan çıkışı hızlandırabilir (BLS/CaptainAltcoin doğrulandı). Bu ölçekteki tek varlık yoğunlaşması + birkaç saat içindeki önemli bir makro veri öncesi kısmi kâr realizasyonuyla pozisyonun dağıtılması sermaye koruması açısından makul olur. Bu bir fiyat/zamanlama tahmini değildir.",
+        "confidence": 38,
+        "rationale": "Live (nakit/demo hariç) varlıkların yaklaşık dörtte birini tek başına oluşturuyor (~%25,7); maliyete göre ~%107,7 derin kârda. Bugün açıklanan ABD Temmuz TÜFE beklentiyle uyumlu geldi ama BTC yine de 65 bin$ direncinden geri çekilip 63,4-63,6 bin$ bandına indi, spot ETF çıkışları ve teknik ortalamaların altına düşüş bildiriliyor (CoinDesk doğrulandı, bu bir fiyat tahmini değil). Bu ölçekteki tek varlık yoğunlaşması sermaye koruması açısından risk taşımaya devam ediyor; kısmi kâr realizasyonuyla pozisyonun dağıtılması makul olur.",
         "risk": "Yüksek"
       },
       {
         "symbol": "EVTL",
         "action": "BEKLE",
-        "confidence": 28,
-        "rationale": "Yarın sabah (13 Ağustos, 08:30 ET) Vertical Aerospace 2Ç2026 sonuçlarını ve güncel nakit/likidite kılavuzunu açıklayacak, tahmini hisse başı zarar -0,40$; henüz açıklanmadı (MarketBeat doğrulandı) — çok yakın ve önemli bir katalizör. Pozisyon maliyete göre ~%66,9 derin zararda, güncel fiyat 0,89$. Kılavuz netleşmeden panikle satmak ya da ortalama düşürmek gerekçesiz olur; sonuç açıklaması sonrası yeniden değerlendirilmeli. Bu bir fiyat tahmini değildir.",
+        "confidence": 30,
+        "rationale": "Yarın sabah (13 Ağustos, piyasa açılışından önce) Vertical Aerospace 2Ç2026 sonuçlarını açıklayacak, henüz açıklanmadı (MarketBeat doğrulandı) — çok yakın ve portföydeki en somut katalizör. Pozisyon maliyete göre ~%66,9 derin zararda, güncel fiyat 0,89$ (bu turda güncellenemedi, Alpha Vantage kota sınırı). Sonuçlar öncesi panikle satmak ya da ortalama düşürmek gerekçesiz olur; açıklama sonrası yeniden değerlendirilmeli.",
         "risk": "Yüksek"
       },
       {
         "symbol": "GTLB",
         "action": "BEKLE",
-        "confidence": 30,
-        "rationale": "Pozisyon maliyete göre ~%62,1 kârda, güncel fiyat 42,11$ (günlük +%3,4). Son 3 ayda içeriden öğrenenlerin net satıcı olduğu görülüyor (0,1 milyon$ alım vs 6,2 milyon$ satım), buna karşın şirket 1 milyar$ ARR eşiğini geçti ve gelir CAGR'ı %42,2 ile güçlü (GuruFocus/Simply Wall St doğrulandı, bağımsız teyit edilmemiş üçüncü taraf veri) — karışık sinyaller. Güçlü kârda olan bir pozisyonda içeriden satış artışı yakından izlenmeli; şu an için net bir alım/satım gerekçesi yok. Bu bir fiyat tahmini değildir.",
+        "confidence": 32,
+        "rationale": "Pozisyon maliyete göre ~%62,1 kârda, güncel fiyat 42,11$ (bu turda güncellenemedi, kota sınırı). GitLab çalışan sayısının ~%14'ünü (~350 kişi) işten çıkardığını açıkladı; buna karşın analist ortalama 12 aylık hedef fiyatı (34,13$) güncel fiyatın altında kalıyor (Yahoo Finance/tickeron doğrulandı, bağımsız teyit edilmemiş üçüncü taraf konsensüs verisi) — karışık sinyal. Güçlü kârda olan bir pozisyonda maliyet yapısındaki değişim yakından izlenmeli; şu an için net bir alım/satım gerekçesi yok.",
         "risk": "Orta"
-      },
-      {
-        "symbol": "UAMY",
-        "action": "BEKLE",
-        "confidence": 33,
-        "rationale": "11 Ağustos'ta açıklanan 2Ç2026 sonuçlarında gelir yıllık bazda %25 geriledi (7,9 milyon$ vs 10,5 milyon$), brüt marj %27'den %7'ye sert daraldı ve faaliyet zararı 7,0 milyon$'a çıktı; buna karşın net kâr 0,1 milyon$ ile pozitif kaldı ve bilanço güçlü (41,4 milyon$ nakit + 20,7 milyon$ hazine tahvili) (Junior Mining Network/SEC doğrulandı, önceki turdan taşındı — bu turda yeni gelişme yok). Güncel fiyat (6,58$) maliyete göre hâlâ ~%8,6 kârda. Marj toparlanmasının sürüp sürmediğini görmek için izlemeye devam mantıklı. Bu bir fiyat tahmini değildir.",
-        "risk": "Yüksek"
       },
       {
         "symbol": "BABA",
         "action": "BEKLE",
-        "confidence": 30,
-        "rationale": "Rosen Law Firm, Hagens Berman ve diğer hukuk büroları 26 Haziran 2025 - 24 Haziran 2026 dönemini kapsayan menkul kıymetler davasında yatırımcı çağrısını sürdürüyor (lead plaintiff son tarihi 5 Ekim 2026); bu turda somut yeni bir gelişme bulunamadı, önceki turdan taşındı. Pozisyon maliyete göre ~%30,5 kârda, güncel fiyat 127,85$. Ek alım ya da satım için gerekçe yok, izlemeye devam sermaye korumasını destekler. Bu bir fiyat tahmini değildir.",
+        "confidence": 28,
+        "rationale": "Securities fraud davasında lead plaintiff son başvuru tarihi 5 Ekim 2026, bu turda somut yeni bir gelişme yok, önceki turdan taşındı (PR Newswire doğrulandı). Pozisyon maliyete göre ~%30,5 kârda, güncel fiyat 127,85$ (bu turda güncellenemedi, kota sınırı). Ek alım ya da satım için gerekçe yok, izlemeye devam sermaye korumasını destekler.",
         "risk": "Yüksek"
       },
       {
         "symbol": "NVO",
         "action": "BEKLE",
-        "confidence": 32,
-        "rationale": "31 Temmuz'daki ZEUS çalışması hayal kırıklığından bu yana toparlanma sınırlı; 17 Ağustos'ta temettü kesim tarihi (ex-date, 0,579$/hisse) yaklaşıyor, önceki turdan taşındı — bu turda yeni gelişme yok. Pozisyon maliyete göre ~%4,1 hafif zararda, güncel fiyat 47,17$. Temettü öncesinde ek alım ya da satım için net bir gerekçe yok, izlemeye devam önerilir. Bu bir fiyat tahmini değildir.",
+        "confidence": 34,
+        "rationale": "2Ç2026'da beklentileri aştı ve 2026 tam yıl satış/kâr büyüme kılavuzunu yukarı revize etti, ancak GLP-1 fiyat baskısı ve büyüme kalitesi endişeleriyle hisse karışık tepki verdi (StockTitan doğrulandı). Pozisyon maliyete göre ~%4,1 hafif zararda, güncel fiyat 47,17$ (bu turda güncellenemedi, kota sınırı). Kılavuz revizyonu olumlu olsa da fiyat tepkisi zayıf; ek alım ya da satım için net bir gerekçe yok, izlemeye devam önerilir.",
+        "risk": "Orta"
+      },
+      {
+        "symbol": "LULU",
+        "action": "BEKLE",
+        "confidence": 26,
+        "rationale": "Pozisyon maliyete göre ~%24,4 zararda, güncel fiyat 125,61$ (bu turda güncellenemedi, kota sınırı, önceki turun günlük değişimi -%1,7 idi). Bu turda LULU'ya özgü doğrulanmış yeni bir haber bulunamadı. Zarardaki bir pozisyonda gerekçesiz ortalama düşürme veya panik satışından kaçınmak sermaye korumasını destekler; yeni veri/haber olmadan net bir alım/satım gerekçesi yok.",
         "risk": "Orta"
       }
-    ],
-    "generatedAt": "2026-08-12T08:20:00Z"
+    ]
   },
   "opportunityReport": {
-    "dataCoverageNote": "12 Ağustos 2026, ~08:10-08:20 UTC turu, salt haber akışına dayanan tarama (güncel fiyat/hacim/değerleme çarpanı bu turda bu semboller için bağımsız sorgulanmadı, öznel/nitel değerlendirmedir). Önceki turda (00:10-00:20 UTC) önerilen ONON, VREX, ALARK, FONET, HZO ve FORTE bu turda tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı) — bu isimlerdeki temel tez (ONON: sert düşüş sonrası izleme; VREX/HZO: M&A arbitrajı; ALARK/FONET/FORTE: sözleşme/devralma haberleri) 8 saat önce zaten raporlanmıştı ve bu turda yeni bir gelişme doğrulanmadı. BIST tarafında üç yeni aday bulundu: ASTOR (TEİAŞ ile art arda büyük sözleşmeler), DOHOL (2Ç2026 net kârı beklentilerin çok üzerinde) ve ALVES (BofA/Merrill Lynch'in süregelen pay artırımı) — Dünya Gazetesi/enerjigunlugu.net/cnbce.com/Paratic kaynaklarıyla doğrulandı. ABD tarafında üç gelişme öne çıktı: DoubleVerify (DV), Nielsen tarafından hisse başına 13,60$ nakit karşılığında (60 günlük VWAP'a göre %30 prim) satın alınacak (Nielsen basın bülteni/Yahoo Finance doğrulandı); Oscar Health (OSCR) 2Ç2026'da beklentileri büyük farkla aştı ancak yıl ikinci yarısı için üyelik kaybı endişesiyle hisse kazançlarını geri verdi (Yahoo Finance/StockStory doğrulandı); News Corp (NWS) 4Ç FY2026'da rekor kârlılık açıkladı, EBITDA %31 arttı, hisse geri alımları dört katına çıktı (GuruFocus/BigGo Finance doğrulandı). Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E veya hacim verisine, teknik göstergelere ve doğrulanmış analist konsensüs verisine erişimim yok; DV için mevcut piyasa fiyatının anlaşma fiyatına göre iskontosu (arbitraj spreadi) bu turda hesaplanamadı; DOHOL'un kâr artışının büyük bölümü 2 milyar TL'lik ertelenmiş vergi geliri kaynaklı, tekrarlanabilir bir operasyonel iyileşme olmayabilir; ALVES küçük/mikro ölçekli ve düşük fiyatlı bir hisse olup kurumsal alım ilgisi dışında somut bir temel katalizör bu turda doğrulanamadı.",
+    "generatedAt": "2026-08-12T16:20:00Z",
+    "dataCoverageNote": "12 Ağustos 2026, ~16:05-16:20 UTC turu, salt haber akışına dayanan tarama (güncel fiyat/hacim/değerleme çarpanı bu turda bu semboller için bağımsız sorgulanmadı, öznel/nitel değerlendirmedir). Önceki turda (08:10-08:20 UTC) önerilen NWS, DV, ASTOR, DOHOL, OSCR ve ALVES bu turda tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı) — bu isimlerde 8 saat içinde doğrulanmış yeni bir gelişme bulunamadı. BIST tarafında iki yeni aday bulundu: AKSEN (Manisa RES projesi için Goldwind ile türbin tedarik sözleşmesi imzalandı, ancak Gabon 145 MW projesi Aralık 2026'ya ertelendi ve hisse bugün ~%3,6 geriledi — karışık sinyal) ve KLSYN (yaklaşık 129,8 milyon TL'lik yeni sözleşme, gelir/kârlılığa olumlu katkı bekleniyor, küçük ölçekli) (Borsametre/Mynet Finans/uzmanpara doğrulandı). ABD tarafında üç gelişme öne çıktı: CoreWeave (CRWV) 2Ç2026'da gelirini yıllık iki katından fazla artırdı (2,58 milyar$) ve backlog'u 104 milyar$'a çıktı, ancak net zarar faiz giderlerindeki artışla 626 milyon$'a genişledi — yüksek büyüme/yüksek kaldıraç profili (Yahoo Finance/Bloomberg doğrulandı); CAVA Group 2Ç2026'da beklentileri aştı, aynı mağaza satışları %9,0 arttı, düzeltilmiş FAVÖK %30 büyüdü (Yahoo Finance/Morningstar doğrulandı); 3M (MMM) hukuki uzlaşma yeniden yapılandırmasına ilişkin olumlu bir güncelleme sonrası bugün ~%3,7 yükseldi (piyasa haber akışı doğrulandı, uzlaşmanın tam finansal detayına erişimim yok). Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E veya hacim verisine, teknik göstergelere ve doğrulanmış analist konsensüs verisine erişimim yok; AKSEN'deki türbin sözleşmesinin toplam gelire net katkısı ve Gabon ertelemesinin etkisi bu turda bağımsız doğrulanamadı; CRWV'nin yüksek faiz yükü ve genişleyen net zararı özellikle riskli; KLSYN küçük ölçekli bir hisse olup likidite/oynaklık riski taşıyor.",
     "items": [
       {
         "market": "US",
-        "symbol": "NWS",
-        "name": "News Corporation",
-        "opportunityScore": 44,
-        "confidence": 38,
-        "risk": "Düşük",
+        "symbol": "CAVA",
+        "name": "CAVA Group Inc.",
+        "opportunityScore": 46,
+        "confidence": 40,
+        "risk": "Orta",
         "action": "İZLE",
-        "reason": "News Corp, 4Ç FY2026'da rekor kârlılık açıkladı: gelir yıllık %11 artışla 2,3 milyar$'a, segment EBITDA'sı %31 artışla 423 milyon$'a (şirket tarihinin en yüksek 4Ç kârı) çıktı, faaliyetlerden net kâr %167 artışla 230 milyon$'a ulaştı; serbest nakit akışı %42 artışla 811 milyon$'a çıktı ve hisse geri alımları dört katına (643 milyon$) çıkarıldı (GuruFocus/BigGo Finance doğrulandı). Dow Jones, Digital Real Estate ve Kitap Yayıncılığı segmentleri güçlü büyüdü, AI içerik lisanslama ortaklıkları (OpenAI, Meta) sürüyor. Kaliteli, düşük kaldıraçlı bir büyüme profili sunuyor; düşük riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "CAVA Group, 2Ç2026'da hisse başına 0,19$ kâr açıkladı (0,18$'lık beklentinin üzerinde), gelir 368,4 milyon$ ile 353,3 milyon$'lık beklentiyi aştı; aynı mağaza satışları %9,0, müşteri trafiği %5,3 arttı, 17 net yeni restoran açıldı ve düzeltilmiş FAVÖK %30 büyüdü (Yahoo Finance/Morningstar doğrulandı). Restoran düzeyi kâr marjı 60 baz puan geriledi (yeni ürün lansmanı ve üçüncü taraf teslimat maliyetleri nedeniyle) ama büyüme ivmesi güçlü. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
         "market": "US",
-        "symbol": "DV",
-        "name": "DoubleVerify Holdings Inc.",
-        "opportunityScore": 36,
-        "confidence": 42,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "Nielsen, 6 Ağustos'ta DoubleVerify'ı (DV) hisse başına 13,60$ nakit karşılığında (60 günlük hacim ağırlıklı ortalama fiyata göre %30 prim), yaklaşık 2,15 milyar$ işlem değeriyle satın almak için anlaşma imzaladı; kapanış hissedar/düzenleyici onayına bağlı, ilk çeyrek 2027'de bekleniyor (Nielsen basın bülteni/Yahoo Finance doğrulandı). Klasik bir birleşme-arbitraj kurulumu: hisse anlaşma fiyatının altında işlem görüyorsa aradaki fark düzenleyici onay riskini ve zaman değerini yansıtır; bu turda DV için güncel fiyat sorgulanmadığından mevcut spread bağımsız doğrulanamadı. Orta riskle izleme önerilir, kesin bir getiri beklentisi verilmiyor, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "BIST",
-        "symbol": "ASTOR",
-        "name": "Astor Enerji A.Ş.",
-        "opportunityScore": 42,
-        "confidence": 34,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "Astor Enerji, 10 Ağustos'ta KAP'a bildirdiği üzere TEİAŞ'ın 11 adet mobil hibrit modül ve yedek parça ihalesini 351,1 milyon TL bedelle kazanarak sözleşme imzaladı (şirketin son bildirilen brüt satış gelirinin %3,78'i); bu, 2 Temmuz'da imzalanan 816,2 milyon TL'lik başka bir TEİAŞ sözleşmesinin ardından geldi (Dünya Gazetesi/enerjigunlugu.net doğrulandı). Art arda gelen büyük ölçekli TEİAŞ sözleşmeleri gelir görünürlüğüne işaret ediyor, ancak kâr marjı ve toplam gelire net katkısı bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "BIST",
-        "symbol": "DOHOL",
-        "name": "Doğan Holding A.Ş.",
-        "opportunityScore": 30,
-        "confidence": 26,
+        "symbol": "CRWV",
+        "name": "CoreWeave Inc.",
+        "opportunityScore": 34,
+        "confidence": 30,
         "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "Doğan Holding, 2Ç2026'da 3,29 milyar TL net kâr açıkladı — yıllık bazda yaklaşık 33 kat artış ve 488 milyon TL'lik piyasa beklentisinin çok üzerinde (cnbce.com/BloombergHT doğrulandı). Ancak bu artışın önemli bir kısmı 2 milyar TL'lik ertelenmiş vergi gelirinden kaynaklanıyor — tekrarlanabilir bir operasyonel iyileşme olmayabilir, bu nedenle kalıcılığı belirsiz. Rakamın büyüklüğü dikkat çekici olsa da tek seferlik kalem etkisi netleşmeden yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "CoreWeave, 2Ç2026'da geliri yıllık iki katından fazla artırarak 2,58 milyar$'a çıkardı (1,21 milyar$'dan), backlog 104 milyar$'a ulaştı ve Anthropic/Meta ile yeni iş anlaşmaları duyuruldu; hisse işlem sonrası %11 yükseldi (Yahoo Finance/Bloomberg doğrulandı). Ancak net zarar, faiz giderlerindeki sıçrama (640 milyon$) nedeniyle 626 milyon$'a genişledi — yüksek büyüme, yüksek kaldıraç ve marj baskısı bir arada. Yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
         "market": "US",
-        "symbol": "OSCR",
-        "name": "Oscar Health Inc.",
-        "opportunityScore": 26,
+        "symbol": "MMM",
+        "name": "3M Company",
+        "opportunityScore": 30,
+        "confidence": 28,
+        "risk": "Düşük",
+        "action": "İZLE",
+        "reason": "3M hissesi, hukuki uzlaşma yeniden yapılandırmasına ilişkin olumlu bir güncelleme sonrası bugün ~%3,7 yükselerek 148,62$'a çıktı, günün en çok yükselen hisselerinden biri oldu (piyasa haber akışı doğrulandı). Uzlaşmanın tam finansal detaylarına ve kalıcı etkisine bu turda erişimim yok. Düşük-orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "BIST",
+        "symbol": "KLSYN",
+        "name": "Koleksiyon Mobilya Sanayi A.Ş.",
+        "opportunityScore": 28,
         "confidence": 24,
         "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "Oscar Health, 2Ç2026'da hisse başına 1,10$ kâr açıkladı (0,43$'lık beklentinin çok üzerinde, +%155,8 sürpriz), gelir yıllık %70,4 artışla 4,88 milyar$'a çıktı ve düzeltilmiş FAVÖK 415,3 milyon$ ile beklentileri aştı (Yahoo Finance/StockStory doğrulandı). Hisse açıklama sonrası ilk anda %11,8 yükseldi, ancak yılın ikinci yarısında üyelik kaybı (churn) endişesiyle kazançlarının bir kısmını geri verdi. Güçlü bir çeyrek fakat ileriye dönük görünürlük belirsiz; yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "Koleksiyon Mobilya, 11 Ağustos'ta KAP'a bildirdiği üzere yaklaşık 129,8 milyon TL'lik yeni bir sözleşme imzaladı; işlerin 20 Ekim 2026'ya kadar tamamlanması planlanıyor ve gelir/operasyonel kârlılık üzerinde olumlu etki bekleniyor (Borsametre/Mynet Finans doğrulandı). Küçük ölçekli bir hisse olup likidite ve oynaklık riski yüksek, sözleşmenin toplam gelire net katkısı bu turda bağımsız doğrulanamadı. Yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
         "market": "BIST",
-        "symbol": "ALVES",
-        "name": "Alves Kablo Elektrik Malzemeleri A.Ş.",
-        "opportunityScore": 22,
-        "confidence": 20,
+        "symbol": "AKSEN",
+        "name": "Aksa Enerji Üretim A.Ş.",
+        "opportunityScore": 24,
+        "confidence": 22,
         "risk": "Yüksek",
-        "action": "İZLE",
-        "reason": "Bank of America'nın iştiraki Merrill Lynch International, 7 Ağustos'ta 2,13-2,15 TL bandında 47,8 milyon adet ALVES hissesi alarak payını %5,21 seviyesine çıkardı; bu, 2026 boyunca süregelen bir birikim hareketinin parçası (Paratic/Yatirimx doğrulandı). Kurumsal bir yatırımcının sürekli alım ilgisi dikkat çekici, ancak bunun dışında şirkete özgü somut bir temel katalizör (sözleşme, bilanço vb.) bu turda doğrulanamadı; düşük fiyatlı/küçük ölçekli bir hisse olarak oynaklık riski yüksek. Yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "action": "BEKLE",
+        "reason": "Aksa Enerji'nin bağlı ortaklığı, Manisa Depolamalı RES Projesi kapsamında Goldwind ile türbin tedarik sözleşmesi imzaladı (KAP doğrulandı) — olumlu bir gelişme. Ancak Gabon'daki 145 MW proje Aralık 2026'ya ertelendi ve hisse bugün ~%3,6 geriledi; karışık sinyaller nedeniyle şu an için net bir katalizör yok. Yüksek riskle bekle/izle önerilir, bu bir alım tavsiyesi değildir."
       }
-    ],
-    "generatedAt": "2026-08-12T08:20:00Z"
+    ]
   },
   "holdings": [
     {
