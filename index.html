@@ -34,22 +34,22 @@
   "aiNote": "",
   "advisorReport": {
     "generatedAt": "2026-08-13T00:10:00Z",
-    "healthScore": 57,
-    "summary": "13 Ağustos turunda Alpha Vantage'ın günlük 25 istek kotası ilk iki denemede (USD/TRY ve bir test sorgusu) anında dolu çıktı; bu yüzden hiçbir holding fiyatı tazelenemedi ve tüm live varlıklar 12 Ağustos kapanış verileriyle kaldı. Mevcut (bir gün eski) veriyle live varlıklar maliyete göre toplamda yaklaşık %16,2 kârda. Vertical Aerospace (EVTL) bugün piyasa açılışından önce 2Ç2026 sonuçlarını açıklaması bekleniyordu; WebSearch'te henüz yayımlanmış bir sonuç bulunamadı. Ağustos'ta planlı bir FOMC toplantısı yok, bir sonraki Fed faiz kararı 16 Eylül'de.",
-    "dataCoverageNote": "13 Ağustos 2026 turu. Fiyat güncellemesi için önce CURRENCY_EXCHANGE_RATE (USD/TRY) sonra GLOBAL_QUOTE (test amaçlı) çağrıldı; ikisi de anında 'standard API rate limit is 25 requests per day' hatası döndürdü — ücretsiz/paylaşılan API anahtarının günlük kotası turun başında zaten dolu çıktı. Bu nedenle BTC, ETH, ARB, AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY ve USD/TRY için tek bir fiyat bile sorgulanamadı; tüm price/prevClose/priceHistory alanları 12 Ağustos turundaki değerlerle aynı bırakıldı (kaynak='live' etiketi korunuyor ama veri bir gün eski). XAU (Gold), GTF (Fund) ve THYAO (BIST) talimat gereği bu turda da hiç sorgulanmadı, demo kaldı. priceHistory serisine bugün için yeni bir kayıt eklenmedi, bu yüzden günlük/aylık/YTD/yıllık getiri hesapları hâlâ 12 Ağustos verisine dayanıyor — bugüne ait doğrulanmış bir fiyat hareketi yok. WebSearch ile doğrulanan güncel gelişmeler: (1) Vertical Aerospace (EVTL) bugün (13 Ağustos) piyasa açılışından önce 2Ç2026 sonuçlarını açıklaması bekleniyordu, arama sırasında henüz yayımlanmış bir sonuç bulunamadı (MarketBeat/StockInvest doğrulandı) — açıklandığında portföydeki en somut yakın katalizör olacak. (2) Ağustos ayında planlı bir FOMC toplantısı yok, bir sonraki Fed faiz kararı 16 Eylül 2026'da açıklanacak; Fed son toplantısında (28-29 Temmuz) politika faizini %3,50-3,75 aralığında sabit tutmuştu (doğrulandı) — bugün için doğrudan bir faiz riski yok. (3) Bitcoin'in 12 Ağustos itibarıyla haber kaynaklarında ~64.200$ civarında raporlandığı görüldü (TheStreet/Yahoo Finance doğrulandı); ancak bu Alpha Vantage'dan gelen doğrulanmış bir fiyat değil, sadece haber referansı — portföydeki price alanı hâlâ 12 Ağustos turundaki 63.400$'da donmuş durumda, ikisi karıştırılmamalı. GTLB, BABA ve NVO için bu turda yeni bir haber taraması yapılmadı, önceki turdan taşınan bilgiler geçerliliğini koruyor ama yeniden doğrulanmadı. KAP açıklamalarının tam metnine, SEC dosyalarının detayına, tam bilanço tablolarına, doğrulanmış analist konsensüs verisine ve RSI/MACD gibi teknik göstergelere erişimim yok. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı; bu turda BTC/EVTL/ARB/GTLB/NVO/BABA öne çıkarıldı.",
+    "healthScore": 55,
+    "summary": "13 Ağustos'un ikinci turunda da Alpha Vantage'ın günlük 25 istek kotası ilk denemede (USD/TRY sorgusu) dolu çıktı; tüm holding fiyatları yine 12 Ağustos kapanışında donuk kaldı. Mevcut (artık iki tur üst üste tazelenemeyen) veriyle live varlıklar maliyete göre toplamda yaklaşık %16,2 kârda. Vertical Aerospace (EVTL) bugün piyasa açılışından önce (13:30 UTC civarı) 2Ç2026 sonuçlarını açıklaması bekleniyor; arama sırasında henüz doğrulanmış bir sonuç yayımlanmamıştı.",
+    "dataCoverageNote": "13 Ağustos 2026, ikinci tur. Fiyat güncellemesi için CURRENCY_EXCHANGE_RATE (USD/TRY) çağrıldı, anında 'standard API rate limit is 25 requests per day' hatası döndü — ücretsiz/paylaşılan API anahtarının günlük kotası bu turun başında da zaten dolu çıktı (bugünkü ilk turda da aynı sonuç alınmıştı). Bu nedenle BTC, ETH, ARB, AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY ve USD/TRY için tek bir fiyat bile sorgulanamadı; tüm price/prevClose/priceHistory alanları 12 Ağustos turundaki değerlerle aynı bırakıldı (kaynak='live' etiketi korunuyor ama veri artık iki tur, yaklaşık bir gün eski). XAU (Gold), GTF (Fund) ve THYAO (BIST) talimat gereği bu turda da hiç sorgulanmadı, demo kaldı. priceHistory serisine bugün için yeni bir kayıt eklenmedi, bu yüzden günlük/aylık/YTD/yıllık getiri hesapları hâlâ 12 Ağustos verisine dayanıyor. WebSearch ile doğrulanan güncel gelişmeler: (1) Vertical Aerospace (EVTL) bugün (13 Ağustos) piyasa açılışından önce, 9:30 ET/13:30 UTC civarı 2Ç2026 sonuçlarını açıklaması bekleniyordu (gelir tahmini 0$, EPS tahmini -0,40$, şirket gelir öncesi aşamada); arama sırasında henüz yayımlanmış bir sonuç bulunamadı (MarketBeat/TradingView doğrulandı) — açıklandığında portföydeki en somut yakın katalizör olacak. (2) Bitcoin'in 12 Ağustos kapanışında ABD enflasyon verisinin ardından ~63.400$ civarında, günü yalnızca %0,24 düşüşle kapattığı haber kaynaklarında raporlanıyor (RioTimes/TheStreet doğrulandı) — bu, portföydeki dondurulmuş 63.400$ fiyatıyla büyük ölçüde uyumlu, ancak yine de API doğrulamalı bir fiyat değil. (3) GitLab (GTLB) için 12 Ağustos itibarıyla haber kaynaklarında ~41,75$ güncel fiyat, yılbaşından bu yana %16,4 düşüş ve ortalama analist hedef fiyatının 34,13$ olduğu bildiriliyor (Yahoo Finance/gurufocus doğrulandı) — portföydeki dondurulmuş 42,11$ fiyatına yakın, karışık sinyal önceki turdan taşınıyor. ARB, AVGO, UNH, PYPL, TMDX, UAMY, AUR ve LULU için bu turda yeni bir haber taraması yapılmadı. KAP açıklamalarının tam metnine, SEC dosyalarının detayına, tam bilanço tablolarına, doğrulanmış analist konsensüs verisine ve RSI/MACD gibi teknik göstergelere erişimim yok. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
     "recommendations": [
       {
         "symbol": "BTC",
         "action": "AZALT",
         "confidence": 33,
-        "rationale": "Live (nakit/demo hariç) varlıkların yaklaşık dörtte birini tek başına oluşturuyor (~%25,7); maliyete göre ~%107,7 derin kârda (12 Ağustos verisi, bu turda Alpha Vantage kotası dolu çıktığı için tazelenemedi). Haber kaynakları BTC'nin 12 Ağustos itibarıyla ~64.200$ civarında olduğunu bildiriyor (TheStreet doğrulandı, ancak bu API doğrulamalı bir fiyat değil). Tek varlıkta bu ölçekte yoğunlaşma sermaye koruması açısından risk taşımaya devam ediyor; kısmi kâr realizasyonuyla pozisyonun dağıtılması makul olur.",
+        "rationale": "Live (nakit/demo hariç) varlıkların yaklaşık dörtte birini tek başına oluşturuyor (~%25,7); maliyete göre ~%107,7 derin kârda (12 Ağustos verisi, bu turda da Alpha Vantage kotası dolu çıktığı için tazelenemedi). Haber kaynakları BTC'nin 12 Ağustos kapanışında ~63.400$ civarında, günü %0,24 düşüşle kapattığını bildiriyor (RioTimes doğrulandı, ancak API doğrulamalı bir fiyat değil). Tek varlıkta bu ölçekte yoğunlaşma sermaye koruması açısından risk taşımaya devam ediyor; kısmi kâr realizasyonuyla pozisyonun dağıtılması makul olur.",
         "risk": "Yüksek"
       },
       {
         "symbol": "EVTL",
         "action": "BEKLE",
         "confidence": 25,
-        "rationale": "Vertical Aerospace bugün (13 Ağustos) piyasa açılışından önce 2Ç2026 sonuçlarını açıklaması bekleniyordu; arama sırasında henüz yayımlanmış bir sonuç bulunamadı (MarketBeat doğrulandı) — portföydeki en somut yakın katalizör. Pozisyon maliyete göre ~%66,9 derin zararda, güncel fiyat 0,89$ (12 Ağustos verisi, bu turda tazelenemedi). Sonuçlar açıklanmadan panikle satmak ya da ortalama düşürmek gerekçesiz olur; açıklama sonrası yeniden değerlendirilmeli.",
+        "rationale": "Vertical Aerospace bugün (13 Ağustos) piyasa açılışından önce, 9:30 ET/13:30 UTC civarı 2Ç2026 sonuçlarını açıklaması bekleniyor; arama sırasında henüz yayımlanmış bir sonuç bulunamadı (MarketBeat/TradingView doğrulandı) — portföydeki en somut yakın katalizör. Pozisyon maliyete göre ~%66,9 derin zararda, güncel fiyat 0,8866$ (12 Ağustos verisi, bu turda tazelenemedi). Sonuçlar açıklanmadan panikle satmak ya da ortalama düşürmek gerekçesiz olur; açıklama sonrası yeniden değerlendirilmeli.",
         "risk": "Yüksek"
       },
       {
@@ -62,8 +62,8 @@
       {
         "symbol": "GTLB",
         "action": "BEKLE",
-        "confidence": 28,
-        "rationale": "Pozisyon maliyete göre ~%62,1 kârda, güncel fiyat 42,11$ (12 Ağustos verisi, bu turda tazelenemedi). Önceki turda doğrulanan GitLab'ın ~%14'ünü (~350 kişi) işten çıkarma haberi ile analist ortalama hedef fiyatının (34,13$) güncel fiyatın altında kalması arasındaki karışık sinyal bu turda yeniden doğrulanmadı, önceki turdan taşındı. Güçlü kârda bir pozisyonda net bir alım/satım gerekçesi yok.",
+        "confidence": 27,
+        "rationale": "Pozisyon maliyete göre ~%62,1 kârda, güncel fiyat 42,11$ (12 Ağustos verisi, bu turda tazelenemedi). Haber kaynakları 12 Ağustos itibarıyla ~41,75$ fiyat, yılbaşından bu yana %16,4 düşüş ve 34,13$ ortalama analist hedef fiyatı bildiriyor (Yahoo Finance/gurufocus doğrulandı) — hedef fiyatın güncel fiyatın altında kalması karışık bir sinyal, önceki turdan taşınıyor. Güçlü kârda bir pozisyonda net bir alım/satım gerekçesi yok.",
         "risk": "Orta"
       },
       {
@@ -84,67 +84,67 @@
   },
   "opportunityReport": {
     "generatedAt": "2026-08-13T00:10:00Z",
-    "dataCoverageNote": "13 Ağustos 2026 turu, salt WebSearch haber taramasına dayanıyor (güncel fiyat/hacim/değerleme çarpanı bu turda bu semboller için bağımsız sorgulanmadı — Alpha Vantage kotası turun başında dolu çıktığı için hiçbir sembol için API doğrulaması yapılamadı, öznel/nitel değerlendirmedir). Önceki turda (12 Ağustos) önerilen CAVA, CRWV, MMM, KLSYN ve AKSEN bu turda tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı); bu isimlerde bu turda yeni bir doğrulama yapılmadı. BIST tarafında üç aday bulundu: TKFEN (gübre fiyatlarındaki yükseliş ve tarım segmentine yönelik olumlu beklentilerle 10 Ağustos'ta 229,9 TL ile tüm zamanların zirvesine ulaştı; TradingView/gcmyatirim doğrulandı), TUPRS (4 Ağustos'ta açıklanan 2Ç2026 bilançosunda 45,877 milyar TL net kâr, ilk yarı net kârı yıllık %291 arttı, gelir %43 ve çekirdek faaliyet kârı %225 büyüdü; cnbce/rotaborsa doğrulandı — sonuç 9 gün önce açıklandı, fiyata ne ölçüde yansıdığı bu turda doğrulanamadı, geç kalma riski var) ve ENJSA (10 Ağustos'ta açıklanan 2Ç2026 bilançosunda ilk yarı net kârı geçen yılın aynı dönemindeki 361 milyon TL zarardan 2,745 milyar TL kâra döndü, 2026 yıl sonu net kâr hedefi 15 milyar TL'ye yükseltildi; bloomberght/gaziantepolusum doğrulandı). ABD tarafında üç gelişme öne çıktı: SanDisk (SNDK) 5 Ağustos'ta açıkladığı 4Ç2026 sonuçlarında hisse başına 39,25$ kâr (33,28$ beklentisinin üzerinde) ve 8,97 milyar$ gelir (yıllık %371,6 artış) bildirdi, AI kaynaklı NAND arz sıkıntısının 2028'e kadar sürmesi bekleniyor; ancak hisse yılbaşından bu yana %353 yükselmesine karşın 25 Haziran zirvesinden ~%47 gerilemiş durumda (247wallst/tradingkey doğrulandı); Lumentum (LITE) 4Ç2026'da hisse başına 3,23$ düzeltilmiş kâr (2,95$ beklentisinin üzerinde) ve 1,01 milyar$ gelir (yıllık %109 artış) açıkladı, AI optik bağlantı/1,6T transceiver talebiyle 1Ç2027 gelir beklentisini (1,225-1,275 milyar$) konsensüsün üzerinde verdi (investing.com/seekingalpha doğrulandı); Hewlett Packard Enterprise (HPE) Morgan Stanley'in notu 'eşit ağırlık'tan 'ağırlık fazlası'na yükseltmesi sonrası %5'in üzerinde yükseldi (CNBC doğrulandı). Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E veya hacim verisine, teknik göstergelere ve doğrulanmış analist konsensüs verisine erişimim yok; TUPRS'ta bilanço 9 gün önce açıklandığı için fiyata ne ölçüde yansıdığı, ENJSA ve TKFEN'de güncel fiyat/hacim bağımsız doğrulanamadı; SNDK değerleme gerilimi ve son dönem düzeltmesi nedeniyle özellikle riskli.",
+    "dataCoverageNote": "13 Ağustos 2026, ikinci tur, salt WebSearch haber taramasına dayanıyor (güncel fiyat/hacim/değerleme çarpanı bu semboller için bağımsız sorgulanmadı — Alpha Vantage kotası bu turda da dolu çıktığı için API doğrulaması yapılamadı, öznel/nitel değerlendirmedir). Önceki turda (13 Ağustos, ilk tur) önerilen TKFEN, LITE, SNDK ve HPE bu turda tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı); bu isimlerde bu turda yeni bir doğrulama yapılmadı. BIST tarafında bankacılık sektörü öne çıktı: BIST 100 endeksi 12 Ağustos seansını %2,96 primle 14.110 puandan tamamladı, yükselişin ana taşıyıcısı bankacılık hisseleriydi (%4,19) ve teknoloji endeksi %5,68 ile en yüksek günlük getiriyi verdi (adliyehaber/borsamatik doğrulandı) — ancak bu geniş endeks/sektör hareketi, tek tek hisse fiyatlarını doğrulamaz. Garanti BBVA (GARAN) 2026 ilk yarısında 64,4 milyar TL net kâr açıkladı (yıllık %20 civarı artış), 2Ç26 tek başına 30,29 milyar TL net kâr (çeyreklik %8,8 düşüş, yıllık %7,3 artış) (AA/paraajansi doğrulandı). Akbank (AKBNK) net kârını 34,38 milyar TL'ye çıkararak yıllık %8,34 büyüme sağladı (borsagundem doğrulandı). Ancak 2Ç26 bilanço sezonunun ardından aracı kurumlar Akbank, Garanti BBVA, Yapı Kredi ve İş Bankası C hisseleri için hedef fiyatlarını büyük ölçüde aşağı yönlü revize etti — artan fonlama maliyetleri ve daralan net faiz marjları gerekçe gösterildi (ekonomim doğrulandı); bu, güçlü kâr büyümesiyle çelişen bir sinyal ve açıkça belirtilmelidir. Enerjisa (ENJSA) önceki turdan taşınıyor: 10 Ağustos'ta açıklanan 2Ç2026 bilançosunda ilk yarı net kârı geçen yılın aynı dönemindeki 361 milyon TL zarardan 2,745 milyar TL kâra döndü (bloomberght doğrulandı), bu turda yeni bir doğrulama yapılmadı. ABD tarafında iki taze gelişme öne çıktı: Nebius Group (NBIS) 12 Ağustos'ta açıkladığı 2Ç2026 sonuçlarında gelir yıllık %454 arttı (582,3 milyon$), düzeltilmiş EBITDA marjı %41 oldu, beklenti-üstü EPS (-0,12$ / beklenti -0,82$) ve yıl sonu ARR hedefinin (7-9 milyar$) teyit edilmesiyle hisse tek günde %34 sıçradı (Motley Fool/stockinvest doğrulandı) — tek günlük %34'lük sıçrama sonrası momentum/değerleme riski yüksek. Airbnb (ABNB) 6 Ağustos'ta açıkladığı 2Ç2026 sonuçlarında gelir yıllık %17 artışla 3,61 milyar$'a ulaştı (beklenti 3,58 milyar$), serbest nakit akışı yıllık %30 arttı, yıllık gelir büyümesi kılavuzu 'düşük-orta onlu'dan 'en az orta onlu'ya yükseltildi (gurufocus/stocktitan doğrulandı). Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E veya hacim verisine, teknik göstergelere ve doğrulanmış analist konsensüs verisine erişimim yok.",
     "items": [
       {
         "market": "BIST",
-        "symbol": "TKFEN",
-        "name": "Tekfen Holding A.Ş.",
-        "opportunityScore": 34,
-        "confidence": 32,
+        "symbol": "GARAN",
+        "name": "Türkiye Garanti Bankası A.Ş.",
+        "opportunityScore": 33,
+        "confidence": 30,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "Tekfen Holding, gübre fiyatlarındaki yükseliş ve tarım segmentine yönelik olumlu beklentilerle 10 Ağustos'ta 229,9 TL ile tüm zamanların zirvesine ulaştı, BIST 100'e kıyasla belirgin biçimde güçlü performans gösteriyor (TradingView/gcmyatirim doğrulandı). Güncel fiyat/hacim verisi bu turda bağımsız doğrulanmadı, gübre fiyatlarındaki hareketin sürdürülebilirliği belirsiz. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "Garanti BBVA, 2026 ilk yarısında 64,4 milyar TL net kâr açıkladı (yıllık ~%20 artış), 2Ç26 tek başına 30,29 milyar TL net kâr (çeyreklik %8,8 düşüş, yıllık %7,3 artış); güçlü kredi/mevduat büyümesi ve net ücret-komisyon gelirinde %39 artışla destekleniyor (AA/paraajansi doğrulandı). Ancak 2Ç26 sonrası aracı kurumlar sektör genelinde hedef fiyatları aşağı yönlü revize etti — artan fonlama maliyetleri gerekçesiyle (ekonomim doğrulandı), bu karışık bir sinyal. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "BIST",
+        "symbol": "AKBNK",
+        "name": "Akbank T.A.Ş.",
+        "opportunityScore": 30,
+        "confidence": 28,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "Akbank, net kârını 34,38 milyar TL'ye çıkararak yıllık %8,34 büyüme sağladı ve BIST 100'de güçlü teknik görünüm sergileyen hisseler arasında yer aldı (borsagundem doğrulandı); 12 Ağustos seansında bankacılık endeksi genelinde %4,19'luk güçlü bir günlük getiri kaydedildi. Ancak aracı kurumlar 2Ç26 sonrası sektör genelinde (Akbank dahil) hedef fiyatları aşağı yönlü revize etti — daralan net faiz marjları gerekçesiyle (ekonomim doğrulandı). Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
         "market": "BIST",
         "symbol": "ENJSA",
         "name": "Enerjisa Enerji A.Ş.",
-        "opportunityScore": 30,
-        "confidence": 28,
+        "opportunityScore": 28,
+        "confidence": 26,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "Enerjisa Enerji, 10 Ağustos'ta açıkladığı 2Ç2026 bilançosunda ilk yarı net kârını geçen yılın aynı dönemindeki 361 milyon TL zarardan 2,745 milyar TL kâra çevirdi ve 2026 yıl sonu net kâr hedefini 15 milyar TL'ye yükseltti (bloomberght/gaziantepolusum doğrulandı). Güncel fiyat/hacim verisi ve bu dönüşün fiyata ne ölçüde yansıdığı bu turda bağımsız doğrulanamadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "Enerjisa Enerji, 10 Ağustos'ta açıkladığı 2Ç2026 bilançosunda ilk yarı net kârını geçen yılın aynı dönemindeki 361 milyon TL zarardan 2,745 milyar TL kâra çevirdi ve 2026 yıl sonu net kâr hedefini 15 milyar TL'ye yükseltti (bloomberght doğrulandı) — önceki turdan taşınan bir öneri, bu turda yeni bir doğrulama yapılmadı. Güncel fiyat/hacim verisi ve bu dönüşün fiyata ne ölçüde yansıdığı bu turda da bağımsız doğrulanamadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
-        "market": "BIST",
-        "symbol": "TUPRS",
-        "name": "Türkiye Petrol Rafinerileri A.Ş.",
-        "opportunityScore": 26,
-        "confidence": 22,
+        "market": "US",
+        "symbol": "ABNB",
+        "name": "Airbnb, Inc.",
+        "opportunityScore": 34,
+        "confidence": 30,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "Tüpraş, 4 Ağustos'ta açıkladığı 2Ç2026 bilançosunda 45,877 milyar TL net kâr bildirdi; ilk yarı net kârı yıllık %291 arttı, gelir %43 ve çekirdek faaliyet kârı %225 büyüdü (cnbce/rotaborsa doğrulandı). Ancak sonuç 9 gün önce açıklandı — güncel fiyata ne ölçüde yansıdığı bu turda doğrulanamadı, geç kalma riski var. Orta riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "Airbnb, 6 Ağustos'ta açıkladığı 2Ç2026 sonuçlarında geliri yıllık %17 artışla 3,61 milyar$'a çıkardı (beklenti 3,58 milyar$), serbest nakit akışı yıllık %30 arttı (1,3 milyar$, %35 marj) ve yıllık gelir büyümesi kılavuzunu 'düşük-orta onlu'dan 'en az orta onlu'ya yükseltti (gurufocus/stocktitan doğrulandı). Güncel fiyat/hacim verisi bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "US",
+        "symbol": "NBIS",
+        "name": "Nebius Group N.V.",
+        "opportunityScore": 30,
+        "confidence": 22,
+        "risk": "Yüksek",
+        "action": "İZLE",
+        "reason": "Nebius Group, 12 Ağustos'ta açıkladığı 2Ç2026 sonuçlarında geliri yıllık %454 artışla 582,3 milyon$'a çıkardı, düzeltilmiş EBITDA marjı %41 oldu ve EPS beklenti-üstü geldi (-0,12$ / beklenti -0,82$); hisse tek günde %34 sıçradı (Motley Fool/stockinvest doğrulandı). Tek günlük %34'lük sıçrama sonrası momentum/değerleme riski belirgin biçimde yüksek, güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
         "market": "US",
         "symbol": "LITE",
         "name": "Lumentum Holdings Inc.",
-        "opportunityScore": 36,
-        "confidence": 30,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "Lumentum, 4Ç2026'da hisse başına 3,23$ düzeltilmiş kâr (2,95$ beklentisinin üzerinde) ve 1,01 milyar$ gelir (yıllık %109 artış) açıkladı; AI optik bağlantı ve 1,6T transceiver talebiyle 1Ç2027 gelir beklentisini (1,225-1,275 milyar$) konsensüsün üzerinde verdi (investing.com/seekingalpha doğrulandı). Güncel fiyat/hacim verisi bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "SNDK",
-        "name": "SanDisk Corporation",
         "opportunityScore": 32,
         "confidence": 26,
-        "risk": "Yüksek",
+        "risk": "Orta",
         "action": "İZLE",
-        "reason": "SanDisk, 5 Ağustos'ta açıkladığı 4Ç2026 sonuçlarında hisse başına 39,25$ kâr (33,28$ beklentisinin üzerinde) ve 8,97 milyar$ gelir (yıllık %371,6 artış) bildirdi; AI kaynaklı NAND arz sıkıntısının 2028'e kadar sürmesi bekleniyor (247wallst/tradingkey doğrulandı). Ancak hisse yılbaşından bu yana %353 yükselmesine karşın 25 Haziran zirvesinden ~%47 gerilemiş durumda — değerleme ve oynaklık riski yüksek. Yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "HPE",
-        "name": "Hewlett Packard Enterprise Co.",
-        "opportunityScore": 24,
-        "confidence": 22,
-        "risk": "Düşük",
-        "action": "İZLE",
-        "reason": "Hewlett Packard Enterprise, Morgan Stanley'in notu 'eşit ağırlık'tan 'ağırlık fazlası'na yükseltip cazip risk/getiri profiline dikkat çekmesi sonrası %5'in üzerinde yükseldi (CNBC doğrulandı). Tek bir analist notuna dayanan bir hareket, güncel fiyat/hacim verisi bu turda bağımsız doğrulanmadı. Düşük-orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "Lumentum, 4Ç2026'da hisse başına 3,23$ düzeltilmiş kâr (2,95$ beklentisinin üzerinde) ve 1,01 milyar$ gelir (yıllık %109 artış) açıkladı; AI optik bağlantı ve 1,6T transceiver talebiyle 1Ç2027 gelir beklentisini (1,225-1,275 milyar$) konsensüsün üzerinde verdi (investing.com/seekingalpha doğrulandı) — önceki turdan (13 Ağustos ilk tur) taşınan bir öneri, bu turda yeni bir doğrulama yapılmadı. Güncel fiyat/hacim verisi bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
       }
     ]
   },
