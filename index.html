@@ -33,118 +33,108 @@
   "lastUpdated": "2026-08-14T16:16:00Z",
   "aiNote": "",
   "advisorReport": {
-    "generatedAt": "2026-08-14T08:14:00Z",
-    "healthScore": 60,
-    "summary": "14 Ağustos 08:12 UTC'de Alpha Vantage ile BTC, ETH, ARB ve USD/TRY yeniden sorgulandı; kripto varlıklar gece boyunca hafif geriledi (BTC ~%0,9, ETH ~%0,6, ARB ~%0,1 düşüş). ABD hisseleri için en son işlem günü hâlâ 13 Ağustos (piyasa yeni bir seans üretmedi), yani 11 ABD hissesinin fiyat verisi ve bu turda taşınan haber değerlendirmesi bir önceki turdaki (00:25 UTC) çekimle aynı. Canlı varlıklar toplamda maliyete göre yaklaşık %14,0 kârda; BTC hâlâ canlı varlıkların en büyük tekil kalemi (~%26,0), bu da tek varlık yoğunlaşma riskini korumaya devam ediyor.",
-    "dataCoverageNote": "14 Ağustos 2026, 08:12 UTC. Bu turda Alpha Vantage CURRENCY_EXCHANGE_RATE ile BTC, ETH, ARB ve USD/TRY başarıyla yeniden çekildi (price/prevClose ve priceHistory'deki 14 Ağustos kaydı güncellendi). Alpha Vantage GLOBAL_QUOTE ile AUR, AVGO, UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY de sorgulandı ancak 'latest trading day' hâlâ 13 Ağustos olarak döndü (piyasa henüz yeni fiyat üretmedi) — bu 11 sembolün price/prevClose değeri değişmedi, priceHistory'deki 14 Ağustos kaydı bir önceki turdaki değerle aynı kaldı, dolayısıyla bu turda ayrıca yazılmadı. XAU (Gold) için CURRENCY_EXCHANGE_RATE yine 'Invalid API call' hatası döndü (talimat gereği dokunulmadı, demo kaldı); GTF (Fund) ve THYAO (BIST) kapsam dışı olduğu için hiç sorgulanmadı, demo kaldı — bu üç kalemin fiyatı 0 olarak görünüyor, bu gerçek bir %100 kayıp değil, sadece canlı fiyat verisi bulunmadığı anlamına gelir. priceHistory serisi artık ~3,5 haftalık; günlük getiri güvenilir biçimde hesaplanabiliyor ama aylık/YTD/yıllık getiriler için hâlâ yeterli veri yok ('veri birikiyor'). Bu turda ABD hisseleri için yeni bir WebSearch haber taraması yapılmadı (seans/fiyat değişmediği için); aşağıdaki gerekçeler 00:25 UTC turundan taşınmıştır ve o turda doğrulanan kaynaklara dayanır. KAP açıklamalarının tam metnine, SEC dosyalarının detayına, tam bilanço tablolarına, doğrulanmış analist konsensüs veritabanına ve RSI/MACD gibi teknik göstergelere erişimim yok. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
+    "generatedAt": "2026-08-14T16:40:00Z",
+    "healthScore": 56,
+    "summary": "14 Ağustos 16:16 UTC turunda Alpha Vantage günlük istek limitine (25 istek/gün) ulaşıldığı için yalnızca BTC, ETH, ARB ve USD/TRY yeniden çekilebildi; 11 ABD hissesi hâlâ 13 Ağustos kapanış fiyatını yansıtıyor. Canlı varlıklar toplamda maliyete göre ~%14,1 kârda, ancak BTC tek başına canlı varlıkların ~%26'sını oluşturarak yoğunlaşma riskini korumaya devam ediyor. Bu turda WebSearch ile UAMY'de sistemdeki fiyatın yansıtmadığı ciddi bir 2Ç kâr kaçırması/hisse düşüşü ve ARB'de 16 Ağustos'ta beklenen büyük bir token kilidi açılması doğrulandı; bu iki taze risk sinyali sağlık puanını bir önceki tura göre hafif aşağı çekti.",
+    "dataCoverageNote": "14 Ağustos 2026, 16:16-16:40 UTC. Bu turda Alpha Vantage CURRENCY_EXCHANGE_RATE ile BTC, ETH, ARB ve USD/TRY başarıyla yeniden çekildi (price/prevClose ve priceHistory'deki 14 Ağustos kaydı güncellendi). GLOBAL_QUOTE ile AUR ve AVGO da sorgulandı, ikisi de hâlâ 13 Ağustos kapanışını döndürdü (fiyat değişmedi, priceHistory zaten güncel). GTLB sorgusunda Alpha Vantage 'günlük istek limitine ulaşıldı (25/gün)' hatası döndürdü; bu noktadan sonra UNH, BABA, LULU, GTLB, NVO, PYPL, TMDX, EVTL, UAMY için YENİDEN sorgu YAPILMADI (limit aşımını önlemek için) — bu sembollerin price/prevClose değeri sistemde hâlâ 13 Ağustos kapanışından kalma, aşağıdaki ilgili gerekçeler bu eski fiyata dayanıyor. XAU (Gold), GTF (Fund) ve THYAO (BIST) Alpha Vantage kapsamı dışında olduğu için hiç sorgulanmadı, demo kaldı. WebSearch ile bu turda doğrulanan güncel gelişmeler: UAMY için Motley Fool (14 Ağustos) 2Ç2026'da 7,93 milyon$ satış üzerinden sadece 0,1 milyon$ net kâr açıklandığını, gelirin yıllık ~%25 gerilediğini, analist beklentisinin ~13,8 milyon$ farkla ıskalandığını ve hissenin bu hafta sert düştüğünü (%23,63) bildiriyor — bu ikinci bir kaynakla doğrulanmadı ve sistemdeki 'live' fiyatla (13 Ağustos kapanışı, +%7,4 toparlanma) çelişiyor, bu çelişki aşağıda açıkça belirtildi. ARB için COINOTAG/AMBCrypto, 16 Ağustos 2026'da 92,65 milyon ARB'lik bir token kilidi açılmasını doğruladı. BTC için Yahoo Finance/Fortune, 14 Ağustos itibarıyla Fear&Greed endeksinin 29 (korku) olduğunu ama Bitcoin ETF girişlerinin 850 milyon$ ile güçlü kaldığını doğruladı. BABA için GlobeNewswire/PRNewswire, devam eden menkul kıymet dolandırıcılığı sınıf davasında öncü davacı başvurusu için son tarihin 5 Ekim 2026 olduğunu doğruladı. priceHistory serisi ~3,5 haftalık; günlük getiri hesaplanabiliyor, aylık/YTD/yıllık getiriler için hâlâ yeterli veri yok ('veri birikiyor'). KAP açıklamalarının tam metnine, SEC dosyalarının detayına, tam bilanço tablolarına, içeriden öğrenenlerin işlemlerine, doğrulanmış analist konsensüs veritabanına ve RSI/MACD gibi teknik göstergelere erişimim yok. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
     "recommendations": [
       {
         "symbol": "BTC",
         "action": "AZALT",
-        "confidence": 33,
-        "rationale": "BTC, canlı (nakit/demo hariç) varlıkların yaklaşık %26,0'ını tek başına oluşturmaya devam ediyor; bu turda API doğrulamalı güncel fiyat 62.856,74$'a geriledi (önceki tura göre ~%0,9 düşüş), maliyete göre hâlâ ~%105,9 çok derin kârda. Bu turda BTC'ye özgü yeni bir haber taraması yapılmadı, hareket geniş kripto piyasasındaki genel geri çekilmeyle tutarlı görünüyor. Tek varlıkta bu ölçekte yoğunlaşma, derin kârda olsa da sermaye koruması açısından risk taşımaya devam ediyor; kısmi kâr realizasyonuyla pozisyonun dağıtılması makul olabilir.",
+        "confidence": 35,
+        "rationale": "BTC, canlı varlıkların yaklaşık %26'sını oluşturmaya devam ediyor (~4.615$ / toplam ~17.732$ canlı varlık değeri); bu turda API doğrulamalı güncel fiyat 63.029,22$'a yükseldi (~%0,27 günlük artış), maliyete göre ~%106,5 çok derin kârda. WebSearch ile doğrulanan güncel habere göre 14 Ağustos'ta Bitcoin kademeli bir düşüş eğiliminde, Fear&Greed endeksi 29 ile korku bölgesinde; buna karşın spot zayıflığa rağmen Bitcoin ETF girişleri 850 milyon$ ile güçlü kalmaya devam ediyor (Yahoo Finance/Fortune doğrulandı) — karışık bir görünüm. Tek varlıkta bu ölçekte yoğunlaşma, çok derin kârda olsa da sermaye koruması açısından risk taşımaya devam ediyor; kısmi kâr realizasyonuyla pozisyonun dağıtılması makul olabilir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "UAMY",
-        "action": "BEKLE",
-        "confidence": 24,
-        "rationale": "UAMY'nin fiyatı bu turda değişmedi (ABD seansı hâlâ 13 Ağustos): önceki turdaki ~%7,4'lük toparlanmayla 5,34$ seviyesinde. Bu yükselişi açıklayan doğrulanmış bir şirket haberi bulunamamıştı; açığa satış oranının float'ın ~%22,8'ine gerilemesi (Finviz doğrulandı) ve Stocktwits mesaj hacmindeki artış (Yahoo Finance doğrulandı) kısa pozisyon kapatma/aşırı satım tepkisiyle tutarlı olabilir ama bu çıkarımsal bir yorum. Pozisyon hâlâ maliyete göre ~%11,9 zararda. Doğrulanmamış bir teknik sıçramaya dayanarak işlem yapmak gerekçesiz olur; izlemeye devam edilmesi makuldür.",
+        "action": "AZALT",
+        "confidence": 40,
+        "rationale": "ÖNEMLİ UYARI: Sistemdeki fiyat (5,34$, önceki turdan +%7,4) Alpha Vantage günlük limitine bu turda ulaşıldığı için yeniden sorgulanamadı ve hâlâ 13 Ağustos kapanışını yansıtıyor — bu, 14 Ağustos'ta Motley Fool'da doğrulanan yeni haberle çelişiyor: UAMY 2Ç2026'da 7,93 milyon$ satış üzerinden sadece 0,1 milyon$ net kâr açıkladı, gelir yıllık ~%25 geriledi, analist beklentisi ~13,8 milyon$ farkla ıskalandı ve hisse bu hafta sert düşüşte (%23,63). Bu haber ikinci bir kaynakla doğrulanmadı ama tek kaynak güvenilir bir finans yayını. Pozisyon zaten maliyete göre ~%11,9 zararda; sistemdeki fiyatın gerçek durumu yansıtmadığı ihtimali yüksek, bu nedenle mevcut fiyatla kesin bir 'sat' kararı yerine ihtiyatlı azaltma ve fiyatın bir sonraki turda doğrulanması öneriliyor.",
+        "risk": "Yüksek"
+      },
+      {
+        "symbol": "ARB",
+        "action": "AZALT",
+        "confidence": 30,
+        "rationale": "ARB pozisyonu maliyete göre ~%94,8 derin zararda (0,07484$ vs 1,45$ ortalama maliyet); bu turda yeniden çekilen fiyat bir önceki turdaki 0,07502$'dan hafif geriledi (~%0,24). WebSearch ile doğrulanan güncel gelişme: Arbitrum ağında 16 Ağustos 2026'da (2 gün sonra) 92,65 milyon ARB'lik bir token kilidi açılması bekleniyor — ~36,5 milyonu yatırımcılara, ~56,1 milyonu takım/danışmanlara ait (COINOTAG doğrulandı); bu ölçekte arz artışları kısa vadede satış baskısı yaratabilir, token zaten 2 yıldır süren bir durgunlukta (AMBCrypto doğrulandı). Pozisyonun kalan değeri küçük (~10,85$); zarar kesmenin portföy geneline etkisi sınırlı olur ama yaklaşan arz baskısı riski nedeniyle pozisyonun azaltılması/kapatılması değerlendirilebilir. Bu bir kesinlik değil, doğrulanmış bir katalizöre dayanan risk uyarısıdır.",
         "risk": "Yüksek"
       },
       {
         "symbol": "GTLB",
         "action": "BEKLE",
-        "confidence": 21,
-        "rationale": "GTLB'nin fiyatı bu turda değişmedi: 43,35$, pozisyon maliyete göre ~%66,9 güçlü kârda. Bir önceki turda bu yükselişi açıklayan yeni bir şirket haberi bulunamamıştı; bir sonraki çeyrek sonuçları 8 Eylül 2026'da açıklanacak (GitLab IR doğrulandı), yani hareket kazanç kaynaklı değil. Güçlü kümülatif kârda ve doğrulanmamış bir katalizörle gelen bir sıçramada kısmi kâr realizasyonu değerlendirilebilir, ama bu bir zorunluluk değil; agresif işlem önerilmiyor.",
+        "confidence": 18,
+        "rationale": "GTLB fiyatı bu turda güncellenemedi (Alpha Vantage günlük limitine ulaşıldı), sistemde hâlâ 13 Ağustos kapanışı 43,35$ görünüyor, pozisyon maliyete göre ~%66,9 güçlü kârda. Bu turda GTLB'ye özgü yeni bir doğrulanmış haber taraması yapılmadı; bir sonraki çeyrek sonuçları 8 Eylül 2026'da açıklanacak. Güçlü kümülatif kârda agresif işlem önerilmiyor, izlemeye devam mantıklı.",
         "risk": "Orta"
       },
       {
         "symbol": "TMDX",
         "action": "BEKLE",
-        "confidence": 29,
-        "rationale": "TMDX'in fiyatı bu turda değişmedi: 89,64$, pozisyon maliyete göre ~%30 kârda. 4 Ağustos'ta açıklanan 2Ç2026 sonuçlarında 189,9 milyon$ gelir bildirildi (yıllık %20,7 artış, beklentinin üzerinde) ve tam yıl gelir kılavuzunun alt sınırı yükseltildi; ancak faaliyet kârı %35,1, net kâr %57,9 geriledi (TransMedics IR/Yahoo Finance doğrulandı). Güçlü gelir büyümesi ile daralan kârlılık karışık bir tablo oluşturuyor; net yön için ek veri gerekli, izlemeye devam makul.",
+        "confidence": 20,
+        "rationale": "TMDX fiyatı bu turda güncellenemedi (Alpha Vantage limiti), sistemde hâlâ 13 Ağustos kapanışı 89,64$, pozisyon maliyete göre ~%30 kârda. Önceki turda doğrulanan 2Ç2026 sonuçları (gelir 189,9 milyon$, yıllık %20,7 artış, ancak net kâr %57,9 geriledi) hâlâ geçerli tek veri kaynağı; bu turda yeni bir gelişme doğrulanmadı. Karışık tablo nedeniyle izlemeye devam makul.",
         "risk": "Orta"
       },
       {
         "symbol": "BABA",
         "action": "BEKLE",
-        "confidence": 21,
-        "rationale": "BABA'nın fiyatı bu turda değişmedi: 122,16$, önceki turda ~%2,4 gerilemişti. 11-12 Ağustos'ta yatırımcı hakları hukuk bürolarının Alibaba aleyhine menkul kıymet dolandırıcılığı sınıf davaları açtığı bildirilmişti (TradingKey doğrulandı); hisse ayrıca çok haftalık bir AI odaklı ralli sonrası kâr realizasyonu ve teknik olarak aşırı alım bölgesinde görülüyor (Barchart doğrulandı). Bir sonraki bilanço 20 Ağustos 2026'da açıklanacak; analist konsensüsü hâlâ Al yönünde (ortalama hedef 190,86$, TradingKey/Yahoo Finance doğrulandı) ama şirket son dört çeyrektir EPS beklentisini kaçırıyor. Pozisyon küçük ve hâlâ ~%24,6 kârda; bilanço öncesi belirsizlik nedeniyle izlemeye devam mantıklı, aktif işlem gerekçesi yok.",
+        "confidence": 24,
+        "rationale": "BABA fiyatı bu turda güncellenemedi (Alpha Vantage limiti), sistemde hâlâ 13 Ağustos kapanışı 122,16$, pozisyon maliyete göre ~%24,7 kârda. WebSearch ile bu turda teyit edilen detay: birden fazla hukuk bürosu (Rosen Law Firm, Hagens Berman, Pomerantz ve diğerleri), 26 Haziran 2025-24 Haziran 2026 dönemini kapsayan bir menkul kıymet dolandırıcılığı sınıf davasında öncü davacı (lead plaintiff) başvurusu için yatırımcı topluyor; başvuru için son tarih 5 Ekim 2026 (GlobeNewswire/PRNewswire doğrulandı). Bir sonraki bilanço 20 Ağustos 2026'da açıklanacak. Pozisyon küçük ve hâlâ kârda; devam eden dava belirsizliği ve yaklaşan bilanço nedeniyle izlemeye devam mantıklı, aktif işlem gerekçesi yok.",
         "risk": "Yüksek"
-      },
-      {
-        "symbol": "UNH",
-        "action": "BEKLE",
-        "confidence": 17,
-        "rationale": "UNH'nin fiyatı bu turda değişmedi: 399,06$, önceki turda ~%1,6 gerilemişti. Yönetişim ve siber güvenlik ihmaliyle ilgili tek kaynaklı, ikinci bir kaynakla doğrulanamamış bir dava haberi vardı — temkinli yaklaşılmalı. Bernstein 12 Ağustos'ta Al notunu yinelemişti (arama toplayıcısı doğrulandı, birincil kaynak teyit edilmedi). Pozisyon maliyete göre ~%40 güçlü kârda. Tek kaynaklı ve doğrulanmamış bir dava haberine dayanarak işlem yapmak gerekçesiz olur; izlemeye devam edilmesi makuldür.",
-        "risk": "Orta"
       }
     ]
   },
   "opportunityReport": {
-    "generatedAt": "2026-08-14T08:20:00Z",
-    "dataCoverageNote": "14 Ağustos 2026, ~08:15 UTC, salt WebSearch haber taramasına dayanıyor (bu semboller portföyde olmadığı için Alpha Vantage ile güncel fiyat/hacim/değerleme çarpanı bağımsız sorgulanmadı, öznel/nitel bir değerlendirmedir). Bu turda önceki turda (00:40 UTC) önerilen SAHOL, TSKB, KCAER, HPE, JBL, CSCO ve AMAT ile daha önceki turlarda önerilen TUPRS, ASELS, KCHOL, SMCI, CRWV, BIRK, GARAN, AKBNK, ENJSA, ABNB, NBIS ve LITE tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı); bu isimlerde bu turda yeni bir doğrulama yapılmadı. Altınay Savunma (ALTNY) araştırma sırasında değerlendirildi ancak 1Ç2026'da 54,2 milyon TL net zarar açıkladığı (bir önceki yıl aynı çeyrekte 81,9 milyon TL kâra karşılık) görüldüğü için dahil edilmedi — güncel fiyat hareketliliği fundamentallerle desteklenmiyor. BIST tarafında: Halkbank (HALKB) 2Ç2026'da solo bazda 8,2 milyar TL net kâr açıkladı, ~7,1 milyar TL piyasa konsensüsünün ve bankanın kendi ~7,2 milyar TL tahmininin belirgin üzerinde (yıllık %32 artış, çeyreklik %13 azalış); net faiz geliri yıllık %83 arttı (Investing.com/Bloomberg HT doğrulandı). Türk Telekom (TTKOM) 2Ç2026'da 72,8 milyar TL hasılat bildirdi, ~70,7 milyar TL konsensüsün üzerinde (yıllık %9,3 artış); ancak FAVÖK marjı yıllık 170 baz puan gerileyerek %40,4'e indi ve çeyreklik net kâr (6 milyar TL) ilk çeyreğe göre zayıf göründü, ilk yarı toplam net kârı yıllık %26 artışla 17,1-17,2 milyar TL'ye ulaştı (Paratic/İş Yatırım doğrulandı) — karışık bir sinyal: hasılat/ilk yarı kârı güçlü ama çeyreklik marj baskısı var. Şişe Cam (SISE), bu akşam (14 Ağustos, seans sonrası) 2Ç2026 sonuçlarını KAP'ta açıklayacak (Finansopia doğrulandı); sonuçlar henüz açıklanmadığı için bu bir tahmin değil, sadece bir katalizör takip notudur. ABD tarafında: Argus, Boeing'i (BA) 11 Ağustos'ta Hold'dan Buy'a yükseltti (hedef 265$, ~%14 yukarı potansiyel), gerekçe üretim/kârlılık sorunlarında ilerleme, FAA'nın üretim artışına onay vermesi, iki uçak modeli için uçuş sertifikasyonu ve 2023'ten bu yana ilk kez pozitif nakit akışı (GuruFocus/Barchart/Yahoo Finance doğrulandı). Coherent (COHR), 12 Ağustos'ta açıkladığı MY2026 4Ç sonuçlarında gelir ilk kez 2 milyar$'ı aştı (2,05 milyar$ / 1,98 milyar$ beklenti, yıllık %34 artış) ve 1Ç MY2027 kılavuzu da Street beklentisinin üzerinde (EPS 1,85-2,05$ / 1,77$ beklenti); veri merkezi/iletişim geliri yıllık %59 arttı. Ancak hisse zaten 12 Ağustos'ta günü %8,24 yükselişle kapatmıştı ve sonrasında ~%3-5 haftalık işlemde geriledi — 'mükemmellik' beklentisiyle fiyatlanan, değerleme riski yüksek bir hisse (BigGo Finance/Investing.com/Benzinga doğrulandı). Agilysys (AGYS), Temmuz 2026 sonunda açıkladığı CY2026 2Ç sonuçlarında gelir beklentiyi aştı (87,68 milyon$, yıllık %14,3 artış) ve tam yıl gelir kılavuzu konsensüsün ~%0,7 üzerinde (orta nokta 370,5 milyon$); analistler hedef fiyatı 90$'dan 135$'a yükseltti (StockStory/TradingView/Yahoo Finance doğrulandı) — bu haber ~2-3 hafta önce açıklandı, yeni değil ama fiyatlanması hâlâ devam ediyor olabilir. Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E veya hacim verisine, teknik göstergelere ve doğrulanmış analist konsensüs veritabanına erişimim yok.",
+    "generatedAt": "2026-08-14T16:45:00Z",
+    "dataCoverageNote": "14 Ağustos 2026, ~16:16-16:45 UTC, salt WebSearch haber taramasına dayanıyor (bu semboller portföyde olmadığı için Alpha Vantage ile güncel fiyat/hacim/değerleme çarpanı bağımsız sorgulanmadı — zaten bu turda Alpha Vantage günlük istek limitine ulaşılmıştı, öznel/nitel bir değerlendirmedir). Bu turda önceki turlarda önerilen HALKB, TTKOM, BA, COHR, AGYS, SAHOL, TSKB, KCAER, HPE, JBL, CSCO, AMAT, TUPRS, ASELS, KCHOL, SMCI, CRWV, BIRK, GARAN, AKBNK, ENJSA, ABNB, NBIS ve LITE tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı); tek istisna SISE — bir önceki turda 'bilanço bu akşam açıklanacak, katalizör bekleniyor' notuyla listelenmişti, bu turda sonuç henüz açıklanmadığı doğrulandığı (Borsamatik/İş Yatırım) için aynı bekleme notuyla korundu, yeni bir öneri değil. Aksa Enerji (AKSEN) araştırma sırasında değerlendirildi ancak 2Ç2026 net kârının (568 milyon TL) piyasa beklentisinin (~645 milyon TL) altında kaldığı görüldüğü için dahil edilmedi — EBİTDA büyümesine rağmen net kâr tarafı beklenti altı (İş Yatırım doğrulandı). BIST tarafında: Anadolu Grubu Holding (AGHOL) 2Ç2026'da 227,1 milyar TL hasılat, 23,2 milyar TL FAVÖK ve 1,2 milyar TL net kâr açıkladı — net kâr geçen yılın aynı döneminde 565 milyon TL'ydi, yani yıllık ~%112 arttı (BloombergHT doğrulandı); ancak hasılat reel bazda sadece %2 büyüdü, FAVÖK yatay kaldı, perakende segmentinde bira hacimlerindeki zayıflık ve otomotiv segmentinde negatif FAVÖK dikkat çekti — net kâr güçlü ama operasyonel tablo karışık. SISE için: Şişecam'ın 2Ç2026 sonuçlarının bugün açıklanması bekleniyor (piyasa net kâr beklentisi ortalama ~3,58 milyar TL, Matriks Haber anketi/İş Yatırım doğrulandı) ancak bu turun tarama saatinde sonuç henüz KAP'a düşmemişti — bu bir tahmin değil, katalizör takip notudur. ABD tarafında: Bernstein, Wayfair'i (W) 14 Ağustos'ta Market Perform'dan Outperform'a yükseltti, hedef fiyatı 100$'dan 125$'a çıkardı (24/7 Wall St. doğrulandı). HSBC, Digital Realty Trust'ı (DLR) Hold'dan Buy'a yükseltti, hedef fiyat 240$ (24/7 Wall St. doğrulandı). Wells Fargo, Dell Technologies (DELL) için Overweight notunu korudu ve hedef fiyatı 505$'dan 545$'a yükseltti (GuruFocus doğrulandı). Bu üç ABD yükseltmesi de tek bir analist/kurum kararına dayanıyor, bağımsız ikinci kaynakla teyit edilmedi. Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E veya hacim verisine, teknik göstergelere ve doğrulanmış analist konsensüs veritabanına erişimim yok.",
     "items": [
       {
         "market": "BIST",
-        "symbol": "HALKB",
-        "name": "Türkiye Halk Bankası A.Ş.",
-        "opportunityScore": 42,
-        "confidence": 30,
+        "symbol": "AGHOL",
+        "name": "Anadolu Grubu Holding A.Ş.",
+        "opportunityScore": 38,
+        "confidence": 26,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "2Ç2026'da solo bazda 8,2 milyar TL net kâr açıkladı, ~7,1 milyar TL piyasa konsensüsünün belirgin üzerinde (yıllık %32 artış); net faiz geliri yıllık %83, net ücret/komisyon geliri yıllık %32 arttı (Investing.com/Bloomberg HT doğrulandı). Ancak net kâr çeyreklik bazda %13 geriledi (9,5 milyar TL'den) ve faaliyet giderleri ücret artışlarıyla çeyreklik %20,6 yükseldi — momentum tek yönlü değil. Kamu bankası olarak makro/politika riskine de duyarlı. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "BIST",
-        "symbol": "TTKOM",
-        "name": "Türk Telekomünikasyon A.Ş.",
-        "opportunityScore": 34,
-        "confidence": 24,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "2Ç2026'da 72,8 milyar TL hasılat bildirdi, ~70,7 milyar TL konsensüsün üzerinde (yıllık %9,3 artış); ilk yarı toplam net kârı yıllık %26 artışla 17,1-17,2 milyar TL'ye ulaştı (Paratic/İş Yatırım doğrulandı). Ancak FAVÖK marjı yıllık 170 baz puan gerileyerek %40,4'e indi ve çeyreklik net kâr (6 milyar TL) zayıf görünüyor — karışık bir sinyal, hasılat/ilk yarı kârı güçlü ama marj baskısı var. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "2Ç2026'da 1,2 milyar TL net kâr açıkladı, geçen yılın aynı dönemine göre (565 milyon TL) yaklaşık iki katına çıktı; konsolide net borç/FAVÖK oranı geçen yılki 1,5x'ten 1,1x'e iyileşti (BloombergHT doğrulandı). Ancak hasılat reel bazda sadece %2 büyüdü, FAVÖK yatay kaldı; perakende segmentinde bira hacimlerinde zayıflık, otomotiv segmentinde negatif FAVÖK var — net kâr güçlü ama operasyonel büyüme sınırlı, karışık bir tablo. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
         "market": "BIST",
         "symbol": "SISE",
         "name": "Türkiye Şişe ve Cam Fabrikaları A.Ş.",
-        "opportunityScore": 25,
-        "confidence": 15,
+        "opportunityScore": 22,
+        "confidence": 14,
         "risk": "Orta",
         "action": "BEKLE",
-        "reason": "Şişe Cam, bu akşam (14 Ağustos, seans sonrası) 2Ç2026 finansal sonuçlarını KAP'ta açıklayacak (Finansopia doğrulandı). Sonuçlar henüz açıklanmadığı için bu bir tahmin veya öneri değil, yalnızca bir katalizör/takip notudur — bilanço öncesi pozisyon almak spekülatif olur. Sonuç açıklandıktan sonra yeniden değerlendirilmesi önerilir; şu an için beklemede kalınmalı."
+        "reason": "Şişecam'ın 2Ç2026 sonuçları bugün (14 Ağustos) açıklanması bekleniyor; piyasa ortalama net kâr beklentisi ~3,58 milyar TL (Matriks Haber anketi/İş Yatırım doğrulandı). Bu turun tarama saatinde sonuç henüz KAP'a düşmemişti — bu bir tahmin veya öneri değil, yalnızca bir katalizör/takip notudur, bilanço öncesi pozisyon almak spekülatif olur. Sonuç açıklandıktan sonra yeniden değerlendirilmesi önerilir; şu an için beklemede kalınmalı."
       },
       {
         "market": "US",
-        "symbol": "BA",
-        "name": "The Boeing Company",
-        "opportunityScore": 46,
-        "confidence": 32,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "Argus, 11 Ağustos'ta Boeing'i Hold'dan Buy'a yükseltti (hedef 265$, ~%14 yukarı potansiyel); gerekçe üretim/kârlılık sorunlarında ilerleme, FAA'nın üretim artışına onayı, iki uçak modeli için uzun süredir beklenen uçuş sertifikaları ve 2023'ten bu yana ilk kez pozitif nakit akışı (GuruFocus/Barchart/Yahoo Finance doğrulandı). Büyük sipariş defteri gelir görünürlüğü sağlıyor. Tek bir analist yükseltmesi olduğu unutulmamalı, üretim/kalite tarafında geçmiş sorunlar tekrarlanma riski taşıyor. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "COHR",
-        "name": "Coherent Corp.",
+        "symbol": "W",
+        "name": "Wayfair Inc.",
         "opportunityScore": 40,
-        "confidence": 26,
+        "confidence": 27,
         "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "12 Ağustos'ta açıkladığı MY2026 4Ç sonuçlarında gelir ilk kez 2 milyar$'ı aştı (2,05 milyar$, yıllık %34 artış) ve 1Ç MY2027 kılavuzu Street beklentisinin üzerinde; veri merkezi/AI-iletişim geliri yıllık %59 arttı (BigGo Finance/Benzinga doğrulandı). Ancak hisse açıklama öncesi zaten günü %8,24 yükselişle kapatmıştı ve haber sonrası ~%3-5 geriledi — piyasa 'mükemmellik' bekliyor, değerleme zaten yüksek yükselişi fiyatlamış durumda. Temel veriler güçlü ama giriş zamanlaması ve değerleme riski yüksek; agresif pozisyon önerilmiyor. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı."
+        "reason": "Bernstein, 14 Ağustos'ta Wayfair'i Market Perform'dan Outperform'a yükseltti, hedef fiyatı 100$'dan 125$'a çıkardı (~%25 yukarı potansiyel, 24/7 Wall St. doğrulandı). Bu tek bir kurumun görüşü, bağımsız ikinci kaynakla teyit edilmedi ve yükseltmenin gerekçesine dair ayrıntı bu turda doğrulanamadı. Wayfair tarihsel olarak yüksek volatiliteye ve rekabet baskısına sahip bir e-ticaret şirketi; güncel fiyat/hacim/değerleme bu turda bağımsız doğrulanmadı. Yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
         "market": "US",
-        "symbol": "AGYS",
-        "name": "Agilysys, Inc.",
-        "opportunityScore": 36,
-        "confidence": 22,
+        "symbol": "DLR",
+        "name": "Digital Realty Trust, Inc.",
+        "opportunityScore": 34,
+        "confidence": 24,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "Temmuz 2026 sonunda açıklanan CY2026 2Ç sonuçlarında gelir beklentiyi aştı (87,68 milyon$, yıllık %14,3 artış), abonelik geliri güçlü büyümeye devam ediyor; tam yıl gelir kılavuzu konsensüsün üzerinde ve analistler hedef fiyatı 90$'dan 135$'a yükseltti (StockStory/TradingView/Yahoo Finance doğrulandı). Haber ~2-3 hafta önce açıklandı, bu turda yeni bir gelişme değil — fiyatlamaya ne kadar yansıdığı bu turda doğrulanmadı, küçük ölçekli bir şirket olduğu için likidite/volatilite riski de dikkate alınmalı. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "HSBC, 14 Ağustos'ta Digital Realty Trust'ı Hold'dan Buy'a yükseltti, hedef fiyat 240$ (24/7 Wall St. doğrulandı). Veri merkezi/REIT teması AI altyapı talebiyle ilişkilendiriliyor ancak bu ilişki bu turda ayrıca doğrulanmadı; tek bir kurum yükseltmesi, ikinci kaynakla teyit edilmedi. Güncel fiyat/hacim/değerleme bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+      },
+      {
+        "market": "US",
+        "symbol": "DELL",
+        "name": "Dell Technologies Inc.",
+        "opportunityScore": 33,
+        "confidence": 23,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "Wells Fargo, 14 Ağustos'ta Dell Technologies için mevcut Overweight notunu korudu ve hedef fiyatı 505$'dan 545$'a yükseltti (GuruFocus doğrulandı). Not değişmediği için bu bir yeni 'al' sinyali değil, mevcut olumlu görüşün pekiştirilmesi; tek bir kurum verisi, ikinci kaynakla teyit edilmedi. Güncel fiyat/hacim/değerleme bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
       }
     ]
   },
