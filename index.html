@@ -30,121 +30,91 @@
   "cash": 6550,
   "usdTryRate": 47.88913436,
   "eurUsdRate": 1.13749197,
-  "lastUpdated": "2026-08-17T00:10:00Z",
+  "lastUpdated": "2026-08-17T08:07:00Z",
   "aiNote": "",
   "advisorReport": {
-    "generatedAt": "2026-08-17T00:25:00Z",
+    "generatedAt": "2026-08-17T08:10:00Z",
     "healthScore": 53,
-    "summary": "17 Ağustos ~00:00-00:10 UTC turunda Alpha Vantage'a yapılan istekler günlük 25 istek kotasına takıldı; USD/TRY ve 9 varlık (BTC, ETH, ARB, AUR, AVGO, UNH, BABA, LULU) başarıyla taze çekildi, kalan 6 ABD hissesi (GTLB, NVO, PYPL, TMDX, EVTL, UAMY) 16 Ağustos'taki son bilinen fiyatını koruyor. Canlı varlıklar toplamda maliyete göre ~%13,6 kârda (~17.648$ değer / 15.540$ maliyet), BTC yoğunlaşması ~%26,1 ile en büyük tek varlık riski olmaya devam ediyor; AVGO ve LULU hâlâ derin haftalık düşüşlerini yansıtıyor. WebSearch ile bu turda doğrulanan gelişme: UNH'ye 13 Ağustos'ta Medicare sahtekarlığı, algoritmik bakım reddi ve 237 milyon$'lık içeriden satış iddialarıyla yeni bir dava açıldığı teyit edildi; LULU (AI Direktörü ayrılışı, 27 Ağustos 2Ç bekleniyor), ARB (16 Ağustos token kilidi) ve UAMY (Ç2 gelir daralması/marj çöküşü) temaları önceki turlarla tutarlı şekilde geçerliliğini koruyor.",
-    "dataCoverageNote": "Fiyat/kur verileri: USD/TRY ve 9 varlık (BTC, ETH, ARB, AUR, AVGO, UNH, BABA, LULU) bu turda (17 Ağustos ~00:00-00:10 UTC) Alpha Vantage ile taze çekildi ve doğrulandı; AUR/AVGO/UNH/BABA/LULU için 'latest trading day' hâlâ 14 Ağustos Cuma'yı gösteriyor (hafta sonu, piyasa kapalı — normal, hata değil). Alpha Vantage ücretsiz API anahtarı bu turda günlük 25 istek limitine ulaştı (muhtemelen aynı gün içinde daha önceki bir tur kotayı tüketmişti); bu yüzden GTLB, NVO, PYPL, TMDX, EVTL, UAMY GÜNCELLENEMEDİ ve K/Z hesapları bu 6 varlık için 16 Ağustos'un fiyatlarıyla yapıldı — güncel olmayabilir. XAU (Altın) Alpha Vantage ücretsiz planında desteklenmiyor, THYAO (BIST) ve GTF (Fon) kapsam dışı — bu üçüne dokunulmadı, K/Z hesaplarına dahil edilmedi. priceHistory serisi kripto/ABD hisseleri için 24-28 gün; günlük getiri hesaplanabiliyor ama aylık/YTD/yıllık getiriler için hâlâ 'veri birikiyor'. WebSearch ile bu turda doğrulanan bulgular (nitel haber taraması, fiyat sorgusu değil): UNH'ye 13 Ağustos'ta açılan yeni dava (Benzinga doğrulandı), LULU'nun AI Direktörü ayrılışı ve 27 Ağustos 2Ç takvimi (foreignpolicyjournal, tradingpedia doğrulandı), ARB'nin 16 Ağustos token kilidi (CoinMarketCap/COINOTAG doğrulandı), UAMY'nin Ç2 gelir daralması (~%25) ve marj çöküşü (%27→%7) detayları (Simply Wall St, stocktwits doğrulandı), AVGO'nun VMware güvenlik açığı ve Apple çip anlaşması temaları (Benzinga/TipRanks doğrulandı, önceki turlarla tutarlı). KAP açıklamalarının tam metnine, SEC dosyalarının detayına, tam bilanço tablolarına, içeriden öğrenenlerin işlemlerine, doğrulanmış gerçek zamanlı analist konsensüs veritabanına ve kendi hesapladığım teknik göstergelere (RSI/MACD) erişimim yok. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
+    "summary": "17 Ağustos ~08:00-08:10 UTC turunda Alpha Vantage günlük istek kotasının hâlâ dolu olduğu doğrulandı (ilk sorgu doğrudan 'rate limit' hatası döndü); bu nedenle hiçbir fiyat/kur güncellemesi yapılamadı ve tüm veriler bugünkü ~00:10-00:45 UTC turundan değişmeden kaldı. Canlı varlıklar toplamda maliyete göre ~%13,6 kârda (~17.648$ değer / 15.540$ maliyet), BTC yoğunlaşması ~%26,1 ile en büyük tek varlık riski olmaya devam ediyor. WebSearch ile bu turda doğrulanan yeni gelişme: AVGO'nun düşüşünde VMware güvenlik açığına ek olarak BofA'nın işaret ettiği ~370 milyar$'lık off-balance-sheet AI finansman/kredi riski teması öne çıktı (hisse haftalık ~%8 geriledi); UNH'nin 13 Ağustos'taki dava(sı/ları) için Barchart kaynağı siber güvenlik/yönetişim iddialarını da doğruladı — önceki turda Benzinga kaynaklı doğrulanan Medicare sahtekarlığı/içeriden satış iddialarına ek bir çerçeveleme olabilir, aynı tarihli birden fazla dava süreci sürüyor olabilir.",
+    "dataCoverageNote": "Fiyat/kur verileri: bu turda (17 Ağustos ~08:00-08:10 UTC) Alpha Vantage'a yapılan ilk test isteği (USD/TRY) doğrudan 'standard API rate limit is 25 requests per day' hatası döndürdü; bu limit hesap/anahtar bazlı olduğundan kalan 15 çağrı (14 holding + varsa tekrar) denenmedi, boşuna kota tüketmemek için atlandı. Bu yüzden hiçbir holding, usdTryRate veya eurUsdRate güncellenmedi; tüm fiyat/prevClose/priceHistory alanları bugünkü ~00:10-00:45 UTC turundaki son başarılı hallerinde kaldı: BTC, ETH, ARB, AUR, AVGO, UNH, BABA, LULU 17 Ağustos verisiyle taze (o turda çekildi), GTLB, NVO, PYPL, TMDX, EVTL, UAMY ise artık İKİ turdur (16 Ağustos'tan beri) güncellenemiyor — bu altı varlık için K/Z hesapları eskiyen fiyatlarla yapılmıştır ve giderek daha az güvenilir hale gelmektedir. XAU (Altın) Alpha Vantage ücretsiz planında desteklenmiyor, THYAO (BIST) ve GTF (Fon) kapsam dışı — bu üçüne dokunulmadı, K/Z hesaplarına dahil edilmedi. priceHistory serisi kripto/ABD hisseleri için ~24-27 gün; günlük getiri hesaplanabiliyor ama aylık/YTD/yıllık getiriler için hâlâ 'veri birikiyor'. WebSearch ile bu turda doğrulanan bulgular (nitel haber taraması, fiyat sorgusu değil): AVGO'nun BofA analizine göre AI XPV finansman platformu üzerinden 2029'a kadar potansiyel 370 milyar$'a ulaşabilecek off-balance-sheet borç/kredi riski taşıdığı ve bunun VMware güvenlik açığı temasına ek yeni bir baskı unsuru olduğu (ad-hoc-news, fxleaders, tradingkey, 247wallst doğrulandı); UNH'nin 13 Ağustos'ta siber güvenlik ve yönetişim başarısızlığı iddialarıyla yeni bir dava ile karşı karşıya olduğu ve hissenin 2026 başından bu yana ~%18 gerilediği (Barchart doğrulandı); LULU'nun 27 Ağustos'taki 2Ç sonuçları öncesi JPMorgan'ın hedef fiyatını 149$'dan 154$'a yükselttiği ama Truist'in Temmuz'da 'Sat'a düşürdüğü (Yahoo Finance doğrulandı) — karışık analist görünümü sürüyor; BTC'nin 62.300-64.000$ bandında dar bir aralıkta sıkıştığı ve hafta sonu düşük hacminin fiyatı baskıladığı (çeşitli kripto kaynaklar doğrulandı). KAP açıklamalarının tam metnine, SEC dosyalarının detayına, tam bilanço tablolarına, içeriden öğrenenlerin işlemlerine, doğrulanmış gerçek zamanlı analist konsensüs veritabanına ve kendi hesapladığım teknik göstergelere (RSI/MACD) erişimim yok. Öneriler şema sınırı gereği en fazla 6 kalemle sınırlı.",
     "recommendations": [
       {
         "symbol": "UAMY",
         "action": "AZALT",
-        "confidence": 35,
-        "rationale": "UAMY fiyatı bu turda güncellenemedi (API kotası), 16 Ağustos'un son bilinen fiyatıyla pozisyon maliyete göre ~%9,1 zararda. WebSearch ile bu turda doğrulanan detay: Ç2 geliri yıllık ~%25 daraldı, gerçekleşen antimuan fiyatları ~%52 geriledi, brüt marj %27'den %7'ye çöktü ve 2026 gelir beklentisi 125 milyon$'dan 60-75 milyon$ aralığına düşürüldü (Simply Wall St, stocktwits doğrulandı) — bu, önceki turlarda doğrulanan 12 Ağustos kılavuz kesintisiyle aynı temaya ait ek detay, yeni bir katalizör değil. Defense Logistics Agency ile 245 milyon$'lık tedarik sözleşmesi kapsamında ilk sevkiyatların yapılması olumlu bir denge unsuru. Temel iş görünümü zayıflamaya devam ettiği için temkinli bir azaltma değerlendirmesi makul.",
+        "confidence": 32,
+        "rationale": "UAMY fiyatı bu turda da güncellenemedi (API kotası, artık iki turdur 16 Ağustos'un son bilinen fiyatında donuk duruyor), pozisyon maliyete göre ~%9,1 zararda. Önceki turlarda doğrulanan temel tema (Ç2 gelirinin ~%25 daralması, brüt marjın %27'den %7'ye çöküşü, 2026 gelir beklentisinin 125 milyon$'dan 60-75 milyon$'a düşürülmesi) bu turda yeni bir WebSearch doğrulaması yapılmadan aynen geçerli sayılmıştır — fiyatın iki turdur donuk kalması güncel piyasa tepkisini yansıtmıyor olabilir, bu bir belirsizliktir. Defense Logistics Agency sözleşmesi kapsamındaki sevkiyatlar olumlu bir denge unsuru olmaya devam ediyor. Temkinli bir azaltma değerlendirmesi makul kalıyor.",
         "risk": "Yüksek"
+      },
+      {
+        "symbol": "AVGO",
+        "action": "BEKLE",
+        "confidence": 28,
+        "rationale": "AVGO pozisyonu maliyete göre ~%3,2 küçük kârda; fiyat bu turda güncellenemedi (bugünkü ~00:10 UTC turundan donuk), hâlâ geçen haftanın sert düşüşünü yansıtıyor. WebSearch ile bu turda doğrulanan yeni gelişme: BofA'nın AI XPV finansman platformu üzerinden işaret ettiği ~370 milyar$'a kadar ulaşabilecek off-balance-sheet borç/kredi riski, VMware güvenlik açığı temasına ek yeni bir baskı unsuru olarak öne çıktı ve hisse haftalık ~%8 geriledi (ad-hoc-news, fxleaders, tradingkey, 247wallst doğrulandı). Buna karşın Apple ile 2031'e uzanan 30 milyar$ üzeri çip tedarik anlaşması ve 27 analistin 'Buy' konsensüsü güçlü bir uzun vadeli talep sinyali olmaya devam ediyor. Karışan ve büyüyen risk teması nedeniyle aktif işlem için net gerekçe yok, izlemeye devam mantıklı; risk profili bir önceki turdan biraz daha temkinli değerlendirilmiştir.",
+        "risk": "Orta"
       },
       {
         "symbol": "LULU",
         "action": "BEKLE",
         "confidence": 25,
-        "rationale": "LULU pozisyonu maliyete göre ~%28,0 zararda (fiyat bu turda değişmedi, hafta sonu nedeniyle 14 Ağustos kapanışını yansıtıyor). WebSearch ile bu turda doğrulanan: hisse dört işlem günü üst üste geriledi, Haziran'dan bu yana en kötü haftalık performansına ulaştı ve Morgan Stanley'nin stajyer anketinde LULU tercihi anket tarihindeki en düşük seviyesinde (foreignpolicyjournal, tradingpedia doğrulandı) — AI Direktörü ayrılışı ve zayıf 2026 satış kılavuzu temaları sürüyor. 27 Ağustos'ta 2Ç sonuçları açıklanacak; bu yakın katalizör öncesi zaten derin zararda olan pozisyonda kesin gerekçe olmadan işlem yapmak sermaye korumasına hizmet etmeyebilir, sonuçları beklemek makul.",
-        "risk": "Orta"
-      },
-      {
-        "symbol": "AVGO",
-        "action": "BEKLE",
-        "confidence": 30,
-        "rationale": "AVGO pozisyonu maliyete göre ~%3,2 küçük kârda; fiyat bu turda taze doğrulandı ve hâlâ Cuma'nın ~%5,9 düşüşünü yansıtıyor. WebSearch ile bu turda yeniden doğrulanan karışık tablo: VMware vCenter güvenlik açığının (CVE-2026-59310) aktif istismarı riski sürüyor, buna karşın Apple ile 2031'e uzanan 30 milyar$ üzeri çip tedarik anlaşması ve 26 analistin 'Buy' konsensüsü (ortalama hedef ~501$) güçlü bir uzun vadeli talep sinyali (Benzinga, TipRanks doğrulandı). Karışık ve birbirini kısmen dengeleyen sinyaller nedeniyle aktif işlem için net gerekçe yok, izlemeye devam mantıklı.",
+        "rationale": "LULU pozisyonu maliyete göre ~%28,0 zararda (fiyat bu turda güncellenemedi, bugünkü ~00:10 UTC turundan donuk). WebSearch ile bu turda doğrulanan yeni detay: JPMorgan 31 Temmuz'da hedef fiyatını 149$'dan 154$'a yükseltirken, Truist Temmuz'da hisseyi 'Sat'a düşürdü — analist görüşleri arasında belirgin bir ayrışma var (Yahoo Finance doğrulandı). AI Direktörü ayrılışı ve 27 Ağustos'taki 2Ç sonuçları (beklenti: EPS'de yıllık ~%42 düşüş) temaları geçerliliğini koruyor. Yakın katalizör öncesi zaten derin zararda olan pozisyonda kesin gerekçe olmadan işlem yapmak sermaye korumasına hizmet etmeyebilir, sonuçları beklemek makul.",
         "risk": "Orta"
       },
       {
         "symbol": "ARB",
         "action": "AZALT",
-        "confidence": 35,
-        "rationale": "ARB pozisyonu bu turda taze doğrulandı, maliyete göre ~%94,9 derin zararda, kalan değeri çok küçük (~10,66$). WebSearch ile bu turda doğrulandı: 16 Ağustos'ta gerçekleşen 92,65 milyon ARB'lik (~7,2 milyon$) token kilidi ve 'sessiz balina dağılımı' fiyatı son ~39 saatte ~%3,9 baskıladı (CoinMarketCap/COINOTAG doğrulandı, önceki turdaki tespitle tutarlı). Katalizör fiilen gerçekleşmiş durumda; pozisyonun küçük kalan değeri nedeniyle portföy geneline etkisi sınırlı olsa da zarar kesme/kapatma değerlendirilebilir.",
+        "confidence": 32,
+        "rationale": "ARB pozisyonu bu turda güncellenemedi (bugünkü ~00:10 UTC turundan donuk), maliyete göre ~%94,9 derin zararda, kalan değeri çok küçük (~10,66$). Önceki turda doğrulanan 16 Ağustos token kilidi/balina dağılımı teması bu turda yeniden doğrulanmadı ancak önceki bulgunun geçerliliğini koruduğu varsayılmıştır. Pozisyonun küçük kalan değeri nedeniyle portföy geneline etkisi sınırlı olsa da zarar kesme/kapatma değerlendirilebilir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "BTC",
         "action": "AZALT",
-        "confidence": 30,
-        "rationale": "BTC, canlı varlıkların ~%26,1'ini oluşturuyor (~4.601$ / toplam ~17.648$ canlı varlık değeri), maliyete göre ~%105,9 çok derin kârda; fiyat bu turda taze doğrulandı ve günlük ~%0,37 hafif geriledi. WebSearch'e göre BTC Ağustos'a ~64.000$ civarında zayıf bir ilk yarı sonrası girdi ve hâlâ önemli hareketli ortalamaların altında işlem görüyor; kısa vadeli tahminler geniş bir aralıkta (60.500$-70.000$) dağılıyor, bu belirsizliği açıkça yansıtır. Tek varlıkta bu ölçekte yoğunlaşma, çok derin kârda olsa da sermaye koruması açısından risk taşımaya devam ediyor; kısmi kâr realizasyonuyla dağıtım makul olabilir.",
+        "confidence": 28,
+        "rationale": "BTC, canlı varlıkların ~%26,1'ini oluşturuyor (~4.601$ / toplam ~17.648$ canlı varlık değeri), maliyete göre ~%105,9 çok derin kârda; fiyat bu turda güncellenemedi (bugünkü ~00:10 UTC turundan donuk). WebSearch ile bu turda doğrulandı: BTC 62.300-64.000$ dar bandında sıkışmaya devam ediyor, hafta sonu düşük hacmi ve ABD kripto düzenleme belirsizliği fiyatı baskılıyor; 3 aylık trend hâlâ ~%19 negatif. Tek varlıkta bu ölçekte yoğunlaşma, çok derin kârda olsa da sermaye koruması açısından risk taşımaya devam ediyor; kısmi kâr realizasyonuyla dağıtım makul olabilir.",
         "risk": "Yüksek"
       },
       {
         "symbol": "UNH",
         "action": "AZALT",
-        "confidence": 30,
-        "rationale": "UNH pozisyonu maliyete göre ~%41,0 güçlü kârda (401,73$ vs 285$ ortalama maliyet), fiyat bu turda taze doğrulandı. WebSearch ile bu turda doğrulanan yeni gelişme: 13 Ağustos'ta Medicare sahtekarlığı, algoritmik bakım reddi ve 237 milyon$'lık içeriden satış iddialarıyla yeni bir dava açıldığı teyit edildi (Benzinga doğrulandı) — önceki turlarda doğrulanan hissedar davası temasına ek bir hukuki risk katmanı. Şirket aynı zamanda Ç2'de güçlü operasyonel iyileşme gösterdi ve 2026 EPS kılavuzunu yükseltti (karışık sinyal). Güçlü kümülatif kârda olan bir pozisyonda büyüyen hukuki risk teması karşısında kısmi kâr realizasyonu sermaye korumasına hizmet edebilir; bu aktif bir 'sat' çağrısı değil, ölçülü bir azaltma değerlendirmesidir.",
+        "confidence": 28,
+        "rationale": "UNH pozisyonu maliyete göre ~%41,0 güçlü kârda, fiyat bu turda güncellenemedi (bugünkü ~00:10 UTC turundan donuk). WebSearch ile bu turda ek doğrulama: Barchart kaynağı 13 Ağustos'ta UNH'ye yönelik siber güvenlik ve yönetişim başarısızlığı iddialarıyla açılan bir davayı teyit etti ve hissenin 2026 başından bu yana ~%18 gerilediğini, 'Pazartesi düşüşü satın alınır mı' tartışmasının piyasada döndüğünü aktardı (Barchart doğrulandı) — bu, önceki turda Benzinga kaynağıyla doğrulanan Medicare sahtekarlığı/içeriden satış iddialı dava ile aynı tarihli olup farklı bir çerçeveleme olabilir, iki kaynağın aynı davayı mı yoksa ayrı davaları mı anlattığı netleştirilebilmiş değil. Güçlü kümülatif kârda olan bir pozisyonda büyüyen/belirsiz hukuki risk teması karşısında kısmi kâr realizasyonu sermaye korumasına hizmet edebilir; bu aktif bir 'sat' çağrısı değil, ölçülü bir azaltma değerlendirmesidir.",
         "risk": "Orta"
       }
     ]
   },
   "opportunityReport": {
-    "generatedAt": "2026-08-17T00:45:00Z",
-    "dataCoverageNote": "17 Ağustos 2026, ~00:35-00:45 UTC turu, salt WebSearch haber taramasına dayanıyor (bu semboller portföyde olmadığı için Alpha Vantage ile güncel fiyat/hacim/değerleme çarpanı kasıtlı olarak sorgulanmadı, kapsam dışı; ayrıca bu turda Alpha Vantage günlük istek kotası zaten dolmuştu). Önceki turlarda önerilen çok sayıda sembol (KARSN, GESAN, FORTE, NET, HLIT, WDAY, EREGL, YKBNK, OTKAR, OKTA, AMZN, CAVA, TCELL, AKSA, MU, NU, RDDT, HALKB, TTKOM, BA, COHR, AGYS, SAHOL, TSKB, KCAER, HPE, JBL, CSCO, AMAT, TUPRS, ASELS, KCHOL, SMCI, CRWV, BIRK, GARAN, AKBNK, ENJSA, ABNB, NBIS, LITE, AGHOL, SISE, W, DLR, DELL, STX, AXON, OKLO, ASTOR, KOTON, LINK, PLTR, DDOG, CAT, EUPWR, HOROZ, HTFL, AMD, AMKBY, DAPGM, MASFN, GLRMK) bu turda tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı). BIST tarafında 2Ç2026 bilanço sezonunda kârını en fazla artıran şirketler taraması üzerinden KTLEV, DOHOL ve PETKM kalite eşiğini geçti; ABD tarafında son 1-2 haftadaki güçlü çeyrek sonuçlarından TWLO, TJX ve LLY öne çıktı. DOHOL'ün kâr sıçramasında 1,6 milyar TL'lik ertelenmiş vergi geliri gibi tek seferlik/operasyonel olmayan kalemlerin payı olduğu, bu nedenle kalitesinin sorgulanabilir olduğu ayrıca not edilmiştir. Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E veya hacim verisine, teknik göstergelere ve doğrulanmış gerçek zamanlı analist konsensüs veritabanına erişimim yok.",
+    "generatedAt": "2026-08-17T08:20:00Z",
+    "dataCoverageNote": "17 Ağustos 2026, ~08:10-08:20 UTC turu, salt WebSearch haber taramasına dayanıyor (bu semboller portföyde olmadığı için Alpha Vantage ile güncel fiyat/hacim/değerleme çarpanı kasıtlı olarak sorgulanmadı; ayrıca bu turda Alpha Vantage günlük istek kotası zaten dolu olduğu doğrulandı). Önceki turlarda önerilen çok sayıda sembol (KARSN, GESAN, FORTE, NET, HLIT, WDAY, EREGL, YKBNK, OTKAR, OKTA, AMZN, CAVA, TCELL, AKSA, MU, NU, RDDT, HALKB, TTKOM, BA, COHR, AGYS, SAHOL, TSKB, KCAER, HPE, JBL, CSCO, AMAT, TUPRS, ASELS, KCHOL, SMCI, CRWV, BIRK, GARAN, AKBNK, ENJSA, ABNB, NBIS, LITE, AGHOL, SISE, W, DLR, DELL, STX, AXON, OKLO, ASTOR, KOTON, LINK, PLTR, DDOG, CAT, EUPWR, HOROZ, HTFL, AMD, AMKBY, DAPGM, MASFN, GLRMK, TWLO, LLY, TJX, PETKM, KTLEV, DOHOL) bu turda tekrar önerilmedi (aynı şirketi sürekli önermeme kuralı). BIST tarafında 2Ç2026 bilanço sezonu taramasından BRSAN ve TOASO kalite eşiğini geçti (her ikisi de büyük, doğrulanmış kâr sıçraması gösterdi); GSRAY, ENJSA, TUPRS, KCHOL, EREGL gibi diğer öne çıkan isimler ya spekülatif/standart-dışı (GSRAY bir spor kulübü hissesi) ya da önceki turlarda zaten önerilmiş olduğu için elenmiştir. ABD tarafında Atlassian (TEAM) 6-7 Ağustos'taki büyük kazanç sıçraması sonrası izlemeye alınmıştır; Marvell (MRVL) karışık/tutarsız kaynaklar nedeniyle, Palo Alto Networks (PANW) ise henüz açıklanmamış (17 Ağustos akşamı bekleniyor) bir bilançoya dayalı spekülasyon olacağı için kalite eşiğini geçemedi ve dahil edilmedi — bu bilinçli bir seçicilik, kapsam eksikliği değil. Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E veya hacim verisine, teknik göstergelere ve doğrulanmış gerçek zamanlı analist konsensüs veritabanına erişimim yok.",
     "items": [
       {
-        "market": "US",
-        "symbol": "TWLO",
-        "name": "Twilio Inc.",
-        "opportunityScore": 58,
+        "market": "BIST",
+        "symbol": "BRSAN",
+        "name": "Borusan Birleşik Boru Fabrikaları A.Ş.",
+        "opportunityScore": 52,
         "confidence": 35,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "6 Ağustos'ta açıklanan 2Ç2026 sonuçlarında EPS 1,47$ ile 1,34$ beklentisini, gelir 1,50 milyar$ ile beklentiyi (yıllık %22 büyüme) aştı; şirket 2026 gelir büyüme kılavuzunu %14-15'ten %18-18,5'e yükseltti. Hisse rapor sonrası iki günde toplam ~%40 sıçradı (193$'dan ~241$'a) ve Mizuho, TD Cowen, BTIG, Citizens, Stifel gibi kurumlar hedef fiyatlarını 240-260$ aralığına çekti (Yahoo Finance, Motley Fool, Quiver Quantitative doğrulandı). Bu ölçekte sert bir ralliden sonra kâr realizasyonu satışı riski var ve momentum sürdürülebilirliği belirsiz. Güncel fiyat/değerleme bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "LLY",
-        "name": "Eli Lilly and Company",
-        "opportunityScore": 55,
-        "confidence": 38,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "5 Ağustos'ta açıklanan 2Ç2026 sonuçlarında gelir yıllık %47,7 büyüyerek 22,97 milyar$'a ulaştı (beklenti 20,26 milyar$), non-GAAP EPS 8,38$ ile 6,01$ beklentisini büyük farkla aştı; Zepbound ve Mounjaro talebindeki sıçrama ana itici güç. Şirket 2026 gelir kılavuzunu 82-85 milyar$'dan 85-87 milyar$'a yükseltti (gurufocus, CNBC, BioSpace doğrulandı). Portföydeki NVO (Novo Nordisk) doğrudan rakibi olduğundan, LLY'nin GLP-1 pazarındaki güçlü performansı NVO'daki mevcut zayıflık temasıyla dolaylı bir ilişki taşıyor — bu bir risk/bağlam notudur, alım gerekçesi değildir. Güncel fiyat/değerleme bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "TJX",
-        "name": "The TJX Companies, Inc.",
-        "opportunityScore": 48,
-        "confidence": 32,
-        "risk": "Düşük",
-        "action": "İZLE",
-        "reason": "TJX (TJ Maxx/Marshalls ana şirketi) 2Ç2026'da EPS 1,10$ ile 1,01$ beklentisini, gelir 14,40 milyar$ ile 14,13 milyar$ beklentisini aştı; tarife maliyetleri beklenenden düşük kaldı ve şirket tam yıl EPS kılavuzunu 4,34-4,43$'tan 4,52-4,57$'a, karşılaştırılabilir satış beklentisini de %2-3'ten %3'e yükseltti, hisse ~%6,4 yükseldi (CNBC doğrulandı). İndirimli perakende modeli ekonomik yavaşlamalara karşı görece dirençli olsa da tarife riski gelecek çeyreklerde yeniden gündeme gelebilir. Güncel fiyat/değerleme bu turda bağımsız doğrulanmadı. Düşük-orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "Borusan Boru, 2026 ilk yarısında gelirini yıllık ~%49 artışla 43,6 milyar TL'ye çıkardı, net kârını ise ~3 katına (597,9 milyon TL'den 1,8 milyar TL'ye) çıkardı; sadece 2Ç2026'da 25,2 milyar TL net satış ve 1,52 milyar TL net kâr açıkladı (Foreks/KAP, Paratic, Yatirimx doğrulandı). Büyüme geniş tabanlı görünüyor (gelir, brüt kâr ve FAVÖK'te eş zamanlı artış). Boru/çelik sektörü emtia fiyatları ve ihracat talebine duyarlı, bu da sürdürülebilirlik riski taşıyor. Güncel fiyat/hacim/değerleme bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
         "market": "BIST",
-        "symbol": "PETKM",
-        "name": "Petkim Petrokimya Holding A.Ş.",
+        "symbol": "TOASO",
+        "name": "Tofaş Türk Otomobil Fabrikası A.Ş.",
         "opportunityScore": 47,
-        "confidence": 30,
+        "confidence": 32,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "Petkim, 2Ç2026'da geçen yılın aynı döneminde açıkladığı 769 milyon TL zarardan 4,08 milyar TL net kâra geçti; bu, piyasa beklentisi olan 3,78 milyar TL'nin üzerinde ve enflasyon muhasebesi uygulamasından bu yana en güçlü kârlılık performansı (borsagundem, yatirimx, İş Yatırım doğrulandı). Yüksek enerji fiyatları ve operasyonel iyileşme ana itici güç; brokerlar (Deniz Yatırım, diğerleri) 21-21,6 TL bandında hedef fiyat belirledi. Petrokimya marjları küresel talep ve enerji fiyatı dalgalanmalarına duyarlı, bu da sürdürülebilirlik riski taşıyor. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "Tofaş, 2026 ilk yarısında net kârını yıllık ~%197 artışla 6,29 milyar TL'ye çıkardı (gelir ~%61 arttı); 2Ç2026'da tek başına 3,09 milyar TL net kâr açıkladı ve yönetim 2026 için %3-4 vergi öncesi kâr marjı beklentisini korudu (İş Yatırım, Borsa Gündem, Paraajansi doğrulandı). Kâr artışının bir kısmı parasal kazançlardan (enflasyon muhasebesi) kaynaklanıyor, bu da kalitesini kısmen sorgulanabilir kılıyor. Otomotiv sektörü faiz oranlarına ve iç talebe duyarlı. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Orta riskle izleme önerilir, bu bir alım tavsiyesi değildir."
       },
       {
-        "market": "BIST",
-        "symbol": "KTLEV",
-        "name": "Katılımevim Tasarruf Finansman A.Ş.",
+        "market": "US",
+        "symbol": "TEAM",
+        "name": "Atlassian Corporation",
         "opportunityScore": 40,
-        "confidence": 22,
+        "confidence": 25,
         "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "Hisse 10-14 Ağustos haftasında BIST 100 içinde en çok değer kazanan hisselerden biri oldu ve 2Ç2026 kâr artışı taramalarında öne çıkan isimler arasında yer aldı; 10 Ağustos'ta Pusula Finans Holding'in 23,3 milyon payı 42,90 TL'den satın aldığı KAP'a bildirildi (rotaborsa, cnbc-e doğrulandı) — büyük ortak/kurumsal alım sinyali olumlu okunabilir. Katılım finansman sektörü göreceli yeni ve düzenleyici/faiz ortamına duyarlı; şirketin kısa borsa geçmişi ve payların yoğunlaşması nedeniyle likidite riski taşıyor. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "BIST",
-        "symbol": "DOHOL",
-        "name": "Doğan Şirketler Grubu Holding A.Ş.",
-        "opportunityScore": 35,
-        "confidence": 20,
-        "risk": "Yüksek",
-        "action": "İZLE",
-        "reason": "Doğan Holding, 2Ç2026'da 3,3 milyar TL ana ortaklık net kârı açıkladı (piyasa beklentisi ~488 milyon TL, önceki yıl aynı dönem 100 milyon TL) ve ilk yarıda 2025'in 628 milyon TL'lik net zararının aksine 3,65 milyar TL kâra geçti; net aktif değeri yılbaşından bu yana ~%14 arttı (borsagundem, İş Yatırım, tacirler doğrulandı). Ancak kâr sıçramasının önemli bir kısmı yatırım gelirleri, finansman gideri düşüşü ve 1,6 milyar TL'lik ertelenmiş vergi geliri gibi operasyonel olmayan kalemlerden kaynaklanıyor — bu, kalitesi sorgulanabilir bir kâr artışı anlamına gelir ve bilinçli olarak düşük güvenle işaretlenmiştir. Güncel fiyat/hacim bu turda bağımsız doğrulanmadı. Yüksek riskle (kâr kalitesi belirsizliği nedeniyle) sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "Atlassian, 6 Ağustos'ta açıkladığı 4Ç sonuçlarında EPS 1,87$ ile 1,50$ beklentisini, gelir 1,766 milyar$ ile 1,66 milyar$ beklentisini aştı (gelir büyümesi ~%28, bulut geliri ~%31); hisse tek günde 110$'dan 149$'a (~%35) sıçradı (Benzinga, StocksToTrade doğrulandı). Ancak analist tepkisi karışık: Morgan Stanley kapsamayı 120$ hedefle başlattı ve KeyBanc hedefini 130$'dan 115$'e indirdi — ikisi de rallî sonrası fiyatın (~149$) altında, bu da hisssenin kısa vadede aşırı ısınmış olabileceğine işaret ediyor; MarketBeat konsensüsü ise 172,88$ ile çok daha iyimser, geniş bir görüş ayrılığı var. Büyük bir sıçramanın ardından girmek momentum kovalama riski taşır. Güncel fiyat bu turda bağımsız doğrulanmadı. Yüksek riskle (rallî sonrası giriş riski nedeniyle) sadece izleme önerilir, bu bir alım tavsiyesi değildir."
       }
     ]
   },
