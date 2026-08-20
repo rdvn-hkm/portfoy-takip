@@ -33,118 +33,128 @@
   "lastUpdated": "2026-08-20T08:10:00Z",
   "aiNote": "",
   "advisorReport": {
-    "generatedAt": "2026-08-20T00:04:24Z",
-    "healthScore": 57,
-    "summary": "20 Ağustos 2026 turunda Alpha Vantage'ın günlük 25 istek limiti daha ilk iki sorguda (USD/TRY ve AAPL test çağrısı) doldu; bu nedenle bu turda HİÇBİR fiyat güncellenemedi ve tüm rakamlar hâlâ 19 Ağustos ~16:05 UTC kapanışını yansıtıyor. Canlı varlıklar genel olarak maliyete göre kârda (BTC +%110, GTLB +%60, PYPL +%44 gibi güçlü pozisyonlar var) ama BABA bugün (20 Ağustos) bilanço açıklayacağı için yüksek olay riski taşıyor, AUR'da art arda içeriden satış bildirimleri ve UAMY'de ciro beklentisi düşürülmesi dikkat çekici zayıflık sinyalleri. Sermaye korumasını önceliklendiren bu değerlendirme, agresif işlem önermek yerine seçici kâr realizasyonu ve izlemeyi öne çıkarıyor.",
-    "dataCoverageNote": "Fiyat verileri: Bu turda Alpha Vantage'a yapılan İLK iki sorgu (USD/TRY kuru ve bir test sorgusu) 'standart API rate limitimiz günde 25 istektir' hatası döndürdü — bu günlük kota muhtemelen bugün içindeki önceki bir çalışma tarafından tüketilmişti. Bu nedenle bu turda TEK bir holding'in bile price/prevClose/priceHistory alanı güncellenemedi; index.html'de görünen tüm fiyatlar 19 Ağustos ~16:05 UTC turundan kalma en son bilinen değerlerdir, lastUpdated alanı da bilinçli olarak değiştirilmedi. XAU (Altın) ve GTF (Fon) ile THYAO (BIST) her zaman olduğu gibi Alpha Vantage kapsamı dışında olduğundan zaten hiç sorgulanmıyor, demo/0 fiyatla kalmaya devam ediyor. Aşağıdaki tavsiyeler tamamen mevcut (19 Ağustos kapanışı) fiyat/K-Z verisi ile bu turda WebSearch üzerinden doğrulanan güncel haberlere dayanıyor. KAP açıklamalarının tam metnine, SEC dosyalarının detayına, resmi bilanço tablolarına, içeriden öğrenenlerin işlem veritabanına, doğrulanmış gerçek zamanlı analist konsensüs verisine ve teknik göstergelere (RSI/MACD) erişimim yok; WebSearch sonuçlarında geçen analist hedef fiyatları/notları üçüncü taraf kaynaklardır ve bağımsız doğrulanmamıştır. Aylık/YTD/yıllık getiri hesapları için priceHistory'deki mevcut kayıtlar sınırlı (~4 hafta), bu nedenle YTD ve yıllık getiriler için hâlâ yeterli veri yok, sadece son ~1 aylık eğilim değerlendirildi.",
+    "generatedAt": "2026-08-20T08:20:00Z",
+    "healthScore": 60,
+    "summary": "Canlı takip edilen 14 pozisyonda toplam maliyete göre ~%17,5 net kâr var; GTLB (+%64), PYPL (+%46), TMDX (+%36) ve BABA (+%31,5) en güçlü katkı sağlayan pozisyonlar. Buna karşın EVTL maliyete göre ~%71 zararda ve tekrarlayan sermaye artırımlarıyla sulanma riski taşıyor; UAMY ve AUR'da temel veriler (ciro beklentisi indirimi, Ç2 kayıp sapması) zayıflık gösteriyor. Bugün BABA'nın Ç1 bilançosu açıklanacağı için bu pozisyonda kısa vadeli yüksek oynaklık bekleniyor.",
+    "dataCoverageNote": "Bugün (20 Ağustos) Alpha Vantage üzerinden 14 canlı varlık (3 kripto + 11 ABD hissesi/USD-TRY) başarıyla güncellendi; ABD hisseleri için veri bir önceki kapanışa (18/19 Ağustos, latest trading day alanına göre) ait — bugünün seansı henüz tamamlanmadı. XAU (Altın), GTF (Fon) ve THYAO (BIST) Alpha Vantage'ın ücretsiz plan kapsamı dışında olduğundan hiç sorgulanmadı, demo/0 fiyatla listede duruyor ve bu rapordaki hesaplamalara dahil edilmedi. Bu turda WebSearch ile doğrulanan haberler: BABA bugün seans öncesi Ç1 (Haziran çeyreği) bilançosu açıklayacak (analist beklentisi: EPS 1,98$, gelir 21,22 milyar$); UAMY 11 Ağustos'ta ciro rehberliğini 125 milyon$'dan 60-75 milyon$'a indirdi; AUR 18 Ağustos'ta Ç2 kaybı beklentiyi aştı (-0,14$ vs -0,12$) ve 12 Ağustos'ta iki ayrı içeriden kişi Form 144 satış bildirimi yaptı; GTLB'de analistler hedef fiyat yükseltti (RBC 46$) ama son 12 ayda 122,6 milyon$ içeriden net satış var; EVTL Ağustos ortasında ~56 milyon$ ek sermaye artırımı (hisse + dönüştürülebilir imtiyazlı) yaptı; TMDX geliri büyüdü ve rehberlik yükseltildi ama net kâr %57,9 daraldı, Needham hedef fiyatını 142$'dan 106$'a indirdi. KAP açıklamalarının tam metnine, SEC dosyalarının detayına, resmi bilanço tablolarına, doğrulanmış gerçek zamanlı analist konsensüsüne ve teknik göstergelere (RSI/MACD) doğrudan erişimim yok; yukarıdaki insider/analist rakamları WebSearch'te bulunan üçüncü taraf haber kaynaklarından derlenmiştir ve bağımsız doğrulanmamıştır. Aylık getiri hesapları priceHistory'deki ~30 günlük veriye dayanıyor; YTD ve yıllık getiriler için hâlâ yeterli geçmiş veri yok.",
     "recommendations": [
       {
         "symbol": "BABA",
         "action": "BEKLE",
-        "confidence": 40,
-        "rationale": "BABA pozisyonu maliyete göre ~%30,8 kârda (128,15$). WebSearch'te doğrulandı: Alibaba bugün (20 Ağustos) çeyrek bilançosunu açıklayacak; analistler EPS'de yıllık ~%6,35 düşüş bekliyor. Ayrıca oyun bölümü Lingxi Games'in ~1,5-2 milyar$ karşılığında satışı ve Qwen3.8 Max AI modelinin ağırlıklarının açık kaynak yapılması gibi stratejik AI/bulut odaklanma haberleri var; buna karşın açıklama eksikliği iddiasına dayanan bir dava riski de bulunuyor. Bilanço öncesi/sonrası yüksek oynaklık beklendiğinden, sonuçlar netleşmeden pozisyon büyütmek veya azaltmak spekülatif olur.",
+        "confidence": 35,
+        "rationale": "Pozisyon maliyete göre ~%31,5 kârda. WebSearch'te doğrulandı: Alibaba bugün (20 Ağustos) ABD seansı öncesi Ç1 (Haziran çeyreği) bilançosunu açıklayacak; analistler EPS'te 1,98$ (yıllık +%8,2) ve gelirde 21,22 milyar$ (yıllık +%26,75) bekliyor. Sonuç öncesi/sonrası yüksek oynaklık kaçınılmaz; sonuçlar netleşmeden pozisyon büyütmek veya azaltmak spekülatif olur, mevcut kârı korumak için beklemek daha temkinli.",
         "risk": "Yüksek"
       },
       {
         "symbol": "AUR",
         "action": "AZALT",
-        "confidence": 52,
-        "rationale": "AUR pozisyonu maliyete göre ~%13,7 kârda ama son işlem gününde ~%11,8 sert düşüş yaşadı (6,15$). WebSearch'te doğrulandı: Ç2'de zarar beklentiden daha derin geldi (hisse başına -0,14$ zarar, beklenti -0,12$ idi) ve gelir sadece 2 milyon$ iken net zarar 270 milyon$'a ulaştı; 7-12 Ağustos arasında dört ayrı içeriden kişi/büyük hissedar Form 144 (satış niyeti) bildirimi yaptı. Güçlü 2026 ciro büyüme hedefi (yıllık ~%400) korunsa da, art arda içeriden satış sinyali ve derinleşen zarar birlikte değerlendirildiğinde, kümülatif kârın bir kısmını realize ederek riski azaltmak sermaye korumasına hizmet eder; agresif bir 'sat' çağrısı değildir.",
+        "confidence": 50,
+        "rationale": "Pozisyon maliyete göre ~%14,5 kârda ama son ~1 ayda %6,3 geriledi. WebSearch'te doğrulandı: 18 Ağustos'ta Ç2 zararı beklentiyi aştı (hisse başına -0,14$ vs -0,12$ beklenti) ve hisse o gün ~%12,8 düştü; 12 Ağustos'ta iki ayrı içeriden kişi/büyük hissedar Form 144 (satış niyeti) bildirimi yaptı. 2026 ciro büyüme hedefi (yıllık ~%400) korunuyor olsa da, art arda içeriden satış sinyali ve beklenti-altı sonuç birlikte değerlendirildiğinde, kârın bir kısmını realize ederek riski azaltmak sermaye korumasına hizmet eder.",
         "risk": "Yüksek"
       },
       {
         "symbol": "UAMY",
-        "action": "AZALT",
-        "confidence": 48,
-        "rationale": "UAMY pozisyonu maliyete göre ~%14,2 zararda (5,20$, son günde ~%7,5 ek düşüş). WebSearch'te doğrulandı: Ç2 geliri yıllık %25 düşüşle 7,9 milyon$'a geriledi ve şirket tam yıl ciro beklentisini 125 milyon$'dan 60-75 milyon$'a belirgin şekilde aşağı çekti; bu haberle hisse bir haftada ~%22 değer kaybetti. H.C. Wainwright hedef fiyatını 11,75$'dan 9,25$'a indirdi (Al notunu korudu). Antimon fiyatlarındaki düşüş ve zayıflayan guidance, kısa vadeli görünümü olumsuzlaştırıyor; zarar durumunda pozisyonu büyütmek yerine riski azaltmak daha temkinli bir yaklaşım.",
+        "action": "BEKLE",
+        "confidence": 45,
+        "rationale": "Pozisyon maliyete göre ~%5,4 zararda; bugün fiyat bir önceki kapanışa göre ~%10,2 toparlandı ama bu, 18 Ağustos'taki ~%7,5'lik sert düşüşün ardından gelen kısmi bir tepki olabilir. WebSearch'te doğrulandı: 11 Ağustos Ç2 raporunda gelir yıllık %25 geriledi ve tam yıl ciro rehberliği 125 milyon$'dan 60-75 milyon$'a belirgin şekilde indirildi; H.C. Wainwright hedef fiyatını 11,75$'dan 9,25$'a düşürdü (Al notu korundu). Zayıf rehberlik ile kısa vadeli fiyat toparlanması çelişkili sinyaller veriyor; netlik oluşana kadar pozisyonu değiştirmemek daha uygun.",
         "risk": "Yüksek"
       },
       {
         "symbol": "GTLB",
         "action": "AZALT",
-        "confidence": 35,
-        "rationale": "GTLB pozisyonu maliyete göre ~%59,7 güçlü kârda (41,50$). WebSearch'te doğrulandı: RBC Capital 14 Ağustos'ta hedef fiyatını 29$'dan 46$'a yükseltti ve Baird 'Al' notunu korudu, ancak son 12 ayda içeriden kişiler 122,6 milyon$ satış yaparken sadece 0,4 milyon$ alım yaptı — belirgin bir net içeriden satış eğilimi. Büyük kümülatif kârda olan bu pozisyonda, olumlu analist görüşüne rağmen yoğun içeriden satış sinyali karşısında kısmi kâr realizasyonu sermaye korumasına uygun olabilir.",
+        "confidence": 55,
+        "rationale": "Pozisyon maliyete göre ~%64 kârda ve son ~1 ayda ~%36 yükseldi, portföyün en güçlü performans gösteren kalemlerinden. WebSearch'te doğrulandı: RBC Capital hedef fiyatını 29$'dan 46$'a yükseltti ve Baird Al notunu korudu; buna karşın son 12 ayda 122,6 milyon$ içeriden net satışa karşı sadece 0,4 milyon$ alım gerçekleşti. Güçlü analist desteği olsa da, büyük birikmiş kâr ve yoğun içeriden satış birlikte düşünüldüğünde, kârın bir kısmını realize etmek sermaye korumasına hizmet eder; bu agresif bir 'sat' çağrısı değildir.",
         "risk": "Orta"
       },
       {
-        "symbol": "PYPL",
+        "symbol": "EVTL",
         "action": "BEKLE",
-        "confidence": 33,
-        "rationale": "PYPL pozisyonu maliyete göre ~%44,4 kârda (60,43$). WebSearch'te doğrulandı: Ç2 EPS'i 1,38$ ile beklentiyi (1,28$) aştı ve şirket tam yıl EPS beklentisini 5,38$'a yükseltti; ayrıca Stripe/Advent International ile satış görüşmelerinin sürdüğü, temmuzda 60,50$/hisse teklifin gündemde olduğu bildirildi (mevcut fiyat bu seviyeye çok yakın). Görüşmelerin resmi sonucu belirsiz olduğundan, mevcut fiyat hem güçlü operasyonel sonuçları hem de olası bir birleşme spekülasyonunu fiyatlıyor olabilir; netlik oluşana kadar beklemek daha temkinli.",
-        "risk": "Orta"
+        "confidence": 40,
+        "rationale": "Pozisyon maliyete göre ~%71,4 zararda, portföyün en zayıf kalemi. WebSearch'te doğrulandı: Ağustos ortasında ~35 milyon$ hisse+varant ihracı ve 24 milyon$'lık ikinci imtiyazlı hisse tranşı ile toplam ~56 milyon$ ek sermaye artırımı yapıldı; bu durum mevcut hissedarlar için sulanma riski taşıyor. Diğer yandan Ç2 zararı beklentiden iyi geldi (-0,31$ vs -0,42$ beklenti) ve şirket Valo uçak platformunda sertifikasyon ilerlemesi bildirdi. Zarar durumunda pozisyonu büyütmek riskli, mevcut derin zararı bu noktada satışla realize etmek de gerekçelendirilmiş bir sinyale dayanmıyor; sermaye korumasını önceliklendirerek beklemek ve gelişmeleri izlemek öneriliyor.",
+        "risk": "Yüksek"
       },
       {
-        "symbol": "AVGO",
+        "symbol": "TMDX",
         "action": "BEKLE",
-        "confidence": 30,
-        "rationale": "AVGO pozisyonu maliyete göre ~%0,2 hafif zararda, son günde ~%3,2 düştü (380,00$). WebSearch'te doğrulandı: Hisse haziran zirvesinden ~%21 geriledi; VMware vCenter'da aktif istismar edilen ciddi bir güvenlik açığı bildirildi ve Bank of America, AI finansman platformuna bağlı garantiler nedeniyle Broadcom'un borcunu düşürdüğü rapor edildi. Buna karşın Ç2'de %48 gelir büyümesi ve AI çip satışlarında %143 artış gösterdi; 2 Eylül'deki Ç3 bilançosu öncesi analistlerin ortalama 12 aylık hedefi 515,78$ ve 48 analistin çoğunluğu 'Güçlü Al' diyor (üçüncü taraf, bağımsız doğrulanmadı). Karışık kısa vadeli sinyaller (güvenlik/borç riski) ile güçlü temel büyüme ve yaklaşan bilanço katalizörü bir arada olduğundan, sonuçlar netleşmeden beklemek uygun.",
+        "confidence": 50,
+        "rationale": "Pozisyon maliyete göre ~%36,3 kârda ve son ~1 ayda ~%32 yükseldi. WebSearch'te doğrulandı: Ç2 geliri yıllık %20,7 büyüyerek beklentiyi hafif aştı (189,9 milyon$) ve şirket 2026 tam yıl ciro rehberliğinin alt sınırını yükseltti; ancak net kâr %57,9 daraldı (14,7 milyon$) ve Needham hedef fiyatını 142$'dan 106$'a indirdi (Al notu korundu). Büyüyen ciro ile daralan kârlılık karışık bir tablo çiziyor; mevcut kârı koruyup marj eğilimini izlemek, bu noktada pozisyon büyütmekten daha temkinli.",
         "risk": "Orta"
       }
     ]
   },
   "opportunityReport": {
-    "generatedAt": "2026-08-20T00:04:24Z",
-    "dataCoverageNote": "20 Ağustos 2026 turu, salt WebSearch haber taramasına dayanıyor (bu semboller portföyde olmadığı için Alpha Vantage hiç sorgulanmadı; zaten günlük kota da bu turun başında dolmuştu). Önceki turlarda zaten önerilmiş çok sayıda sembol (ör. TGT, ACMR, ROST, TAVHL, ULKER, OYAKC, ISGYO, ARGX, KRDMD, RIOT, AMX, DUOL, SANEL, KOCMT, VANGD, KARSN, GESAN, FORTE, NET, HLIT, WDAY, EREGL, YKBNK, OTKAR, OKTA, AMZN, CAVA, TCELL, AKSA, MU, NU, RDDT, HALKB, TTKOM, BA, COHR, AGYS, SAHOL, TSKB, KCAER, HPE, JBL, CSCO, AMAT, TUPRS, ASELS, KCHOL, SMCI, CRWV, BIRK, GARAN, AKBNK, ENJSA, ABNB, NBIS, LITE, AGHOL, SISE, W, DLR, DELL, STX, AXON, OKLO, ASTOR, KOTON, LINK, PLTR, DDOG, CAT, EUPWR, HOROZ, HTFL, AMD, AMKBY, DAPGM, MASFN, GLRMK, TWLO, LLY, TJX, PETKM, KTLEV, DOHOL, BRSAN, TOASO, TEAM, KAREL, ALAB, CRDO, AKSEN, ISRG, RBRK, AG, BIMAS, AYGAZ, CCOLA, BBY, ON, INTC, TKFEN, ARASE, ADGYO, TPR, NTAP, CTOS) bu turda bilinçli olarak dışlandı (aynı şirketi sürekli önermeme kuralı); bu listeye ek olarak ilk aramalarda BIST momentum lideri olarak öne çıkan TKFEN, BRSAN ve savunma sanayi haberleriyle öne çıkan ASELS de aynı sebeple (daha önce önerilmiş) elendi, yerine tamamen yeni isimler arandı. Bu turda bulunan yeni fırsatlar: BIST tarafında (1) Koza Altın (KOZAL) — Halk Yatırım Ağustos'ta 34,3 TL hedef fiyatla 'Al' notu verdi, hisse son bilanço sonrası 33,22 TL ile tarihi zirve gördü; küresel altın fiyatlarının 2026 3. çeyrekte bankalar arası tahminlere göre 4.200-5.132$/ons aralığında (RBC/Standard Chartered, üçüncü taraf) seyretmesi bekleniyor, bu bir altın madencisi için doğrudan destekleyici bir makro arka plan oluşturuyor (ama tahminler doğrulanmamış banka projeksiyonları). (2) Galatasaray Sportif (GSRAY) — en son bilançosunda 608,6 milyon TL kâr açıkladı, F/K oranı ~7,51 ve PD/DD ~0,81 ile düşük çarpanlarda işlem görüyor (hisse.net/mynet kaynaklı, bağımsız doğrulanmadı); spor kulübü şirketlerinin geliri transfer/şampiyonluk gibi tek seferlik kalemlere duyarlı, oynaklığı yüksek. (3) Odine Solutions Teknoloji (ODINE) — Ağustos'ta Türksat ile router sistemleri sözleşmesi ve bir LLM/otonom bilgi hattı patenti başvurusu haberleri var, hisse ayın 12'sinde tarihi zirveye ulaştı (~%43,6 aylık kazanç); bu çok küçük ölçekli ve son derece spekülatif bir teknoloji hissesi, resmi bilanço/ciro detayına bu turda ulaşılamadı, momentum büyük ölçüde teknik/haber akışı kaynaklı görünüyor. ABD tarafında: (1) Nvidia (NVDA) — 26 Ağustos'ta bilanço açıklayacak (93-95 milyar$ gelir bekleniyor), 19 Ağustos'ta H200 çiplerinin Çin'e ihracatına onay aldığı bildirildi; 61 analistin ortalama notu 'Güçlü Al' ve 302,83$ ortalama hedef fiyat (üçüncü taraf, bağımsız doğrulanmadı) ama Çin veri merkezi gelirinin hâlâ sıfır olduğu da doğrulandı. (2) CrowdStrike (CRWD) — 26 Ağustos'ta bilanço açıklayacak, hisse son 77 günde %348,8 yükselmiş ve tarihi zirvede; ancak bilanço öncesi ileri F/K çarpanı ~175x'e ulaşmış durumda, bu yürütme hatasına çok az tolerans bırakıyor — yüksek risk. (3) Eaton (ETN) — Dana Incorporated ile Mobility Group'u ayırıp birleştiren 10 milyar$'ın üzerinde değerli bir Reverse Morris Trust anlaşması duyuruldu, Ç2 geliri %21 büyüdü (ABD veri merkezi backlog'u ~307 GW), temettü 1,10$'a yükseltildi; ancak hisse son bir haftada %23,6 yükselmiş durumda, kısa vadede momentum kovalama riski var. Tüm opportunityScore ve confidence değerleri öznel/nitel bir değerlendirmedir; kesin güncel fiyat, P/E, hacim verisine, teknik göstergelere (RSI/MACD) ve doğrulanmış gerçek zamanlı analist konsensüs veritabanına erişimim yok; burada aktarılan hedef fiyatlar ve haber özetleri WebSearch sonuçlarında bulunan üçüncü taraf kaynaklardan alınmıştır ve bağımsız doğrulanmamıştır.",
+    "generatedAt": "2026-08-20T08:25:00Z",
+    "dataCoverageNote": "Bu rapordaki tüm veriler WebSearch ile bu turda taranan güncel haber kaynaklarına dayanıyor; Alpha Vantage üzerinden bu sembollere canlı fiyat sorgusu yapılmadı (portföydeki BIST/Fund/Gold kalemleri için zaten kapsam dışı olduğu doğrulanmıştı, bu tarama da aynı nedenle yalnızca haber/hedef fiyat bazlı). Aşağıdaki hedef fiyatlar ve yüzdeler haber kaynaklarında (aracı kurum raporları, finans siteleri) geçen üçüncü taraf verilerdir, tarafımca doğrudan doğrulanmamıştır. KAP açıklamalarının tam metnine, SEC dosyalarının detayına, resmi bilanço tablolarının tamamına, içeriden öğrenenlerin işlem veritabanına ve teknik göstergelere (RSI/MACD) erişimim yok. Bu bir yatırım tavsiyesi değildir; sadece bu turda öne çıkan, doğrulanabilir bir haber katalizörü taşıyan gelişmelerin bir listesidir.",
     "items": [
       {
         "market": "BIST",
-        "symbol": "KOZAL",
-        "name": "Koza Altın İşletmeleri A.Ş.",
-        "opportunityScore": 55,
-        "confidence": 32,
+        "symbol": "TUPRS",
+        "name": "Tüpraş",
+        "opportunityScore": 72,
+        "confidence": 65,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "Halk Yatırım Ağustos'ta 34,3 TL hedef fiyatla 'Al' notu verdi; hisse son bilanço sonrası 33,22 TL ile tarihi zirve gördü (üçüncü taraf kaynak, bağımsız doğrulanmadı). Küresel bankaların 2026 3. çeyrek ons altın tahminleri 4.200-5.132$ aralığında (RBC, Standard Chartered) ve merkez bankası alımlarının yıllık ~1.000 tona yaklaşması bekleniyor — bir altın üreticisi için doğrudan destekleyici makro arka plan. Ancak bu banka tahminleri doğrulanmamış projeksiyonlardır ve altın madenciliği şirketleri jeopolitik/işletme riskine de duyarlıdır. Orta riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "WebSearch'te doğrulandı: Tüpraş 4 Ağustos'ta açıkladığı Ç2 sonuçlarında 45,88 milyar TL net kâr bildirdi (analist beklentisi 30,37 milyar TL); ilk yarı net kârı yıllık ~%20 arttı. Bilanço sonrası 16 aracı kurumun ortalama hedef fiyatı 405,44 TL (346-470,90 TL aralığı). Güçlü bilanço ve geniş analist desteği olumlu, ancak rafineri marjlarının ve global petrol fiyatlarının oynaklığına duyarlı bir iş modeli olduğu unutulmamalı; pozisyon açmadan önce güncel fiyat/hedef farkının bağımsız doğrulanması öneriliyor."
       },
       {
         "market": "BIST",
-        "symbol": "GSRAY",
-        "name": "Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş.",
-        "opportunityScore": 38,
-        "confidence": 20,
-        "risk": "Yüksek",
+        "symbol": "BIMAS",
+        "name": "BİM Birleşik Mağazalar",
+        "opportunityScore": 68,
+        "confidence": 60,
+        "risk": "Orta",
         "action": "İZLE",
-        "reason": "Son bilançosunda 608,6 milyon TL kâr açıkladı ve F/K ~7,51, PD/DD ~0,81 gibi düşük çarpanlarla işlem görüyor (hisse.net/mynet kaynaklı, bağımsız doğrulanmadı, resmi KAP tablosuna erişimim yok). Spor kulübü şirketlerinin geliri transfer dönemi, şampiyonluk/kupa performansı ve Avrupa kupası gelirleri gibi tek seferlik ve öngörülemeyen kalemlere yüksek duyarlılık gösterir, bu da kazanç sürdürülebilirliğini belirsizleştirir. Yüksek riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "WebSearch'te doğrulandı: 18 Ağustos itibarıyla 12 aracı kurumun BIMAS için ortalama hedef fiyatı 525,46 TL (son fiyat ~402,50 TL, ima edilen potansiyel ~%30,5); 12 kurumdan 8'i 'Al' tavsiyesi veriyor, Halk Yatırım hedefini 565,90 TL'ye yükseltti. Perakende/gıda sektörünün savunmacı yapısı ve geniş analist desteği olumlu bir sinyal; enflasyon ve tüketici harcama trendlerindeki olası bozulma ana risk unsuru."
       },
       {
         "market": "BIST",
-        "symbol": "ODINE",
-        "name": "Odine Solutions Teknoloji Ticaret ve Sanayi A.Ş.",
-        "opportunityScore": 30,
-        "confidence": 15,
+        "symbol": "TOASO",
+        "name": "Tofaş Türk Otomobil Fabrikası",
+        "opportunityScore": 66,
+        "confidence": 50,
         "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "Ağustos'ta Türksat ile router sistemleri sözleşmesi ve bir LLM/otonom bilgi hattı patent başvurusu haberleri çıktı; hisse 12 Ağustos'ta tarihi zirveye ulaştı ve ayı ~%43,6 kazançla sürdürüyor (üçüncü taraf kaynak, bağımsız doğrulanmadı). Ancak bu çok küçük ölçekli, düşük likiditeli bir teknoloji hissesi; ciro/kârlılık detaylarına bu turda ulaşılamadı ve mevcut yükseliş büyük ölçüde haber akışı/momentum kaynaklı görünüyor, temel bir doğrulama yapılamadı. Yüksek riskle sadece izleme önerilir, spekülatif bir isim olduğu açıkça belirtilir; bu bir alım tavsiyesi değildir."
+        "reason": "WebSearch'te doğrulandı: Tofaş Ç2 2026'da net dönem kârını 6,29 milyar TL olarak açıkladı (2025 Ç2: 2,12 milyar TL); esas faaliyet kârı da -0,88 milyar TL'den 2,88 milyar TL'ye döndü. Bilanço sonrası 10 aracı kurumun ortalama hedef fiyatı 431,02 TL (%66,94 potansiyel getiri iddiası, en yüksek hedef 530 TL). Kâr artışı büyük ölçüde zayıf bir baz döneme (2025 Ç2) göre hesaplandığından oranlar abartılı görünebilir; otomotiv sektörünün döngüselliği ve kur/talep duyarlılığı nedeniyle risk yüksek değerlendiriliyor, agresif pozisyon önerilmiyor."
       },
       {
         "market": "US",
-        "symbol": "NVDA",
-        "name": "NVIDIA Corporation",
-        "opportunityScore": 60,
-        "confidence": 42,
+        "symbol": "MU",
+        "name": "Micron Technology",
+        "opportunityScore": 78,
+        "confidence": 65,
         "risk": "Orta",
         "action": "İZLE",
-        "reason": "26 Ağustos'ta bilanço açıklayacak (Wall Street 93-95 milyar$ gelir bekliyor) ve 19 Ağustos'ta H200 çiplerinin Çin'e ihracatına onay aldığı bildirildi; 61 analistin ortalama notu 'Güçlü Al' ve ~302,83$ ortalama hedef fiyat (üçüncü taraf, bağımsız doğrulanmadı, ~%37,8 yukarı potansiyele işaret ediyor). Buna karşın Çin veri merkezi gelirinin hâlâ sıfır olduğu da doğrulandı; H200 onayının gelire ne zaman/ne kadar yansıyacağı belirsiz. Orta riskle sadece izleme önerilir, bilanço öncesi bir alım tavsiyesi değildir."
+        "reason": "WebSearch'te doğrulandı: New Street Research analisti Pierre Ferragu, Micron'u 'Al'a yükseltti ve hedef fiyatını 1.250$'a çekti; UBS 1.625$ hedefle 'Al' notunu korudu, geniş analist konsensüsü ~1.568$ civarında. Yükseltmeler doğrudan hızlanan AI bellek talebine ve iyileşen maliyet yapısına bağlanıyor; küresel yarı iletken satışları Mayıs 2026'da rekor 120,6 milyar$'a ulaşarak yıllık %104 büyüdü. Yarı iletken sektörünün döngüsel doğası ve talep tahminlerindeki belirsizlik nedeniyle risk orta seviyede değerlendiriliyor."
       },
       {
         "market": "US",
-        "symbol": "CRWD",
-        "name": "CrowdStrike Holdings, Inc.",
+        "symbol": "HON",
+        "name": "Honeywell",
+        "opportunityScore": 65,
+        "confidence": 55,
+        "risk": "Düşük",
+        "action": "İZLE",
+        "reason": "WebSearch'te doğrulandı: Morgan Stanley, Honeywell Aerospace bölümünü gerekçe göstererek hisseyi 'eşit ağırlık'tan 'fazla ağırlık'a yükseltti ve hedef fiyatını 205$'a çıkardı (mevcut fiyata göre ~%28 yukarı potansiyel). Çeşitlendirilmiş sanayi/havacılık iş modeli görece daha düşük tekil-şirket riski taşıyor; ana risk genel sanayi döngüsü ve havacılık talebindeki olası yavaşlama."
+      },
+      {
+        "market": "US",
+        "symbol": "MRK",
+        "name": "Merck & Co.",
+        "opportunityScore": 70,
+        "confidence": 60,
+        "risk": "Orta",
+        "action": "İZLE",
+        "reason": "WebSearch'te doğrulandı: Merck ve Moderna, 19 Ağustos'ta kişiselleştirilmiş mRNA kanser aşısı (intismeran autogene) + Keytruda kombinasyonunun faz 3 melanom çalışmasında birincil hedefe ulaştığını açıkladı (nüks/ölüm riskinde %49, uzak metastaz riskinde %59 azalma); haber sonrası Merck hissesi günü ~%12 yükselişle kapattı. Onay başvurusunun aylar içinde yapılması planlanıyor ama düzenleyici onay süreci ve zamanlaması belirsiz; kurulu, temettü ödeyen bir ilaç şirketi olması tekil-olay riskini bir miktar azaltıyor."
+      },
+      {
+        "market": "US",
+        "symbol": "MRNA",
+        "name": "Moderna",
         "opportunityScore": 40,
-        "confidence": 25,
+        "confidence": 35,
         "risk": "Yüksek",
         "action": "İZLE",
-        "reason": "26 Ağustos'ta bilanço açıklayacak; hisse son 77 günde %348,8 yükselerek tarihi zirveye (227,21$) ulaştı ve analiz kaynaklarına göre ileri F/K çarpanı ~175x'e çıktı (üçüncü taraf kaynak, bağımsız doğrulanmadı). Bu denli gerilmiş bir değerleme, bilanço sonrası küçük bir yürütme hatasında bile sert bir düzeltme riski taşır. Yüksek riskle sadece izleme önerilir, bilanço öncesi bir alım tavsiyesi değildir."
-      },
-      {
-        "market": "US",
-        "symbol": "ETN",
-        "name": "Eaton Corporation plc",
-        "opportunityScore": 46,
-        "confidence": 30,
-        "risk": "Orta",
-        "action": "İZLE",
-        "reason": "Dana Incorporated ile Mobility Group'unu ayırıp birleştiren 10 milyar$'ın üzerinde değerli bir Reverse Morris Trust anlaşması duyurdu ve Elektrikli/Havacılık odaklı, AI veri merkezi büyümesine daha bağımlı bir portföye yöneliyor; Ç2 geliri %21 büyüdü, ABD veri merkezi backlog'u ~307 GW'a ulaştı, temettü 1,10$'a yükseltildi (28 Ağustos ödemeli). Ancak hisse son bir haftada zaten %23,6 yükseldi, bu da kısa vadede momentum kovalama/geri çekilme riski taşıyor. Orta riskle sadece izleme önerilir, bu bir alım tavsiyesi değildir."
+        "reason": "WebSearch'te doğrulandı: Aynı mRNA kanser aşısı faz 3 başarı haberiyle Moderna hissesi 19 Ağustos'ta tek günde ~%177 sıçradı. Haber gerçek ve önemli olsa da, bu büyüklükte tek günlük bir hareket haberin büyük ölçüde fiyata yansıdığı ve kısa vadede sert geri çekilme/kâr satışı riski taşıdığı anlamına gelebilir; onay ve ticarileşme süreci hâlâ aylar/yıllar alabilir. Sadece izleme listesi için not ediliyor, mevcut fiyat seviyesinden pozisyon açmak yüksek risk taşır."
       }
     ]
   },
